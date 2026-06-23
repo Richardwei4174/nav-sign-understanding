@@ -1,0 +1,3741 @@
+[
+  {
+    "imagePath": "IMG_3300.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Bathroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Restroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Russell Sage Lab, 3rd Floor?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Elevator (accessible restrooms on 2nd floor)?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Rooms 3100 to 3210?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is SAGE 3101 Computer Lab/Classroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is The Beanery Cafe?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Beanery Cafe?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Main Stairwell?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Economics Department Office?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Rooms 3400 to 3510?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Men's Room?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3303.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Russell Sage Lab, 3rd Floor?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Elevator?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Rooms 3100 to 3210?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is SAGE 3101 Computer Lab/Classroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Computer Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is The Beanery Cafe?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Main Stairwell?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Economics Department Office?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Rooms 3400 to 3510?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Men's Room?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is SAGE 3303 Classroom?",
+        "answer": "locational"
+      }
+    ]
+  },
+	{
+		"imagePath": "IMG_3304.JPG",
+		"questions": [
+			{
+				"question": "Where is Restrooms?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Bathroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Restroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Russell Sage Lab, 3rd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is Elevator (accessible restrooms on 2nd floor)?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Elevator?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Rooms 3100 to 3210?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 3101 Computer Lab/Classroom?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Computer Lab?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is The Beanery Cafe?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Main Stairwell?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Economics Department Office?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Rooms 3400 to 3510?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Men's Room?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 3303 Classroom?",
+				"answer": "locational"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3305.JPG",
+		"questions": [
+			{
+				"question": "Where is Sage Lab 3rd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 3602-3510?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 3702-3704?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3702?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3704?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is 3703-3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3703?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3306.JPG",
+		"questions": [
+			{
+				"question": "Where is Sage Lab 3rd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 3602-3510?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 3702-3704?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3702?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3704?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is 3703-3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3703?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3307.JPG",
+		"questions": [
+			{
+				"question": "Where is Sage Lab 3rd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 3602-3510?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 3702-3704?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3702?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3704?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is 3703-3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3703?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3308.JPG",
+		"questions": [
+			{
+				"question": "Where is Restrooms?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Russell Sage Laboratory 2nd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 2100 to 2500?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2100?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2500?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 1st Floor (via West Stairs or Elevator)?",
+				"answer": "left"
+			},      
+			{
+				"question": "Where is 1st Floor?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Elevator?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Main Directory in 3rd Floor Lobby?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 2600 to 2715?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2600?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2715?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 3510 to 3713?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "straight"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3310.JPG",
+		"questions": [
+			{
+				"question": "Where is Restrooms?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Russell Sage Laboratory 2nd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 2100 to 2500?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2100?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2500?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 1st Floor?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Elevator?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Main Directory in 3rd Floor Lobby?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 2600 to 2715?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2600?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2715?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 3510 to 3713?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "straight"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3311.JPG",
+		"questions": [
+			{
+				"question": "Where is Restrooms?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Russell Sage Laboratory 2nd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 2100 to 2500?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2100?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2500?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 1st Floor?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Elevator?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Main Directory in 3rd Floor Lobby?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 2600 to 2715?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2600?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2715?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 3510 to 3713?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "straight"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "straight"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3313.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Laboratory 2nd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 2400 to 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2400?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 3510 to 3713 (via East Stairs)?",
+				"answer": "left"
+			},      
+			{
+				"question": "Where is 3510 to 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 2100 to 2317?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2317?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 1st Floor (via West Stairs or Elevator)?",
+				"answer": "right"
+			},      
+			{
+				"question": "Where is 1st Floor?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Elevator?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Restrooms?",
+				"answer": "right"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3314.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Laboratory 2nd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 2300 to 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2300?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 3510 to 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Restrooms?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 2100 to 2211?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2211?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 1st Floor (via West Stairs or Elevator)?",
+				"answer": "right"
+			},      
+			{
+				"question": "Where is 1st Floor?",
+				"answer": "right"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3315.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Laboratory 2nd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 2300 to 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2300?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 3510 to 3713 (via East Stairs)?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 3510 to 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Restrooms?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 2100 to 2211?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2211?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 1st Floor (via West Stairs or Elevator)?",
+				"answer": "right"
+			},    
+			{
+				"question": "Where is 1st Floor?",
+				"answer": "right"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3316.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Laboratory 2nd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 2300 to 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2300?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 3510 to 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Restrooms?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 2100 to 2211?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2211?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 1st Floor (via West Stairs or Elevator)?",
+				"answer": "right"
+			},      
+			{
+				"question": "Where is 1st Floor?",
+				"answer": "right"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3317.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Laboratory 2nd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 2300 to 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2300?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 2715?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 3510 to 3713 (via East Stairs)?",
+				"answer": "left"
+			},      
+			{
+				"question": "Where is 3510 to 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3713?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Restrooms?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is 2100 to 2211?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 2211?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 1st Floor?",
+				"answer": "right"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3319.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Lab. 3rd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is Lobby?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 3303 Auditorium?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Auditorium?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Economics Department Office (Room 3504)?",
+				"answer": "left"
+			},      
+			{
+				"question": "Where is Economics Department Office?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Rooms 3400 to 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3400?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Men's Room?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 3101 Computer Lab/Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Computer Lab?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Rooms 3100 to 3210?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3210?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is The Beanery Cafe?",
+				"answer": "right"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3320.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Lab. 3rd Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is Lobby?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 3303 Auditorium?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Auditorium?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Economics Department Office?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Rooms 3400 to 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3400?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 3510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Men's Room?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 3101 Computer Lab/Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Computer Lab?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Rooms 3100 to 3210?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 3210?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is The Beanery Cafe?",
+				"answer": "right"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3321.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Laboratory 4th Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 4100 to 4306?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4306?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Elevator?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4101 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4101?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4112 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4112?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4203 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4203?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 4400 to 4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4400?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 4510 Classroom?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 4711 Classroom?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Women's Room?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is HASS Student Services?",
+				"answer": "right"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3322.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Laboratory 4th Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 4100 to 4306?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4306?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Elevator?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4101 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4101?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4112 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4112?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4203 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4203?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 4400 to 4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4400?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 4510 Classroom?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 4711 Classroom?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Women's Room?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3323.JPG",
+		"questions": [
+			{
+				"question": "Where is Russell Sage Laboratory 4th Floor?",
+				"answer": "locational"
+			},
+			{
+				"question": "Where is 4100 to 4306?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4306?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Elevator?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4101 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4101?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4112 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4112?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is SAGE 4203 Classroom?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4203?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 4400 to 4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4400?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 4510 Classroom?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is SAGE 4711 Classroom?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Women's Room?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3324.JPG",
+		"questions": [
+			{
+				"question": "Where is Aaron Kemp Business Manager?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4410?",
+				"answer": "locational"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3325.JPG",
+		"questions": [
+			{
+				"question": "Where is 4510-4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3326.JPG",
+		"questions": [
+			{
+				"question": "Where is 4510-4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3327.JPG",
+		"questions": [
+			{
+				"question": "Where is 4510-4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4510?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3328.JPG",
+		"questions": [
+			{
+				"question": "Where is Sage Lab 4th Floor?",
+				"answer": "locational"
+			},      
+			{
+				"question": "Where is 4100-4602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 4702-4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4702?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3329.JPG",
+		"questions": [
+			{
+				"question": "Where is Sage Lab 4th Floor?",
+				"answer": "locational"
+			},      
+			{
+				"question": "Where is 4100-4602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 4702-4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4702?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			}
+		]
+	},
+	{
+		"imagePath": "IMG_3330.JPG",
+		"questions": [
+			{
+				"question": "Where is Sage Lab 4th Floor?",
+				"answer": "locational"
+			},      
+			{
+				"question": "Where is 4100-4602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4100?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is Room 4602?",
+				"answer": "right"
+			},
+			{
+				"question": "Where is 4702-4711?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4702?",
+				"answer": "left"
+			},
+			{
+				"question": "Where is Room 4711?",
+				"answer": "left"
+			}
+		]
+	},
+  {
+    "imagePath": "IMG_3331.JPG",
+    "questions": [
+      {
+        "question": "Where is Sage Lab 4th Floor?",
+        "answer": "locational"
+      },      
+      {
+        "question": "Where is 4100-4602?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 4100?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 4602?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4702-4711?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 4702?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 4711?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3333.JPG",
+    "questions": [
+      {
+        "question": "Where is Sage Lab 5th Floor?",
+        "answer": "locational"
+      },      
+      {
+        "question": "Where is 5100-5602?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 5100?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 5602?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5702-5717?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 5702?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 5717?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3334.JPG",
+    "questions": [
+      {
+        "question": "Where is Sage Lab 5th Floor?",
+        "answer": "locational"
+      },      
+      {
+        "question": "Where is 5100-5602?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 5100?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 5602?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5702-5717?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 5702?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 5717?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3335.JPG",
+    "questions": [
+      {
+        "question": "Where is 5702?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5704?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5706?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5708?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5710?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5703?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5705?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5709?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5711?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3336.JPG",
+    "questions": [
+      {
+        "question": "Where is 5702?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5704?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5706?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5708?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5710?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5703?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5705?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5709?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5711?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3337.JPG",
+    "questions": [
+      {
+        "question": "Where is 5702?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5704?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5706?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5708?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5710?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5703?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5705?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5709?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5711?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3338.JPG",
+    "questions": [
+      {
+        "question": "Where is 5702?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5704?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5706?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5708?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5710?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 5703?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5705?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5709?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 5711?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3339.JPG",
+    "questions": [
+      {
+        "question": "Where is 1201 - 1301?",
+        "answer": "left"
+      },      
+      {
+        "question": "Where is 1201?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 1301?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3344.JPG",
+    "questions": [
+      {
+        "question": "Where is 1201 - 1301?",
+        "answer": "left"
+      },       
+      {
+        "question": "Where is 1201?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 1301?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3345.JPG",
+    "questions": [
+      {
+        "question": "Where is 1201 - 1301?",
+        "answer": "left"
+      },       
+      {
+        "question": "Where is 1201?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 1301?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3346.JPG",
+    "questions": [
+      {
+        "question": "Where is 1107 - 1112?",
+        "answer": "right"
+      },      
+      {
+        "question": "Where is 1107?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1201 - 1301?",
+        "answer": "down"
+      },      
+      {
+        "question": "Where is 1201?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is 1301?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3347.JPG",
+    "questions": [
+      {
+        "question": "Where is 1107 - 1112?",
+        "answer": "right"
+      },      
+      {
+        "question": "Where is 1107?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1201 - 1301?",
+        "answer": "down"
+      },      
+      {
+        "question": "Where is 1201?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is 1301?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3348.JPG",
+    "questions": [
+      {
+        "question": "Where is 1107 - 1112?",
+        "answer": "right"
+      },      
+      {
+        "question": "Where is 1107?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1201 - 1301?",
+        "answer": "down"
+      },      
+      {
+        "question": "Where is 1201?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is 1301?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3349.JPG",
+    "questions": [
+      {
+        "question": "Where is 1107 - 1112?",
+        "answer": "right"
+      },      
+      {
+        "question": "Where is 1107?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1201 - 1301?",
+        "answer": "down"
+      },      
+      {
+        "question": "Where is 1201?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is 1301?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3350.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3351.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3352.JPG",
+    "questions": [
+      {
+        "question": "Where is SAGE?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3353.JPG",
+    "questions": [
+      {
+        "question": "Where is SAGE?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3354.JPG",
+    "questions": [
+      {
+        "question": "Where is CONFERENCE ROOM 2103?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Conference Room?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 2103?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3357.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3359.JPG",
+    "questions": [
+      {
+        "question": "Where is Conference Room 2103?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Conference Room?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3360.JPG",
+    "questions": [
+      {
+        "question": "Where is Exit?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3364.JPG",
+    "questions": [
+      {
+        "question": "Where is CONFERENCE ROOM 2103?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is CONFERENCE ROOM?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3365.JPG",
+    "questions": [
+      {
+        "question": "Where is Women's Bathroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Men's Bathroom?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3366.JPG",
+    "questions": [
+      {
+        "question": "Where is Bathroom?",
+        "answer": "straight"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3368.JPG",
+    "questions": [
+      {
+        "question": "Where is Women's Bathroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Men's Bathroom?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3369.JPG",
+    "questions": [
+      {
+        "question": "Where is Bathroom?",
+        "answer": "straight"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3370.JPG",
+    "questions": [
+      {
+        "question": "Where is contracts and grants?",
+        "answer": "straight-left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3371.JPG",
+    "questions": [
+      {
+        "question": "Where is West Hall?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3372.JPG",
+    "questions": [
+      {
+        "question": "Where is Women's Bathroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Men's Bathroom?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3373.JPG",
+    "questions": [
+      {
+        "question": "Where is Bathroom?",
+        "answer": "straight"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3374.JPG",
+    "questions": [
+      {
+        "question": "Where is exit?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3375.JPG",
+    "questions": [
+      {
+        "question": "Where is contracts and grants?",
+        "answer": "straight-left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3376.JPG",
+    "questions": [
+      {
+        "question": "Where is EXIT?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3377.JPG",
+    "questions": [
+      {
+        "question": "Where is ARTS?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3378.JPG",
+    "questions": [
+      {
+        "question": "Where is EXIT?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3379.JPG",
+    "questions": [
+      {
+        "question": "Where is CONTRACTS AND GRANTS?",
+        "answer": "straight-left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3380.JPG",
+    "questions": [
+      {
+        "question": "Where is ARTS?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3382.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is ARTS?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3383.JPG",
+    "questions": [
+      {
+        "question": "Where is ARTS?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3384.JPG",
+    "questions": [
+      {
+        "question": "Where is G15?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3385.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is ARTS?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3386.JPG",
+    "questions": [
+      {
+        "question": "Where is 2nd floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 3rd floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 4th floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 1st floor?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3388.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is ARTS?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3389.JPG",
+    "questions": [
+      {
+        "question": "Where is G15?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3390.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is ARTS?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3391.JPG",
+    "questions": [
+      {
+        "question": "Where is Ladies' Restroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is Mathematical Sciences Room 301?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Department of Mathematical Sciences Room 301?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Mathematical Sciences?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is 4th Floor?",
+        "answer": ["straight-right", "straight"]
+      },
+      {
+        "question": "Where is 2nd Floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 3rd Floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 1st Floor?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3392.JPG",
+    "questions": [
+      {
+        "question": "Where is Auditorium?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3393.JPG",
+    "questions": [
+      {
+        "question": "Where is Department of Mathematical Sciences Room 301?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Mathematical Sciences 4th Floor?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is Ladies' Restroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is 2nd floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 3rd floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 4th floor?",
+        "answer": ["straight-right", "straight"]
+      },
+      {
+        "question": "Where is 1st floor?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3394.JPG",
+    "questions": [
+      {
+        "question": "Where is Auditorium?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3395.JPG",
+    "questions": [
+      {
+        "question": "Where is Mathematical Sciences 4th Floor?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is Mathematical Sciences?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is 4th Floor?",
+        "answer": "straight-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3396.JPG",
+    "questions": [
+      {
+        "question": "Where is Auditorium?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3397.JPG",
+    "questions": [
+      {
+        "question": "Where is Department of Mathematical Sciences Room 301?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Mathematical Sciences 4th Floor?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is Ladies' Restroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is 2nd floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 3rd floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 4th floor?",
+        "answer": ["straight-right", "straight"]
+      },
+      {
+        "question": "Where is 1st floor?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3398.JPG",
+    "questions": [
+      {
+        "question": "Where is Amos Eaton?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3399.JPG",
+    "questions": [
+      {
+        "question": "Where is Ladies' Restroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3400.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Accessible Restroom?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3401.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Accessible Restroom?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3402.JPG",
+    "questions": [
+      {
+        "question": "Where is Mathematical Sciences Office?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 301?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Mathematical Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3rd Floor?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3404.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is Accessible Restroom?",
+        "answer": "straight"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3405.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is Accessible Restroom?",
+        "answer": "straight"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3406.JPG",
+    "questions": [
+      {
+        "question": "Where is Mathematical Sciences Office?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 301?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Mathematical Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3rd Floor?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3407.JPG",
+    "questions": [
+      {
+        "question": "Where is MEN?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3409.JPG",
+    "questions": [
+      {
+        "question": "Where is Information Tech. & Web Science?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Information Technology & Web Science?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is ITWS Lab?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Prof. Plotka?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Jeanne Luker?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3410.JPG",
+    "questions": [
+      {
+        "question": "Where is Information Tech. & Web Science?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Information Technology & Web Science?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is ITWS Lab?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Prof. Plotka?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Jeanne Luker?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3411.JPG",
+    "questions": [
+      {
+        "question": "Where is Mathematical Sciences Office?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 301?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Mathematical Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3rd Floor?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3412.JPG",
+    "questions": [
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is LALLY 02?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3413.JPG",
+    "questions": [
+      {
+        "question": "Where is LALLY?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3417.JPG",
+    "questions": [
+      {
+        "question": "Where is Fire Escape?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3419.JPG",
+    "questions": [
+      {
+        "question": "Where is Women's Restroom?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3421.JPG",
+    "questions": [
+      {
+        "question": "Where is Fire Escape?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3423.JPG",
+    "questions": [
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3424.JPG",
+    "questions": [
+      {
+        "question": "Where is GREENE?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3425.JPG",
+    "questions": [
+      {
+        "question": "Where is Fire Department Connection?",
+        "answer": "down-left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3426.JPG",
+    "questions": [
+      {
+        "question": "Where is Fire Department Connection?",
+        "answer": "down-left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3427.JPG",
+    "questions": [
+      {
+        "question": "Where is Ladies Restroom?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3428.JPG",
+    "questions": [
+      {
+        "question": "Where is Ladies Restroom?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3429.JPG",
+    "questions": [
+      {
+        "question": "Where is Ladies Restroom?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3430.JPG",
+    "questions": [
+      {
+        "question": "Where is Ladies Restroom?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3431.JPG",
+    "questions": [
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3432.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Women's Restroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 202A?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3433.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Women's Restroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 202A?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3434.JPG",
+    "questions": [
+      {
+        "question": "Where is Elevator?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Women's Restroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Room 202A?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 005C?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3438.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3440.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3442.JPG",
+    "questions": [
+      {
+        "question": "Where is 3039?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3045?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3051?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4034?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4040?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4050?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3112?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 3116?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 3130?",
+        "answer": "left"
+      }
+    ]
+  },
+
+  {
+    "imagePath": "IMG_3443.JPG",
+    "questions": [
+      {
+        "question": "Where is 3039?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3045?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3051?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4034?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4040?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4050?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3112?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 3116?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 3130?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3444.JPG",
+    "questions": [
+      {
+        "question": "Where is 3039?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3045?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3051?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4034?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4040?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 4050?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3112?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 3116?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 3130?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3445.JPG",
+    "questions": [
+      {
+        "question": "Where is CII 3112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is CII 3116?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3116?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3130?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is CII 3112, 3116 & 3130?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3446.JPG",
+    "questions": [
+      {
+        "question": "Where is CII 3112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is CII 3116?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3116?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is CII 3130?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3130?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is CII 3112, 3116 & 3130?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3447.JPG",
+    "questions": [
+      {
+        "question": "Where is CII 3112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3112?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is CII 3116?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3116?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is CII 3130?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3130?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is CII 3112, 3116 & 3130?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3449.JPG",
+    "questions": [
+      {
+        "question": "Where is 3111?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3125?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3111-3125?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3450.JPG",
+    "questions": [
+      {
+        "question": "Where is 3111?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3125?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3111-3125?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3451.JPG",
+    "questions": [
+      {
+        "question": "Where is DCC?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is JEC?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is ADA?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3452.JPG",
+    "questions": [
+      {
+        "question": "Where is 3039?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3051?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 3039-3051?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3453.JPG",
+    "questions": [
+      {
+        "question": "Where is 3112?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is 3116?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is 3130?",
+        "answer": "straight-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3454.JPG",
+    "questions": [
+      {
+        "question": "Where is 3112?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is 3116?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is 3130?",
+        "answer": "straight-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3455.JPG",
+    "questions": [
+      {
+        "question": "Where is 3213?",
+        "answer": "straight-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3456.JPG",
+    "questions": [
+      {
+        "question": "Where is 3213?",
+        "answer": "straight-right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3457.JPG",
+    "questions": [
+      {
+        "question": "Where is 3039-3051?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3458.JPG",
+    "questions": [
+      {
+        "question": "Where is STAIRS & ELEVATORS?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3459.JPG",
+    "questions": [
+      {
+        "question": "Where is STAIRS & ELEVATORS?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3460.JPG",
+    "questions": [
+      {
+        "question": "Where is STAIRS & ELEVATORS?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3461.JPG",
+    "questions": [
+      {
+        "question": "Where is The Forge?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3462.JPG",
+    "questions": [
+      {
+        "question": "Where is The Forge?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3463.JPG",
+    "questions": [
+      {
+        "question": "Where is The Forge?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is DCC / JEC Path of travel?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3464.JPG",
+    "questions": [
+      {
+        "question": "Where is WRPI 91.5 FM?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is RPI's College Radio Station?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3465.JPG",
+    "questions": [
+      {
+        "question": "Where is WRPI 91.5 FM?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is RPI's College Radio Station?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3469.JPG",
+    "questions": [
+      {
+        "question": "Where is HASS Media Studio?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Media Studio?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3470.JPG",
+    "questions": [
+      {
+        "question": "Where is HASS Media Studio?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Media Studio?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3471.JPG",
+    "questions": [
+      {
+        "question": "Where is HASS Media Studio?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Media Studio?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3472.JPG",
+    "questions": [
+      {
+        "question": "Where is Tunnel to Communications Center?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Communications Center?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3473.JPG",
+    "questions": [
+      {
+        "question": "Where is Tunnel to Communications Center?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Communications Center?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3474.JPG",
+    "questions": [
+      {
+        "question": "Where is Tunnel to Communications Center?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Communications Center?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3475.JPG",
+    "questions": [
+      {
+        "question": "Where is Centrifuge Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Hydrology Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Civil & Environmental Centrifuge Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Civil & Environmental Hydrology Lab?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3476.JPG",
+    "questions": [
+      {
+        "question": "Where is Centrifuge Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Hydrology Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Civil & Environmental Centrifuge Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Civil & Environmental Hydrology Lab?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3477.JPG",
+    "questions": [
+      {
+        "question": "Where is Centrifuge Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Hydrology Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Civil & Environmental Centrifuge Lab?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Civil & Environmental Hydrology Lab?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3478.JPG",
+    "questions": [
+      {
+        "question": "Where is CII/DCC/JEC?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is DCC?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is JEC?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3479.JPG",
+    "questions": [
+      {
+        "question": "Where is Restrooms?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3480.JPG",
+    "questions": [
+      {
+        "question": "Where is 2100-2119?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 2100?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 2119?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3481.JPG",
+    "questions": [
+      {
+        "question": "Where is 2100-2119?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 2100?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 2119?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3482.JPG",
+    "questions": [
+      {
+        "question": "Where is 2100-2119?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 2100?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 2119?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3483.JPG",
+    "questions": [
+      {
+        "question": "Where is THE DESIGN LAB?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Design Lab?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is JEC 3232?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3484.JPG",
+    "questions": [
+      {
+        "question": "Where is THE DESIGN LAB?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Design Lab?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is JEC 3232?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3485.JPG",
+    "questions": [
+      {
+        "question": "Where is THE DESIGN LAB?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Design Lab?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is JEC 3232?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3486.JPG",
+    "questions": [
+      {
+        "question": "Where is 3100-3118?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3100?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3118?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3487.JPG",
+    "questions": [
+      {
+        "question": "Where is 3100-3118?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3100?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3118?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3488.JPG",
+    "questions": [
+      {
+        "question": "Where is 3100-3118?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3100?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3118?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3489.JPG",
+    "questions": [
+      {
+        "question": "Where is 3200-3232?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3200?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3232?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3490.JPG",
+    "questions": [
+      {
+        "question": "Where is 3200-3232?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3200?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3232?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3491.JPG",
+    "questions": [
+      {
+        "question": "Where is 3300-3321?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3300?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3321?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3492.JPG",
+    "questions": [
+      {
+        "question": "Where is 3300-3321?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3300?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 3321?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3493.JPG",
+    "questions": [
+      {
+        "question": "Where is 1200-1219?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 1200?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 1219?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3494.JPG",
+    "questions": [
+      {
+        "question": "Where is 1200-1219?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 1200?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 1219?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3495.JPG",
+    "questions": [
+      {
+        "question": "Where is 1300-1321?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 1300?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 1321?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3496.JPG",
+    "questions": [
+      {
+        "question": "Where is 1300-1321?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 1300?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Room 1321?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3497.JPG",
+    "questions": [
+      {
+        "question": "Where is Tunnel to JEC & DCC?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is JEC?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is DCC?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3498.JPG",
+    "questions": [
+      {
+        "question": "Where is Tunnel to JEC & DCC?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is JEC?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is DCC?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3501.JPG",
+    "questions": [
+      {
+        "question": "Where is Earth & Environmental Sciences?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Environmental Sciences?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 1W19?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3502.JPG",
+    "questions": [
+      {
+        "question": "Where is Earth and Environmental Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Environmental Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Earth Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1W19?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3503.JPG",
+    "questions": [
+      {
+        "question": "Where is Earth and Environmental Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Environmental Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Earth Sciences?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3504.JPG",
+    "questions": [
+      {
+        "question": "Where is Earth and Environmental Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Environmental Sciences?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Earth Sciences?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3505.JPG",
+    "questions": [
+      {
+        "question": "Where is Entrance IC36?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is IC36?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is IC34?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_3506.JPG",
+    "questions": [
+      {
+        "question": "Where is JEC?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is DCC?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "imagePath": "IMG_E3313.JPG",
+    "questions": [
+      {
+        "question": "Where is Russell Sage Laboratory 2nd Floor?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 2400 to 2715?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 3510 to 3713?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 2100 to 2317?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 1st Floor?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Elevator?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Restrooms?",
+        "answer": "right"
+      }
+    ]
+  }
+
+
+
+
+]
