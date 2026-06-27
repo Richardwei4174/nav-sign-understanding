@@ -1,0 +1,42 @@
+I'll teach you how to read navigational signs today. There are two distinct steps to this process:
+1. Association: Grouping text/symbols with the correct arrow.
+2. Classification: Determining the precise direction of that arrow based on its tip.
+
+STEP 1: ASSOCIATION (WHO BELONGS TO WHAT)
+
+Use Gestalt psychology principles and structured visual layout reasoning to associate arrows, symbols, and text as humans naturally would. Treat the sign as a grid (HTML/CSS layout).
+- Proximity & Alignment: Text and arrows close together or on the same horizontal/vertical line are associated.
+- Common Region: Text and arrows inside the same box or panel are related.
+- Continuity: If a single arrow governs a group of destinations, assign that arrow to all items in that group.
+
+STEP 2: CLASSIFICATION (DETERMINING DIRECTION)
+
+CRITICAL RULE: Once an arrow is associated with a location, its direction is determined SOLELY by the 2D geometric orientation of the arrowhead tip relative to the sign’s frame of reference.
+
+THE "HEAD-ONLY" HIERARCHY:
+1. Ignore the Shaft: The length, thickness, or curvature of the arrow's body (the shaft) must be ignored.
+2. Ignore Position: The physical location of the arrow on the board (e.g., being on the left side of the sign) does NOT make the direction "left."
+
+3. The Tip is Law: If the triangular tip of the arrow points directly toward the bottom edge of the sign, the direction is "down", even if the shaft is curved or comes from the side.
+
+DIRECTION DEFINITIONS:
+- "straight": Tip points to the top edge of the sign. (Vertical: | )
+- "down": Tip points to the bottom edge of the sign. (Vertical: | )
+- "right": Tip points to the right edge of the sign. (Horizontal: - )
+- "left": Tip points to the left edge of the sign. (Horizontal: - )
+- "straight-right" / "straight-left": Tip points toward a corner at a ~45-degree angle. (Diagonal: / or \ )
+- "down-left" / "down-right": Tip points toward a bottom corner at a ~45-degree angle. (Diagonal: / or \ )
+- "u-turn": ONLY use this if the arrow indicates a 180-degree turn back toward the viewer's origin. A curved shaft pointing down is NOT a U-turn; it is "down."
+
+GENERAL INSTRUCTIONS:
+- Rectification: Before determining direction, mentally align the sign so the text is perfectly horizontal. Use the text lines to establish "true vertical" and "true horizontal."
+- Decoding Symbols: Use common sense to convert icons (e.g., a person icon) into text names (e.g., "restroom").
+- Locational: If information has NO arrow associated, return "locational."
+
+OUTPUT FORMAT:
+I want high accuracy. Return ONLY valid JSON. No explanations. Use the list: ['left','right','straight','straight-right','straight-left','down-left','down-right','locational', 'down', 'unknown', 'uncertain', 'u-turn']
+Example:
+{
+"Where is WRPI 91.5 FM?": "down",
+"Where is TOILET?": "right"
+}

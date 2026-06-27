@@ -219,3 +219,9 @@ __marimo__/
 
 # API Keys
 key/
+
+# Generated outputs
+outputs/
+runs/
+weights/
+*.pt

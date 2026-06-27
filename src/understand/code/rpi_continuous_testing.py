@@ -5,13 +5,14 @@ import os
 import time
 import random
 from openai import OpenAI
-from utils import file_utils
+from src.utils import file_utils
 
 
-# python rpi_continuous_testing.py \
-#   --image-folder Nav_sign_data \
-#   --qa-file rpi_test_set.json \
-#   --output rpi_qa_results.json
+# python -m src.understand.code.rpi_continuous_testing \
+#   --image-folder data/Nav_sign_data \
+#   --qa-file src/understand/qa_test_set/rpi_test_set.json \
+#   --output outputs/qa_results.json \
+#   --prompt-file src/understand/prompts/qa_prompt.txt
 
 
 
@@ -43,6 +44,7 @@ class GeminiDirectionQA:
     def get_image_string(self, image_path):
         return f"data:image/jpg;base64,{self.encode_image(image_path)}"
 
+    # original image + prompt + questions (fall back)
     def ask_questions_for_image(self, image_path, questions):
         question_text = "\n".join([f"- {q}" for q in questions])
 
@@ -86,6 +88,55 @@ class GeminiDirectionQA:
         )
 
         return completion.choices[0].message.content
+    
+    # rectified image included
+    def ask_questions_for_images(self, image_paths, questions):
+        question_text = "\n".join([f"- {q}" for q in questions])
+
+        full_prompt = (
+            f"{self.qa_prompt}\n\n"
+            f"Questions:\n"
+            f"{question_text}"
+        )
+
+        content = [
+            {
+                "type": "text",
+                "text": full_prompt
+            }
+        ]
+
+        for image_path in image_paths:
+            content.append({
+                "type": "image_url",
+                "image_url": {
+                    "url": self.get_image_string(image_path),
+                    "detail": "high"
+                }
+            })
+
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "You are a helpful assistant capable of understanding "
+                    "navigational signs."
+                )
+            },
+            {
+                "role": "user",
+                "content": content
+            }
+        ]
+
+        completion = self.client.chat.completions.create(
+            model=self.model_version,
+            messages=messages,
+            n=1,
+            temperature=0
+        )
+
+        return completion.choices[0].message.content    
 
     def parse_response(self, raw_response):
         try:
@@ -93,6 +144,35 @@ class GeminiDirectionQA:
             return json.loads(cleaned)
         except Exception:
             return None
+    def ask_questions_with_fallback(self, original_image_path, rectified_image_paths, questions):
+        if rectified_image_paths:
+            raw_rectified = self.ask_questions_for_images(
+                image_paths=rectified_image_paths,
+                questions=questions
+            )
+            parsed_rectified = self.parse_response(raw_rectified)
+        else:
+            raw_rectified = None
+            parsed_rectified = None
+
+        unknown_questions = get_unknown_questions(parsed_rectified, questions)
+
+        if parsed_rectified is not None and not unknown_questions:
+            return raw_rectified, parsed_rectified
+
+        raw_original = self.ask_questions_for_image(
+            image_path=original_image_path,
+            questions=unknown_questions
+        )
+        parsed_original = self.parse_response(raw_original)
+
+        final_response = parsed_rectified if parsed_rectified is not None else {}
+
+        if parsed_original is not None:
+            for question in unknown_questions:
+                final_response[question] = parsed_original.get(question, "unknown")
+
+        return json.dumps(final_response), final_response
         
 
 #yes the two function is indented correctly
@@ -125,6 +205,40 @@ def is_correct(predicted, expected):
 
     return predicted == expected
 
+def get_rectified_images(image_name):
+    image_stem = os.path.splitext(image_name)[0]
+
+    rectified_dir = os.path.join(
+        "outputs",
+        "pipeline",
+        image_stem,
+        "rectified"
+    )
+
+    if not os.path.exists(rectified_dir):
+        return []
+
+    rectified_images = []
+
+    for filename in sorted(os.listdir(rectified_dir)):
+        if filename.startswith("rectified_") and filename.endswith(".jpg"):
+            rectified_images.append(os.path.join(rectified_dir, filename))
+
+    return rectified_images
+
+def get_unknown_questions(parsed_response, questions):
+    unknown_questions = []
+
+    if parsed_response is None:
+        return questions
+
+    for question in questions:
+        answer = parsed_response.get(question, "unknown")
+
+        if answer in ["unknown", "ERROR", None]:
+            unknown_questions.append(question)
+
+    return unknown_questions
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -150,7 +264,7 @@ if __name__ == "__main__":
         qa_test_set = json.load(f)
 
     # TEST MODE: only first 3 images
-    # qa_test_set = qa_test_set[:3]
+    qa_test_set = qa_test_set[:3]
 
     results = []
     total_questions = 0
@@ -182,11 +296,16 @@ if __name__ == "__main__":
 
         while True:
             try:
-                raw_response = qa.ask_questions_for_image(
-                    image_path=image_path,
+
+                rectified_image_paths = get_rectified_images(image_name)
+
+                print(f"Found {len(rectified_image_paths)} rectified images for {image_name}")
+
+                raw_response, parsed_response = qa.ask_questions_with_fallback(
+                    original_image_path=image_path,
+                    rectified_image_paths=rectified_image_paths,
                     questions=questions
                 )
-                parsed_response = qa.parse_response(raw_response)
 
                 if parsed_response is not None:
                     break
