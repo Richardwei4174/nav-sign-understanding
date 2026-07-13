@@ -15,6 +15,19 @@ from src.utils import file_utils
 #   --prompt-file src/understand/prompts/qa_prompt.txt
 
 
+# How long a single Gemini API call is allowed to take before we give up on
+# it. Without this, the openai SDK's default timeout is 10 minutes - so a
+# single slow/rate-limited call has no practical ceiling, and (since the
+# live pipeline's gemini_worker processes one call at a time) that one call
+# stalls every other queued sign behind it for as long as it takes.
+GEMINI_REQUEST_TIMEOUT_SECONDS = 45.0
+
+# Bounded retries for transient failures (network blips, rate limits,
+# etc). Kept small and logged, rather than silent/unbounded, so a bad
+# network moment doesn't either hang forever or kill the worker thread.
+GEMINI_MAX_RETRIES = 2
+GEMINI_RETRY_BACKOFF_SECONDS = 5.0
+
 
 class GeminiDirectionQA:
     def __init__(self, root, api_key_path, model_version, prompt_file):
@@ -34,7 +47,13 @@ class GeminiDirectionQA:
 
         self.client = OpenAI(
             api_key=api_key,
-            base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+            base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+            timeout=GEMINI_REQUEST_TIMEOUT_SECONDS,
+            # The SDK's own internal retries stack on top of ours and would
+            # make it hard to tell how long a single logical attempt took.
+            # We do our own bounded retry/backoff below instead, with
+            # logging, so latency is actually visible.
+            max_retries=0,
         )
 
     def encode_image(self, image_path):
@@ -43,6 +62,55 @@ class GeminiDirectionQA:
 
     def get_image_string(self, image_path):
         return f"data:image/jpg;base64,{self.encode_image(image_path)}"
+
+    def _create_completion(self, messages):
+        """
+        Call the Gemini API with bounded retries and explicit timing.
+
+        Splitting this out means every call site logs how long the network
+        call itself took (as opposed to local work like image encoding),
+        and a slow/failing call is bounded instead of hanging or silently
+        killing whatever thread called it.
+        """
+        last_error = None
+
+        for attempt in range(1, GEMINI_MAX_RETRIES + 2):
+            call_start = time.perf_counter()
+
+            try:
+                completion = self.client.chat.completions.create(
+                    model=self.model_version,
+                    messages=messages,
+                    n=1,
+                    temperature=0,
+                )
+
+                call_seconds = time.perf_counter() - call_start
+                print(
+                    f"[GeminiDirectionQA] API call took {call_seconds:.2f}s "
+                    f"(attempt {attempt}/{GEMINI_MAX_RETRIES + 1})"
+                )
+
+                return completion.choices[0].message.content
+
+            except Exception as e:
+                call_seconds = time.perf_counter() - call_start
+                last_error = e
+                print(
+                    f"[GeminiDirectionQA] API call failed after "
+                    f"{call_seconds:.2f}s on attempt "
+                    f"{attempt}/{GEMINI_MAX_RETRIES + 1}: {e!r}"
+                )
+
+                if attempt <= GEMINI_MAX_RETRIES:
+                    time.sleep(GEMINI_RETRY_BACKOFF_SECONDS)
+
+        # All attempts exhausted. Raising here (rather than swallowing the
+        # error) is intentional - callers such as gemini_worker in the live
+        # pipeline should be updated to catch this so one failed sign
+        # doesn't take down the whole worker thread; see note in
+        # run_live_pipeline_threaded_async_full.py's gemini_worker.
+        raise last_error
 
     # original image + prompt + questions (fall back)
     def ask_questions_for_image(self, image_path, questions):
@@ -53,6 +121,10 @@ class GeminiDirectionQA:
             f"Questions:\n"
             f"{question_text}"
         )
+
+        encode_start = time.perf_counter()
+        image_url = self.get_image_string(image_path)
+        encode_seconds = time.perf_counter() - encode_start
 
         messages = [
             {
@@ -72,7 +144,7 @@ class GeminiDirectionQA:
                     {
                         "type": "image_url",
                         "image_url": {
-                            "url": self.get_image_string(image_path),
+                            "url": image_url,
                             "detail": "high"
                         }
                     }
@@ -80,14 +152,12 @@ class GeminiDirectionQA:
             }
         ]
 
-        completion = self.client.chat.completions.create(
-            model=self.model_version,
-            messages=messages,
-            n=1,
-            temperature=0
+        print(
+            f"[GeminiDirectionQA] Encoded 1 image in {encode_seconds:.3f}s "
+            f"for {len(questions)} question(s)"
         )
 
-        return completion.choices[0].message.content
+        return self._create_completion(messages)
     
     # rectified image included
     def ask_questions_for_images(self, image_paths, questions):
@@ -106,6 +176,8 @@ class GeminiDirectionQA:
             }
         ]
 
+        encode_start = time.perf_counter()
+
         for image_path in image_paths:
             content.append({
                 "type": "image_url",
@@ -114,6 +186,8 @@ class GeminiDirectionQA:
                     "detail": "high"
                 }
             })
+
+        encode_seconds = time.perf_counter() - encode_start
 
         messages = [
             {
@@ -129,14 +203,12 @@ class GeminiDirectionQA:
             }
         ]
 
-        completion = self.client.chat.completions.create(
-            model=self.model_version,
-            messages=messages,
-            n=1,
-            temperature=0
+        print(
+            f"[GeminiDirectionQA] Encoded {len(image_paths)} image(s) in "
+            f"{encode_seconds:.3f}s for {len(questions)} question(s)"
         )
 
-        return completion.choices[0].message.content    
+        return self._create_completion(messages)
 
     def parse_response(self, raw_response):
         try:

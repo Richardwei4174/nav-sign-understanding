@@ -58,11 +58,18 @@ def get_sam_corners(mask_image):
     epsilon = 0.02 * cv2.arcLength(largest_contour, True)
     approx = cv2.approxPolyDP(largest_contour, epsilon, True)
 
-    if len(approx) != 4:
-        return None, largest_contour, approx
+    if len(approx) == 4:
+        points = approx.reshape(4, 2).astype("float32")
+        corners = order_points(points)
+        return corners, largest_contour, approx
 
-    points = approx.reshape(4, 2).astype("float32")
-    corners = order_points(points)
+    # Fallback for rounded-corner signs:
+    # Use the minimum-area rectangle around the SAM mask.
+    rect = cv2.minAreaRect(largest_contour)
+    box = cv2.boxPoints(rect)
+    box = box.astype("float32")
+
+    corners = order_points(box)
 
     return corners, largest_contour, approx
 

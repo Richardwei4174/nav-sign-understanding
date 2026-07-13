@@ -20,6 +20,22 @@ import cv2
 #   --output outputs/multiview_single_result.json
 
 
+# python -m src.pipeline.run_multiview_pipeline \
+#   --input-dir data/test_images \
+#   --output-root outputs/checking_test_images \
+#   --qa-file src/understand/qa_test_set/rpi_test_set.json \
+#   --prompt-file src/understand/prompts/qa_prompt.txt \
+#   --output outputs/checking_test_results.json
+
+# Argument	Purpose
+# --image	Process one image.
+# --input-dir	Process an entire folder (don't use with --image).
+# --output-root	Where each image's pipeline outputs (crops/, rectified/, annotated_original.jpg, etc.) are stored.
+# --qa-file	Loads the QA questions for evaluation.
+# --prompt-file	Loads the Gemini prompt.
+# --output	Writes the combined summary JSON (overall accuracy across all processed images).
+
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SRC_ROOT = Path(__file__).resolve().parents[1]
 
@@ -397,7 +413,140 @@ def ask_cropwise_then_merge(
     return json.dumps(final_response), final_response, all_crop_results
 
 
+def run_multiview_from_detections(
+    image_path,
+    output_root,
+    qa,
+    question_items,
+    detections,
+    crop_paths=None,
+    image_output_name=None,
+):
+    if image_output_name is None:
+        dirs = make_image_output_dirs(image_path, output_root)
+    else:
+        image_output_dir = Path(output_root) / image_output_name
+        image_output_dir.mkdir(parents=True, exist_ok=True)
 
+        dirs = {
+            "image_output_dir": image_output_dir,
+            "crops_dir": image_output_dir / "crops",
+            "rectified_dir": image_output_dir / "rectified",
+            "results_path": image_output_dir / "gemini_results.json",
+        }
+
+        dirs["crops_dir"].mkdir(exist_ok=True)
+        dirs["rectified_dir"].mkdir(exist_ok=True)
+
+    image_path = Path(image_path)
+    image_name = image_path.name
+
+    copied_crop_paths = []
+
+    if crop_paths:
+        for crop_path in crop_paths:
+            crop_path = Path(crop_path)
+            copied_crop_path = dirs["crops_dir"] / crop_path.name
+
+            if crop_path.exists():
+                shutil.copy(crop_path, copied_crop_path)
+                copied_crop_paths.append(copied_crop_path)
+            else:
+                print(f"Warning: crop path does not exist: {crop_path}")
+
+    rectified_paths = crop_regions_from_detections(
+        image_path=image_path,
+        detections=detections,
+        output_dir=dirs["rectified_dir"],
+    )
+
+    annotated_original_path = (
+        dirs["image_output_dir"] / "annotated_original.jpg"
+    )
+
+    create_annotated_original_image(
+        image_path=image_path,
+        detections=detections,
+        output_path=annotated_original_path,
+    )
+
+    print(f"Found {len(rectified_paths)} rectified images for {image_name}")
+
+    questions = [q["question"] for q in question_items]
+
+    raw_response, parsed_response, gemini_attempts = ask_multiview_with_retries(
+        qa=qa,
+        original_image_path=annotated_original_path,
+        rectified_image_paths=rectified_paths,
+        detections=detections,
+        questions=questions,
+    )
+
+    if parsed_response is None:
+        parsed_response = {}
+
+    gemini_results = []
+    image_correct = 0
+    image_total = 0
+
+    for q in question_items:
+        question = q["question"]
+        expected = q["answer"]
+
+        predicted = normalize_prediction(
+            parsed_response.get(question, "ERROR")
+        )
+
+        correct = is_correct(predicted, expected)
+
+        image_total += 1
+        if correct:
+            image_correct += 1
+
+        result_entry = {
+            "question": question,
+            "expected": expected,
+            "predicted": predicted,
+            "correct": correct,
+        }
+
+        if predicted == "ERROR":
+            result_entry["error_response"] = raw_response
+
+        gemini_results.append(result_entry)
+
+        print(f"  {question} | expected={expected} | predicted={predicted}")
+
+    print(
+        f"Image accuracy: {image_correct}/{image_total} "
+        f"({image_correct / image_total if image_total > 0 else 0:.4f})"
+    )
+
+    results = {
+        "input_image": str(image_path),
+        "detections": detections,
+        "crop_paths": [str(p) for p in copied_crop_paths],
+        "rectified_paths": [str(p) for p in rectified_paths],
+        "gemini_attempts": gemini_attempts,
+        "raw_gemini_response": raw_response,
+        "parsed_gemini_response": parsed_response,
+        "gemini_results": gemini_results,
+    }
+
+    with open(dirs["results_path"], "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+
+    print(f"Saved: {dirs['results_path']}")
+
+    return {
+        "imagePath": image_name,
+        "results": gemini_results,
+        "image_correct": image_correct,
+        "image_total": image_total,
+        "image_accuracy": (
+            image_correct / image_total if image_total > 0 else 0
+        ),
+    }
 
 def run_single_image(image_path, output_root, qa, qa_lookup):
     dirs = make_image_output_dirs(image_path, output_root)

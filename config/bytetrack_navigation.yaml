@@ -1,0 +1,19 @@
+tracker_type: bytetrack
+
+# Match YOLO-World threshold.
+track_high_thresh: 0.05
+
+# Allow low-confidence detections to remain candidates.
+track_low_thresh: 0.05
+
+# Immediately create a new track.
+new_track_thresh: 0.05
+
+# Keep tracks alive for brief occlusions.
+track_buffer: 30
+
+# Association threshold.
+match_thresh: 0.80
+
+# Fuse detection confidence into association.
+fuse_score: True
