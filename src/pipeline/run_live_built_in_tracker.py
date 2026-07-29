@@ -17,6 +17,10 @@ from rapidfuzz import fuzz
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SRC_ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT))
+sys.path.append(str(SRC_ROOT))
+
+from src.pipeline.visual_quality import crop_quality
 
 DEBUG_LOG_FILE = None
 DEBUG_LOG_HANDLE = None
@@ -25,6 +29,91 @@ DEBUG_LOG_LOCK = threading.Lock()
 
 PERF_LOG_FILE = None
 PERF_LOG_LOCK = threading.Lock()
+
+
+RAW_WRITER_QUEUE_MAXSIZE = 180
+
+
+class LiveEventLogger:
+    """Collect structured evaluation events from all pipeline threads."""
+
+    CORE_FIELDS = (
+        "frame_idx",
+        "source_frame_elapsed_seconds",
+        "track_id",
+        "target",
+        "bbox",
+        "ocr_text",
+        "confidence",
+    )
+
+    def __init__(self, output_path, run_start_time, metadata):
+        self.output_path = Path(output_path)
+        self.run_start_time = run_start_time
+        self.metadata = dict(metadata)
+        self.events = []
+        self.lock = threading.Lock()
+        self.next_event_index = 0
+
+    def elapsed_seconds(self):
+        return round(time.monotonic() - self.run_start_time, 6)
+
+    def record(self, event_type, elapsed_seconds=None, **fields):
+        event = {
+            "event_index": None,
+            "event_type": event_type,
+            "elapsed_seconds": (
+                self.elapsed_seconds()
+                if elapsed_seconds is None
+                else round(float(elapsed_seconds), 6)
+            ),
+        }
+
+        for field in self.CORE_FIELDS:
+            event[field] = fields.pop(field, None)
+
+        if event["source_frame_elapsed_seconds"] is not None:
+            event["source_frame_elapsed_seconds"] = round(
+                float(event["source_frame_elapsed_seconds"]), 6
+            )
+
+        if event["bbox"] is not None:
+            event["bbox"] = list(event["bbox"])
+
+        if fields:
+            event["details"] = fields
+
+        with self.lock:
+            event["event_index"] = self.next_event_index
+            self.next_event_index += 1
+            self.events.append(event)
+
+        return event
+
+    def save(self):
+        with self.lock:
+            payload = {
+                "schema_version": 1,
+                "metadata": dict(self.metadata),
+                "events": list(self.events),
+            }
+
+        with open(self.output_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+
+
+def save_frame_timestamps(path, raw_video_path, frame_timestamps, metadata):
+    payload = {
+        "schema_version": 1,
+        "video_file": raw_video_path.name,
+        "clock": "time.monotonic",
+        "elapsed_time_unit": "seconds",
+        "metadata": metadata,
+        "frames": frame_timestamps,
+    }
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
 
 
 def update_runtime_stats(stats, stats_lock, **values):
@@ -294,6 +383,8 @@ def make_unknown_result(question_item):
         "expected": question_item["answer"],
         "predicted": "unknown",
         "correct": question_item["answer"] == "unknown",
+        "first_seen_seconds": None,
+        "best_frame_seconds": None,
     }
 
 # save as we go
@@ -353,6 +444,11 @@ def create_target_states(
             "match_threshold": match_threshold,
             "first_match_frame": None,
             "first_match_time": None,
+            "first_match_seconds": None,
+            "first_correct_match_frame": None,
+            "first_correct_match_seconds": None,
+            "first_correct_match_track_id": None,
+            "first_correct_match_event_logged": False,
             "matched_track_id": None,
             "last_seen_frame": None,
             "consecutive_misses": 0,
@@ -376,6 +472,7 @@ def all_targets_finished(target_states):
 def update_target_with_detection(
     state,
     frame_idx,
+    frame_stream_seconds,
     frame_path,
     crop_path,
     bbox_xyxy,
@@ -397,12 +494,12 @@ def update_target_with_detection(
     and fuzzy-match score are tie-breakers.
     """
     if state["status"] not in ["searching", "window_open"]:
-        return
+        return False
 
     match_score = score_match(state["target"], ocr_text) if ocr_text else 0
 
     if match_score < state["match_threshold"]:
-        return
+        return False
 
     # Once a target is bound to a physical track, do not let another duplicate
     # or nearby detection replace its candidate history.
@@ -410,7 +507,7 @@ def update_target_with_detection(
         state["matched_track_id"] is not None
         and state["matched_track_id"] != track_id
     ):
-        return
+        return False
 
     print(
         f"MATCH PASSED | "
@@ -422,13 +519,21 @@ def update_target_with_detection(
 
     now = time.monotonic()
 
-    if state["first_match_frame"] is None:
+    is_first_match = state["first_match_frame"] is None
+
+    if is_first_match:
         state["first_match_frame"] = frame_idx
         state["first_match_time"] = now
+        state["first_match_seconds"] = frame_stream_seconds
         state["matched_track_id"] = track_id
         state["last_seen_frame"] = frame_idx
         state["consecutive_misses"] = 0
         state["status"] = "window_open"
+
+        if state["first_correct_match_seconds"] is None:
+            state["first_correct_match_frame"] = frame_idx
+            state["first_correct_match_seconds"] = frame_stream_seconds
+            state["first_correct_match_track_id"] = track_id
 
         print(f"\nFIRST MATCH FOUND for target: {state['target']}")
         print(f"Matched track: {track_id}")
@@ -449,6 +554,7 @@ def update_target_with_detection(
 
     candidate = {
         "frame_index": frame_idx,
+        "frame_stream_seconds": frame_stream_seconds,
         "frame_path": frame_path if save_debug_images else None,
         "crop_path": crop_path if save_debug_images else None,
         "frame_image": frame.copy(),
@@ -487,6 +593,8 @@ def update_target_with_detection(
             f"ocr_conf={avg_conf:.3f}"
         )
 
+    return is_first_match
+
 
 def update_target_visibility(target_states, seen_track_ids, frame_idx):
     """
@@ -496,6 +604,8 @@ def update_target_visibility(target_states, seen_track_ids, frame_idx):
     the counter. A target closes only after the configured grace buffer is
     exhausted, allowing brief detector misses or occlusions.
     """
+    closed_states = []
+
     for state in target_states.values():
         if state["status"] != "window_open":
             continue
@@ -524,6 +634,10 @@ def update_target_visibility(target_states, seen_track_ids, frame_idx):
                 f"\nFinished last-seen window for target: "
                 f"{state['target']}"
             )
+
+            closed_states.append(state)
+
+    return closed_states
 
 
 def save_selection_for_target(run_dir, target, state):
@@ -560,11 +674,13 @@ def save_selection_for_target(run_dir, target, state):
         "match_threshold": state["match_threshold"],
         "last_seen_grace_updates": state["last_seen_grace_updates"],
         "first_match_frame": state["first_match_frame"],
+        "first_seen_seconds": state.get("first_correct_match_seconds"),
         "candidate_observation_count": state.get(
             "candidate_observation_count", 0
         ),
         "selected": {
             "frame_index": best_candidate["frame_index"],
+            "best_frame_seconds": best_candidate.get("frame_stream_seconds"),
             "frame_path": str(selected_frame_path),
             "crop_path": str(selected_crop_path),
             "bbox_xyxy": best_candidate["bbox_xyxy"],
@@ -586,11 +702,58 @@ def save_selection_for_target(run_dir, target, state):
 
     return selected_frame_path, selected_crop_path, selection_path
 
+
+def record_target_candidate_selected(
+    event_logger,
+    target,
+    state,
+    close_reason,
+):
+    candidate = state.get("best_candidate")
+    if candidate is None:
+        return
+
+    event_logger.record(
+        "target_candidate_selected",
+        frame_idx=candidate.get("frame_index"),
+        source_frame_elapsed_seconds=candidate.get(
+            "frame_stream_seconds"
+        ),
+        track_id=state.get("matched_track_id"),
+        target=target,
+        bbox=candidate.get("bbox_xyxy"),
+        ocr_text=candidate.get("ocr_text"),
+        confidence=candidate.get("avg_ocr_confidence"),
+        close_reason=close_reason,
+        visual_quality=candidate.get("visual_quality"),
+        match_score=candidate.get("match_score"),
+    )
+
+
+def submit_target_to_gemini(event_logger, gemini_queue, target, state):
+    candidate = state.get("best_candidate")
+    state["submitted_to_gemini"] = True
+
+    event_logger.record(
+        "gemini_submitted",
+        frame_idx=(candidate or {}).get("frame_index"),
+        source_frame_elapsed_seconds=(candidate or {}).get(
+            "frame_stream_seconds"
+        ),
+        track_id=state.get("matched_track_id"),
+        target=target,
+        bbox=(candidate or {}).get("bbox_xyxy"),
+        ocr_text=(candidate or {}).get("ocr_text"),
+        confidence=(candidate or {}).get("avg_ocr_confidence"),
+    )
+    gemini_queue.put((target, state))
+
 def put_latest_frame(
     frame_queue,
     item,
     runtime_stats=None,
     runtime_stats_lock=None,
+    event_logger=None,
 ):
     """
     Keep only the newest frame in the queue.
@@ -600,12 +763,22 @@ def put_latest_frame(
         frame_queue.put_nowait(item)
     except queue.Full:
         try:
-            frame_queue.get_nowait()
+            dropped_item = frame_queue.get_nowait()
+            frame_queue.task_done()
             if runtime_stats is not None and runtime_stats_lock is not None:
                 increment_runtime_stat(
                     runtime_stats,
                     runtime_stats_lock,
                     "dropped_detection_frames",
+                )
+            if event_logger is not None and dropped_item is not None:
+                event_logger.record(
+                    "detection_frame_dropped",
+                    frame_idx=dropped_item.get("frame_idx"),
+                    source_frame_elapsed_seconds=dropped_item.get(
+                        "frame_stream_seconds"
+                    ),
+                    reason="newer_frame_available",
                 )
         except queue.Empty:
             pass
@@ -628,7 +801,12 @@ def put_latest_detection(detection_result_queue, item):
         detection_result_queue.put_nowait(item)
 
 
-def put_ocr_job(ocr_queue, item):
+def put_ocr_job(
+    ocr_queue,
+    item,
+    tracks_lock,
+    event_logger=None,
+):
     """
     Add an OCR job without freezing the detection thread.
     If the OCR queue is full, drop the oldest OCR job.
@@ -639,10 +817,121 @@ def put_ocr_job(ocr_queue, item):
         try:
             old_item = ocr_queue.get_nowait()
             ocr_queue.task_done()
+            if old_item is not None:
+                old_track = old_item.get("track", {})
+                restored_ocr_status = None
+
+                with tracks_lock:
+                    dropped_job_id = old_item.get("ocr_job_id")
+                    if (
+                        old_track.get("ocr_status") == "pending"
+                        and old_track.get("pending_ocr_job_id")
+                        == dropped_job_id
+                    ):
+                        old_track["ocr_status"] = old_item.get(
+                            "previous_ocr_status", "done"
+                        )
+                        old_track["ocr_attempted"] = old_item.get(
+                            "previous_ocr_attempted", False
+                        )
+                        old_track["last_ocr_frame"] = old_item.get(
+                            "previous_last_ocr_frame", -1
+                        )
+                        old_track["pending_ocr_job_id"] = None
+                        restored_ocr_status = old_track["ocr_status"]
+
+                if event_logger is not None:
+                    event_logger.record(
+                        "ocr_job_dropped",
+                        frame_idx=old_item.get(
+                            "source_frame_idx", old_item.get("frame_idx")
+                        ),
+                        source_frame_elapsed_seconds=old_item.get(
+                            "frame_stream_seconds"
+                        ),
+                        track_id=old_track.get(
+                            "stable_id", old_item.get("track_id")
+                        ),
+                        bbox=old_item.get("bbox_xyxy"),
+                        reason="ocr_queue_full",
+                        ocr_job_id=old_item.get("ocr_job_id"),
+                        restored_ocr_status=restored_ocr_status,
+                    )
         except queue.Empty:
             pass
 
         ocr_queue.put_nowait(item)
+
+
+def put_raw_video_frame(
+    raw_writer_queue,
+    item,
+    event_logger,
+    runtime_stats,
+    runtime_stats_lock,
+):
+    """Prefer complete raw recording; log explicitly if encoding falls behind."""
+    try:
+        raw_writer_queue.put_nowait(item)
+        return
+    except queue.Full:
+        pass
+
+    try:
+        dropped_item = raw_writer_queue.get_nowait()
+        raw_writer_queue.task_done()
+        event_logger.record(
+            "raw_video_frame_dropped",
+            frame_idx=dropped_item.get("capture_frame_idx"),
+            source_frame_elapsed_seconds=dropped_item.get(
+                "capture_elapsed_seconds"
+            ),
+            reason="raw_writer_queue_full",
+        )
+        increment_runtime_stat(
+            runtime_stats,
+            runtime_stats_lock,
+            "dropped_raw_video_frames",
+        )
+    except queue.Empty:
+        pass
+
+    raw_writer_queue.put_nowait(item)
+
+
+def raw_video_writer_worker(
+    raw_writer_queue,
+    raw_video_writer,
+    frame_timestamps,
+    event_logger,
+    runtime_stats,
+    runtime_stats_lock,
+):
+    """Encode raw frames and map each encoded index to its capture time."""
+    video_frame_index = 0
+
+    while True:
+        item = raw_writer_queue.get()
+
+        if item is None:
+            raw_writer_queue.task_done()
+            break
+
+        raw_video_writer.write(item["frame"])
+        frame_timestamps.append({
+            "video_frame_index": video_frame_index,
+            "capture_frame_idx": item["capture_frame_idx"],
+            "elapsed_seconds": round(
+                float(item["capture_elapsed_seconds"]), 6
+            ),
+        })
+        video_frame_index += 1
+        increment_runtime_stat(
+            runtime_stats,
+            runtime_stats_lock,
+            "written_raw_video_frames",
+        )
+        raw_writer_queue.task_done()
 
 
 def put_video_frame(
@@ -736,6 +1025,7 @@ def gemini_worker(
     video_name,
     target_states,
     target_states_lock,
+    event_logger,
 ):
     """
     Process each selected sign crop with all currently unresolved questions.
@@ -808,6 +1098,8 @@ def gemini_worker(
         # except a thread that silently stopped logging "[Gemini thread]"
         # lines. We catch it, log it, and let this one target be retried
         # on a later/better crop instead of losing the whole worker.
+        gemini_started_seconds = event_logger.elapsed_seconds()
+
         try:
             result = run_multiview_from_detections(
                 image_path=selected_frame_path,
@@ -819,6 +1111,20 @@ def gemini_worker(
                 image_output_name=f"{video_name}_{trigger_target}",
             )
         except Exception as e:
+            event_logger.record(
+                "gemini_error",
+                frame_idx=best_candidate.get("frame_index"),
+                source_frame_elapsed_seconds=best_candidate.get(
+                    "frame_stream_seconds"
+                ),
+                track_id=trigger_state.get("matched_track_id"),
+                target=trigger_target,
+                bbox=best_candidate.get("bbox_xyxy"),
+                ocr_text=best_candidate.get("ocr_text"),
+                confidence=best_candidate.get("avg_ocr_confidence"),
+                request_started_seconds=gemini_started_seconds,
+                error=repr(e),
+            )
             print(
                 f"[Gemini thread] Call failed for target "
                 f"{trigger_target!r}, will retry on a later crop: {e!r}"
@@ -830,6 +1136,7 @@ def gemini_worker(
                     trigger_state["submitted_to_gemini"] = False
                     trigger_state["first_match_frame"] = None
                     trigger_state["first_match_time"] = None
+                    trigger_state["first_match_seconds"] = None
                     trigger_state["matched_track_id"] = None
                     trigger_state["last_seen_frame"] = None
                     trigger_state["consecutive_misses"] = 0
@@ -846,6 +1153,23 @@ def gemini_worker(
         else:
             returned_results = [result]
 
+        if not returned_results:
+            event_logger.record(
+                "gemini_response",
+                frame_idx=best_candidate.get("frame_index"),
+                source_frame_elapsed_seconds=best_candidate.get(
+                    "frame_stream_seconds"
+                ),
+                track_id=trigger_state.get("matched_track_id"),
+                target=trigger_target,
+                bbox=best_candidate.get("bbox_xyxy"),
+                ocr_text=best_candidate.get("ocr_text"),
+                confidence=best_candidate.get("avg_ocr_confidence"),
+                trigger_target=trigger_target,
+                request_started_seconds=gemini_started_seconds,
+                response_count=0,
+            )
+
         accepted_results = []
 
         with target_states_lock:
@@ -856,11 +1180,49 @@ def gemini_worker(
 
             for returned_result in returned_results:
                 if not isinstance(returned_result, dict):
+                    event_logger.record(
+                        "gemini_response",
+                        frame_idx=best_candidate.get("frame_index"),
+                        source_frame_elapsed_seconds=best_candidate.get(
+                            "frame_stream_seconds"
+                        ),
+                        track_id=trigger_state.get("matched_track_id"),
+                        target=trigger_target,
+                        bbox=best_candidate.get("bbox_xyxy"),
+                        ocr_text=best_candidate.get("ocr_text"),
+                        confidence=best_candidate.get(
+                            "avg_ocr_confidence"
+                        ),
+                        trigger_target=trigger_target,
+                        request_started_seconds=gemini_started_seconds,
+                        response_type=type(returned_result).__name__,
+                    )
                     continue
 
                 question = returned_result.get("question", "")
                 predicted = returned_result.get("predicted", "unknown")
                 matching_state = question_to_state.get(question)
+
+                event_logger.record(
+                    "gemini_response",
+                    frame_idx=best_candidate.get("frame_index"),
+                    source_frame_elapsed_seconds=best_candidate.get(
+                        "frame_stream_seconds"
+                    ),
+                    track_id=trigger_state.get("matched_track_id"),
+                    target=(
+                        matching_state.get("target")
+                        if matching_state is not None
+                        else None
+                    ),
+                    bbox=best_candidate.get("bbox_xyxy"),
+                    ocr_text=best_candidate.get("ocr_text"),
+                    confidence=best_candidate.get("avg_ocr_confidence"),
+                    question=question,
+                    predicted=predicted,
+                    trigger_target=trigger_target,
+                    request_started_seconds=gemini_started_seconds,
+                )
 
                 if matching_state is None:
                     print(
@@ -888,6 +1250,14 @@ def gemini_worker(
 
                 matching_state["status"] = "answered"
                 matching_state["submitted_to_gemini"] = True
+                returned_result["first_seen_seconds"] = (
+                    trigger_state.get("first_correct_match_seconds")
+                )
+                returned_result["best_frame_seconds"] = (
+                    trigger_state.get("best_candidate", {}).get(
+                        "frame_stream_seconds"
+                    )
+                )
                 accepted_results.append(returned_result)
 
                 print(
@@ -902,6 +1272,7 @@ def gemini_worker(
                 trigger_state["submitted_to_gemini"] = False
                 trigger_state["first_match_frame"] = None
                 trigger_state["first_match_time"] = None
+                trigger_state["first_match_seconds"] = None
                 trigger_state["matched_track_id"] = None
                 trigger_state["last_seen_frame"] = None
                 trigger_state["consecutive_misses"] = 0
@@ -959,6 +1330,7 @@ def ocr_worker(
     save_debug_images,
     runtime_stats,
     runtime_stats_lock,
+    event_logger,
 ):
     """
     Background PaddleOCR worker.
@@ -984,7 +1356,10 @@ def ocr_worker(
 
         track = item["track"]
         track_id = item["track_id"]
+        ocr_job_id = item["ocr_job_id"]
         frame_idx = item["frame_idx"]
+        source_frame_idx = item.get("source_frame_idx", frame_idx)
+        frame_stream_seconds = item["frame_stream_seconds"]
         crop = item["crop"]
         frame = item["frame"]
         bbox_xyxy = item["bbox_xyxy"]
@@ -992,9 +1367,51 @@ def ocr_worker(
         crop_path = item["crop_path"]
         quality = item["quality"]
 
+        with tracks_lock:
+            pending_job_id_at_start = track.get("pending_ocr_job_id")
+            job_is_current_at_start = (
+                pending_job_id_at_start == ocr_job_id
+            )
+
+        if not job_is_current_at_start:
+            event_logger.record(
+                "ocr_job_stale",
+                frame_idx=source_frame_idx,
+                source_frame_elapsed_seconds=frame_stream_seconds,
+                track_id=track.get("stable_id", track_id),
+                bbox=bbox_xyxy,
+                ocr_job_id=ocr_job_id,
+                current_pending_ocr_job_id=pending_job_id_at_start,
+                stale_phase="before_ocr_execution",
+            )
+            print(
+                f"  Discarded stale OCR job before execution | "
+                f"track {track_id} | job={ocr_job_id} | "
+                f"pending={pending_job_id_at_start}"
+            )
+            ocr_queue.task_done()
+            continue
+
+        with tracks_lock:
+            first_ocr_attempt = not track.get(
+                "first_ocr_attempt_logged", False
+            )
+            if first_ocr_attempt:
+                track["first_ocr_attempt_logged"] = True
+
+        if first_ocr_attempt:
+            event_logger.record(
+                "first_ocr_attempt",
+                frame_idx=source_frame_idx,
+                source_frame_elapsed_seconds=frame_stream_seconds,
+                track_id=track.get("stable_id", track_id),
+                bbox=bbox_xyxy,
+            )
+
         start = time.perf_counter()
         ocr_lines = run_ocr(ocr, crop)
         ocr_seconds = time.perf_counter() - start
+        ocr_completed_seconds = event_logger.elapsed_seconds()
         print(f"OCR took {ocr_seconds:.3f}s")
         update_runtime_stats(
             runtime_stats,
@@ -1012,27 +1429,54 @@ def ocr_worker(
         avg_conf = get_avg_confidence(ocr_lines)
 
         with tracks_lock:
-            # Only attach this OCR result if this is still the same track object.
-            # This prevents the worker from blindly writing into a stale object
-            # if the detection thread has moved on.
-            track["ocr_status"] = "done"
-            track["ocr_attempted"] = True
-            track["ocr_attempt_count"] = track.get("ocr_attempt_count", 0) + 1
-            track["last_ocr_frame"] = frame_idx
-            track["last_ocr_quality"] = quality
-            track["ocr_text"] = ocr_text
-            track["ocr_lines"] = ocr_lines
-            track["avg_ocr_confidence"] = avg_conf
+            current_pending_job_id = track.get("pending_ocr_job_id")
+            is_current_job = current_pending_job_id == ocr_job_id
 
-            # Keep the strongest OCR evidence seen so far.
-            # A later, clearer crop can correct an early weak/empty OCR result.
-            if avg_conf >= track.get("best_ocr_confidence", 0.0) or (ocr_text and not track.get("best_ocr_text")):
-                track["best_ocr_text"] = ocr_text
-                track["best_ocr_lines"] = ocr_lines
-                track["best_ocr_confidence"] = avg_conf
-                track["best_ocr_frame_idx"] = frame_idx
+            if is_current_job:
+                track["ocr_status"] = "done"
+                track["ocr_attempted"] = True
+                track["ocr_attempt_count"] = (
+                    track.get("ocr_attempt_count", 0) + 1
+                )
+                track["last_ocr_frame"] = frame_idx
+                track["last_ocr_quality"] = quality
+                track["ocr_text"] = ocr_text
+                track["ocr_lines"] = ocr_lines
+                track["avg_ocr_confidence"] = avg_conf
 
-            track["best_quality"] = max(track["best_quality"], quality)
+                # Keep the strongest OCR evidence seen so far.
+                # A later, clearer crop can correct an early weak/empty result.
+                if (
+                    avg_conf >= track.get("best_ocr_confidence", 0.0)
+                    or (ocr_text and not track.get("best_ocr_text"))
+                ):
+                    track["best_ocr_text"] = ocr_text
+                    track["best_ocr_lines"] = ocr_lines
+                    track["best_ocr_confidence"] = avg_conf
+                    track["best_ocr_frame_idx"] = frame_idx
+
+                track["best_quality"] = max(track["best_quality"], quality)
+                track["pending_ocr_job_id"] = None
+
+        if not is_current_job:
+            event_logger.record(
+                "ocr_job_stale",
+                frame_idx=source_frame_idx,
+                source_frame_elapsed_seconds=frame_stream_seconds,
+                track_id=track.get("stable_id", track_id),
+                bbox=bbox_xyxy,
+                ocr_text=ocr_text,
+                confidence=avg_conf,
+                ocr_job_id=ocr_job_id,
+                current_pending_ocr_job_id=current_pending_job_id,
+                stale_phase="after_ocr_execution",
+            )
+            print(
+                f"  Discarded stale OCR result | track {track_id} | "
+                f"job={ocr_job_id} | pending={current_pending_job_id}"
+            )
+            ocr_queue.task_done()
+            continue
 
         print(
             f"  OCR done | track {track_id} | "
@@ -1052,6 +1496,9 @@ def ocr_worker(
             )
             candidate_bbox = list(track.get("best_bbox_xyxy", bbox_xyxy))
             candidate_frame_idx = track.get("best_frame_idx", frame_idx)
+            candidate_frame_stream_seconds = track.get(
+                "best_frame_seconds", frame_stream_seconds
+            )
             candidate_frame_path = track.get("best_frame_path", frame_path)
             candidate_crop_path = track.get("best_crop_path", crop_path)
 
@@ -1061,9 +1508,10 @@ def ocr_worker(
             for target, state in target_states.items():
                 before_status = state["status"]
 
-                update_target_with_detection(
+                is_first_match = update_target_with_detection(
                     state=state,
                     frame_idx=candidate_frame_idx,
+                    frame_stream_seconds=candidate_frame_stream_seconds,
                     frame_path=candidate_frame_path,
                     crop_path=candidate_crop_path,
                     bbox_xyxy=candidate_bbox,
@@ -1076,6 +1524,34 @@ def ocr_worker(
                     track_id=track.get("stable_id", track["id"]),
                     visual_quality=track.get("best_quality", quality),
                 )
+
+                if (
+                    is_first_match
+                    and not state.get("first_correct_match_event_logged")
+                ):
+                    state["first_correct_match_event_logged"] = True
+                    state["first_correct_match_frame"] = source_frame_idx
+                    state["first_correct_match_seconds"] = (
+                        frame_stream_seconds
+                    )
+                    state["first_correct_match_track_id"] = track.get(
+                        "stable_id", track["id"]
+                    )
+                    event_logger.record(
+                        "target_first_correct_ocr_match",
+                        elapsed_seconds=ocr_completed_seconds,
+                        frame_idx=source_frame_idx,
+                        source_frame_elapsed_seconds=frame_stream_seconds,
+                        track_id=track.get("stable_id", track["id"]),
+                        target=target,
+                        bbox=bbox_xyxy,
+                        ocr_text=ocr_text,
+                        confidence=avg_conf,
+                        ocr_completion_elapsed_seconds=(
+                            ocr_completed_seconds
+                        ),
+                        match_score=score_match(target, ocr_text),
+                    )
 
                 match_score = score_match(target, ocr_text) if ocr_text else 0
 
@@ -1143,54 +1619,13 @@ def normalized_center_distance(a, b):
     return dist / diag
 
 
-def crop_quality(crop, bbox_xyxy=None, frame_shape=None, yolo_conf=1.0):
-    """
-    Estimate whether a sign crop is useful for OCR/Gemini.
-
-    Higher is better. This is still a heuristic, but it now considers:
-    - crop area
-    - sharpness / blur
-    - YOLO confidence
-    - whether the sign is cut off by the frame edge
-    """
-    if crop is None or crop.size == 0:
-        return 0.0
-
-    gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
-    sharpness = cv2.Laplacian(gray, cv2.CV_64F).var()
-    area = crop.shape[0] * crop.shape[1]
-
-    sharpness_factor = 1.0 + min(sharpness, 500.0) / 500.0
-    confidence_factor = 0.5 + max(0.0, min(float(yolo_conf), 1.0))
-
-    edge_factor = 1.0
-    if bbox_xyxy is not None and frame_shape is not None:
-        x1, y1, x2, y2 = bbox_xyxy
-        h, w = frame_shape[:2]
-        margin = 4
-
-        touches_left = x1 <= margin
-        touches_top = y1 <= margin
-        touches_right = x2 >= w - margin
-        touches_bottom = y2 >= h - margin
-        edge_touches = sum([touches_left, touches_top, touches_right, touches_bottom])
-
-        # Penalize likely partial signs. Do not make it zero, because sometimes
-        # a partially visible crop can still provide useful OCR evidence.
-        if edge_touches == 1:
-            edge_factor = 0.65
-        elif edge_touches >= 2:
-            edge_factor = 0.40
-
-    return area * sharpness_factor * confidence_factor * edge_factor
-
-
 def update_best_track_view(
     track,
     crop,
     frame,
     bbox_xyxy,
     frame_idx,
+    frame_stream_seconds,
     frame_path,
     crop_path,
     quality,
@@ -1207,6 +1642,7 @@ def update_best_track_view(
         track["best_frame"] = frame.copy()
         track["best_bbox_xyxy"] = list(bbox_xyxy)
         track["best_frame_idx"] = frame_idx
+        track["best_frame_seconds"] = frame_stream_seconds
         track["best_frame_path"] = frame_path
         track["best_crop_path"] = crop_path
         return True
@@ -1247,7 +1683,7 @@ def find_best_track(sign_tracks, bbox, frame_idx, used_track_ids, max_age=30):
 
 
 
-def create_track_state(track_id, bbox_xyxy, frame_idx):
+def create_track_state(track_id, bbox_xyxy, frame_idx, frame_stream_seconds):
     """
     Create the OCR/best-view state associated with either a temporary ID
     or a confirmed ByteTrack ID.
@@ -1260,6 +1696,10 @@ def create_track_state(track_id, bbox_xyxy, frame_idx):
         "last_seen_frame": frame_idx,
         "ocr_status": "not_started",
         "ocr_attempted": False,
+        "first_detection_logged": False,
+        "first_ocr_attempt_logged": False,
+        "ocr_job_generation": 0,
+        "pending_ocr_job_id": None,
         "ocr_attempt_count": 0,
         "last_ocr_frame": -1,
         "last_ocr_quality": 0.0,
@@ -1275,6 +1715,7 @@ def create_track_state(track_id, bbox_xyxy, frame_idx):
         "best_frame": None,
         "best_bbox_xyxy": list(bbox_xyxy),
         "best_frame_idx": frame_idx,
+        "best_frame_seconds": frame_stream_seconds,
         "best_frame_path": None,
         "best_crop_path": None,
     }
@@ -1540,6 +1981,7 @@ def detection_worker(
     runtime_stats_lock,
     track_retention_frames,
     yolo_conf,
+    event_logger,
 ):
     # ByteTrack assigns persistent IDs. We keep our own per-ID state for
     # OCR history, retry scheduling, and best-view selection.
@@ -1561,6 +2003,7 @@ def detection_worker(
 
         frame_idx = item["frame_idx"]
         raw_frame = item["raw_frame"]
+        frame_stream_seconds = item["frame_stream_seconds"]
 
         if frame_idx % process_every_n_frames != 0:
             frame_queue.task_done()
@@ -1667,6 +2110,7 @@ def detection_worker(
                                 track_id=temporary_key,
                                 bbox_xyxy=[x1, y1, x2, y2],
                                 frame_idx=frame_idx,
+                                frame_stream_seconds=frame_stream_seconds,
                             )
                             sign_tracks[temporary_key] = track
                             print(
@@ -1705,6 +2149,7 @@ def detection_worker(
                                     track_id=bytetrack_key,
                                     bbox_xyxy=[x1, y1, x2, y2],
                                     frame_idx=frame_idx,
+                                    frame_stream_seconds=frame_stream_seconds,
                                 )
                                 sign_tracks[bytetrack_key] = track
                                 print(
@@ -1718,12 +2163,27 @@ def detection_worker(
                     used_track_ids.add(track["id"])
                     seen_track_ids.add(track.get("stable_id", track["id"]))
 
+                    if not track.get("first_detection_logged", False):
+                        track["first_detection_logged"] = True
+                        event_logger.record(
+                            "track_first_detected",
+                            frame_idx=frame_idx,
+                            source_frame_elapsed_seconds=(
+                                frame_stream_seconds
+                            ),
+                            track_id=track.get("stable_id", track["id"]),
+                            bbox=[x1, y1, x2, y2],
+                            confidence=conf,
+                            current_tracker_id=track["id"],
+                        )
+
                     best_view_updated = update_best_track_view(
                         track=track,
                         crop=crop,
                         frame=raw_frame,
                         bbox_xyxy=[x1, y1, x2, y2],
                         frame_idx=frame_idx,
+                        frame_stream_seconds=frame_stream_seconds,
                         frame_path=frame_path if save_debug_images else None,
                         crop_path=crop_path if save_debug_images else None,
                         quality=quality,
@@ -1738,9 +2198,17 @@ def detection_worker(
                     run_ocr_now = should_run_ocr_for_track(track, quality, frame_idx)
 
                     if run_ocr_now:
+                        previous_ocr_status = track["ocr_status"]
+                        previous_ocr_attempted = track["ocr_attempted"]
+                        previous_last_ocr_frame = track["last_ocr_frame"]
+                        track["ocr_job_generation"] = (
+                            track.get("ocr_job_generation", 0) + 1
+                        )
+                        ocr_job_id = track["ocr_job_generation"]
                         track["ocr_status"] = "pending"
                         track["ocr_attempted"] = True
                         track["last_ocr_frame"] = frame_idx
+                        track["pending_ocr_job_id"] = ocr_job_id
 
                         # Use the most recent detection result for display while OCR is pending.
                         pending_label = f"ID {track['id']}: OCR pending"
@@ -1757,7 +2225,21 @@ def detection_worker(
                             {
                                 "track": track,
                                 "track_id": track["id"],
+                                "ocr_job_id": ocr_job_id,
+                                "previous_ocr_status": previous_ocr_status,
+                                "previous_ocr_attempted": (
+                                    previous_ocr_attempted
+                                ),
+                                "previous_last_ocr_frame": (
+                                    previous_last_ocr_frame
+                                ),
                                 "frame_idx": frame_idx,
+                                "source_frame_idx": track.get(
+                                    "best_frame_idx", frame_idx
+                                ),
+                                "frame_stream_seconds": track.get(
+                                    "best_frame_seconds", frame_stream_seconds
+                                ),
                                 "crop": (track["best_crop"].copy() if track["best_crop"] is not None else crop.copy()),
                                 "frame": (track["best_frame"].copy() if track["best_frame"] is not None else raw_frame.copy()),
                                 "bbox_xyxy": list(track.get("best_bbox_xyxy", [x1, y1, x2, y2])),
@@ -1766,6 +2248,8 @@ def detection_worker(
                                 "quality": track.get("best_quality", quality),
                                 "latest_boxes": latest_boxes_for_job,
                             },
+                            tracks_lock=tracks_lock,
+                            event_logger=event_logger,
                         )
 
                         print(f"  track {track['id']} box {box_idx}: queued for OCR quality={track.get('best_quality', quality):.1f}")
@@ -1805,7 +2289,12 @@ def detection_worker(
                             if state["status"] == "window_open":
                                 update_target_with_detection(
                                     state=state,
-                                    frame_idx=frame_idx,
+                                    frame_idx=track.get(
+                                        "best_frame_idx", frame_idx
+                                    ),
+                                    frame_stream_seconds=track.get(
+                                        "best_frame_seconds", frame_stream_seconds
+                                    ),
                                     frame_path=track.get("best_frame_path"),
                                     crop_path=track.get("best_crop_path"),
                                     bbox_xyxy=track.get("best_bbox_xyxy", [x1, y1, x2, y2]),
@@ -1820,11 +2309,19 @@ def detection_worker(
                                 )
 
         with target_states_lock:
-            update_target_visibility(
+            closed_states = update_target_visibility(
                 target_states=target_states,
                 seen_track_ids=seen_track_ids,
                 frame_idx=frame_idx,
             )
+
+            for closed_state in closed_states:
+                record_target_candidate_selected(
+                    event_logger=event_logger,
+                    target=closed_state["target"],
+                    state=closed_state,
+                    close_reason="last_seen_grace_exhausted",
+                )
 
             for target, state in target_states.items():
                 if (
@@ -1833,8 +2330,12 @@ def detection_worker(
                     and state["best_candidate"] is not None
                 ):
                     print(f"\nSubmitting target to Gemini thread: {target}")
-                    state["submitted_to_gemini"] = True
-                    gemini_queue.put((target, state))
+                    submit_target_to_gemini(
+                        event_logger=event_logger,
+                        gemini_queue=gemini_queue,
+                        target=target,
+                        state=state,
+                    )
 
         with tracks_lock:
             with target_states_lock:
@@ -1893,6 +2394,9 @@ def run_live_pipeline(
     video_name = "live_camera"
     live_video_path = Path("live_camera.mp4")
     annotated_video_path = output_root / "live_annotated_output.mp4"
+    raw_video_path = output_root / "raw_live_output.mp4"
+    frame_timestamps_path = output_root / "frame_timestamps.json"
+    live_events_path = output_root / "live_events.json"
 
     run_dir = output_root
     global DEBUG_LOG_FILE
@@ -1904,6 +2408,8 @@ def run_live_pipeline(
         "processed_detection_frames": 0,
         "completed_ocr_jobs": 0,
         "written_video_frames": 0,
+        "written_raw_video_frames": 0,
+        "dropped_raw_video_frames": 0,
         "removed_stale_tracks": 0,
         "dropped_writer_frames": 0,
         "active_tracks": 0,
@@ -2010,6 +2516,57 @@ def run_live_pipeline(
         prompt_file=prompt_file,
     )
 
+    requested_camera_width = 1280
+    requested_camera_height = 720
+    requested_camera_fps = 30
+    tracker_config_path = PROJECT_ROOT / "config" / "bytetrack_navigation.yaml"
+    ocr_config = {
+        "use_angle_cls": True,
+        "lang": "en",
+        "use_gpu": True,
+        "show_log": False,
+    }
+    run_start_wall_clock = datetime.now().astimezone().isoformat(
+        timespec="milliseconds"
+    )
+    run_start_time = time.monotonic()
+    event_metadata = {
+        "run_start_wall_clock": run_start_wall_clock,
+        "monotonic_origin_seconds": run_start_time,
+        "clock": "time.monotonic",
+        "elapsed_time_unit": "seconds",
+        "camera_index": camera_index,
+        "requested_camera": {
+            "width": requested_camera_width,
+            "height": requested_camera_height,
+            "fps": requested_camera_fps,
+        },
+        "yolo": {
+            "model": "yolov8s-world.pt",
+            "confidence": yolo_conf,
+            "iou": 0.3,
+            "classes": classes,
+            "process_every_n_frames": process_every_n_frames,
+        },
+        "tracker_configuration": str(tracker_config_path),
+        "ocr_configuration": ocr_config,
+        "gemini_model": model_version,
+        "targets": list(target_states.keys()),
+        "raw_writer_queue_maxsize": RAW_WRITER_QUEUE_MAXSIZE,
+        "outputs": {
+            "raw_video": raw_video_path.name,
+            "frame_timestamps": frame_timestamps_path.name,
+            "live_events": live_events_path.name,
+            "annotated_video": annotated_video_path.name,
+            "summary": summary_path.name,
+        },
+    }
+    event_logger = LiveEventLogger(
+        output_path=live_events_path,
+        run_start_time=run_start_time,
+        metadata=event_metadata,
+    )
+
     # -----------------------------
     # Thread communication
     # -----------------------------
@@ -2020,7 +2577,7 @@ def run_live_pipeline(
     result_queue = queue.Queue()
 
     stop_event = threading.Event()
-    tracks_lock = threading.Lock()
+    tracks_lock = threading.RLock()
     target_states_lock = threading.Lock()
     results_lock = threading.Lock()
     gemini_thread = threading.Thread(
@@ -2039,6 +2596,7 @@ def run_live_pipeline(
             video_name,
             target_states,
             target_states_lock,
+            event_logger,
         ),
         daemon=True,
     )
@@ -2059,6 +2617,7 @@ def run_live_pipeline(
             save_debug_images,
             runtime_stats,
             runtime_stats_lock,
+            event_logger,
         ),
         daemon=True,
     )
@@ -2087,6 +2646,7 @@ def run_live_pipeline(
             runtime_stats_lock,
             track_retention_frames,
             yolo_conf,
+            event_logger,
         ),
         daemon=True,
     )
@@ -2100,9 +2660,9 @@ def run_live_pipeline(
     cap.set(cv2.CAP_PROP_FPS, 30)
     cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-    cap.set(cv2.CAP_PROP_FPS, 30)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, requested_camera_width)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, requested_camera_height)
+    cap.set(cv2.CAP_PROP_FPS, requested_camera_fps)
 
 
     if not cap.isOpened():
@@ -2117,6 +2677,21 @@ def run_live_pipeline(
     OUTPUT_VIDEO_FPS = 20.0
 
     fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+    actual_camera_width = int(
+        cap.get(cv2.CAP_PROP_FRAME_WIDTH) or requested_camera_width
+    )
+    actual_camera_height = int(
+        cap.get(cv2.CAP_PROP_FRAME_HEIGHT) or requested_camera_height
+    )
+    actual_camera_fps = float(
+        cap.get(cv2.CAP_PROP_FPS) or requested_camera_fps
+    )
+    event_logger.metadata["actual_camera"] = {
+        "width": actual_camera_width,
+        "height": actual_camera_height,
+        "fps": actual_camera_fps,
+    }
+
     video_writer = cv2.VideoWriter(
         str(annotated_video_path),
         fourcc,
@@ -2126,6 +2701,32 @@ def run_live_pipeline(
 
     if not video_writer.isOpened():
         raise RuntimeError(f"Could not open video writer: {annotated_video_path}")
+
+    raw_video_writer = cv2.VideoWriter(
+        str(raw_video_path),
+        fourcc,
+        requested_camera_fps,
+        (actual_camera_width, actual_camera_height),
+    )
+
+    if not raw_video_writer.isOpened():
+        raise RuntimeError(f"Could not open raw video writer: {raw_video_path}")
+
+    frame_timestamps = []
+    raw_writer_queue = queue.Queue(maxsize=RAW_WRITER_QUEUE_MAXSIZE)
+    raw_writer_thread = threading.Thread(
+        target=raw_video_writer_worker,
+        args=(
+            raw_writer_queue,
+            raw_video_writer,
+            frame_timestamps,
+            event_logger,
+            runtime_stats,
+            runtime_stats_lock,
+        ),
+        daemon=True,
+    )
+    raw_writer_thread.start()
 
     # Bounded so a slow encoder cannot retain unlimited full video frames
     # and exhaust RAM during a long live run.
@@ -2171,6 +2772,7 @@ def run_live_pipeline(
     latest_ocr_text = ""
     latest_match_text = ""
     latest_gemini_text = ""
+    last_capture_elapsed_seconds = None
     while True:
         ret, frame = cap.read()
 
@@ -2180,15 +2782,34 @@ def run_live_pipeline(
 
         raw_frame = frame.copy()
         display_frame = cv2.resize(frame, (display_width, display_height))
+        frame_stream_seconds = round(
+            time.monotonic() - run_start_time,
+            6,
+        )
+        last_capture_elapsed_seconds = frame_stream_seconds
+
+        put_raw_video_frame(
+            raw_writer_queue=raw_writer_queue,
+            item={
+                "capture_frame_idx": frame_idx,
+                "capture_elapsed_seconds": frame_stream_seconds,
+                "frame": raw_frame,
+            },
+            event_logger=event_logger,
+            runtime_stats=runtime_stats,
+            runtime_stats_lock=runtime_stats_lock,
+        )
 
         put_latest_frame(
             frame_queue,
             {
                 "frame_idx": frame_idx,
+                "frame_stream_seconds": frame_stream_seconds,
                 "raw_frame": raw_frame.copy(),
             },
             runtime_stats=runtime_stats,
             runtime_stats_lock=runtime_stats_lock,
+            event_logger=event_logger,
         )
 
         try:
@@ -2260,6 +2881,7 @@ def run_live_pipeline(
                 "gemini_queue_size": gemini_queue.qsize(),
                 "result_queue_size": result_queue.qsize(),
                 "writer_queue_size": writer_queue.qsize(),
+                "raw_writer_queue_size": raw_writer_queue.qsize(),
                 "active_tracks": stats_snapshot.get("active_tracks", 0),
                 "processed_detection_frames": stats_snapshot.get(
                     "processed_detection_frames", 0
@@ -2270,6 +2892,9 @@ def run_live_pipeline(
                 "written_video_frames": stats_snapshot.get(
                     "written_video_frames", 0
                 ),
+                "written_raw_video_frames": stats_snapshot.get(
+                    "written_raw_video_frames", 0
+                ),
                 "dropped_detection_frames": stats_snapshot.get(
                     "dropped_detection_frames", 0
                 ),
@@ -2278,6 +2903,9 @@ def run_live_pipeline(
                 ),
                 "dropped_writer_frames": stats_snapshot.get(
                     "dropped_writer_frames", 0
+                ),
+                "dropped_raw_video_frames": stats_snapshot.get(
+                    "dropped_raw_video_frames", 0
                 ),
                 "last_yolo_seconds": round(
                     stats_snapshot.get("last_yolo_seconds", 0.0), 4
@@ -2314,10 +2942,12 @@ def run_live_pipeline(
                 f"ocrQ={ocr_queue.qsize()} | "
                 f"geminiQ={gemini_queue.qsize()} | "
                 f"writerQ={writer_queue.qsize()} | "
+                f"rawQ={raw_writer_queue.qsize()} | "
                 f"tracks={stats_snapshot.get('active_tracks', 0)} | "
                 f"removed={stats_snapshot.get('removed_stale_tracks', 0)} | "
                 f"dropDet={stats_snapshot.get('dropped_detection_frames', 0)} | "
                 f"dropVid={stats_snapshot.get('dropped_writer_frames', 0)}"
+                f" | dropRaw={stats_snapshot.get('dropped_raw_video_frames', 0)}"
                 + (
                     f" | rssMB={perf_row['process_rss_mb']}"
                     if "process_rss_mb" in perf_row
@@ -2454,26 +3084,21 @@ def run_live_pipeline(
     cap.release()
     cv2.destroyAllWindows()
 
+    print("Finishing raw live video file...")
+    raw_writer_queue.put(None)
+
     print("Finishing annotated video file...")
     # A blocking put is intentional for the shutdown sentinel. The writer
     # drains enough space and then receives None.
     writer_queue.put(None)
-    writer_thread.join()
-    video_writer.release()
-
-    print(f"Saved annotated video: {annotated_video_path}")
 
     # Graceful shutdown. Order matters here:
     # 1) Tell detection_worker there are no more frames, and wait for it to
     #    fully exit. It may still queue OCR jobs based on the last frames it
     #    processed, so we must not touch ocr_queue until it's done.
     print("Stopping detection thread (no more incoming frames)...")
-    put_latest_frame(
-        frame_queue,
-        None,
-        runtime_stats=runtime_stats,
-        runtime_stats_lock=runtime_stats_lock,
-    )
+    # Blocking put preserves every detection frame still queued at capture stop.
+    frame_queue.put(None)
     detection_thread.join()
 
     # 2) Now it's safe to drain whatever OCR jobs are left. These can still
@@ -2493,6 +3118,12 @@ def run_live_pipeline(
             if state["status"] == "window_open":
                 state["status"] = "window_done"
                 print(f"  Force-closed matching window for target: {target}")
+                record_target_candidate_selected(
+                    event_logger=event_logger,
+                    target=target,
+                    state=state,
+                    close_reason="capture_stopped",
+                )
 
             if (
                 state["status"] == "window_done"
@@ -2500,8 +3131,12 @@ def run_live_pipeline(
                 and state["best_candidate"] is not None
             ):
                 print(f"  Submitting target to Gemini thread: {target}")
-                state["submitted_to_gemini"] = True
-                gemini_queue.put((target, state))
+                submit_target_to_gemini(
+                    event_logger=event_logger,
+                    gemini_queue=gemini_queue,
+                    target=target,
+                    state=state,
+                )
 
     # 4) Only now signal Gemini to stop, and actually wait for it to finish
     #    (including any in-flight API call) rather than a short timeout.
@@ -2510,6 +3145,28 @@ def run_live_pipeline(
     print("Waiting for Gemini thread to finish pending requests...")
     gemini_queue.put((None, None))
     gemini_thread.join()
+
+    # Video encoding has been draining in parallel with model shutdown. Join
+    # both writers before persisting their final frame mappings and metadata.
+    raw_writer_thread.join()
+    raw_video_writer.release()
+    save_frame_timestamps(
+        path=frame_timestamps_path,
+        raw_video_path=raw_video_path,
+        frame_timestamps=frame_timestamps,
+        metadata={
+            "run_start_wall_clock": run_start_wall_clock,
+            "monotonic_origin_seconds": run_start_time,
+            "requested_camera": event_metadata["requested_camera"],
+            "actual_camera": event_logger.metadata.get("actual_camera"),
+        },
+    )
+    writer_thread.join()
+    video_writer.release()
+
+    print(f"Saved raw video: {raw_video_path}")
+    print(f"Saved frame timestamps: {frame_timestamps_path}")
+    print(f"Saved annotated video: {annotated_video_path}")
 
     stop_event.set()
 
@@ -2538,6 +3195,20 @@ def run_live_pipeline(
     print("\nLIVE PIPELINE COMPLETE.")
     print(f"Saved summary: {summary_path}")
     print(f"Saved performance metrics: {PERF_LOG_FILE}")
+    event_logger.metadata["final_runtime_stats"] = snapshot_runtime_stats(
+        runtime_stats,
+        runtime_stats_lock,
+    )
+    event_logger.metadata["capture_duration_seconds"] = (
+        last_capture_elapsed_seconds
+    )
+    event_logger.record(
+        "run_completed",
+        capture_duration_seconds=last_capture_elapsed_seconds,
+        raw_video_frames_written=len(frame_timestamps),
+    )
+    event_logger.save()
+    print(f"Saved live events: {live_events_path}")
 
     if DEBUG_LOG_HANDLE is not None:
         DEBUG_LOG_HANDLE.close()

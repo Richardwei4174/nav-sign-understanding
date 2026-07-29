@@ -1,0 +1,3148 @@
+{
+  "analysis_name": "seven-condition corrected still-image paired analysis",
+  "analysis_version": "1.0.0",
+  "condition_summaries": [
+    {
+      "condition": "original_only",
+      "correct": 1065,
+      "display_name": "Original only",
+      "errors": 35,
+      "image_macro_accuracy": 0.9740285806037252,
+      "image_macro_rank": 4,
+      "micro_accuracy": 0.9681818181818181,
+      "micro_rank": 2,
+      "pairwise_losses": 1,
+      "pairwise_ties": 0,
+      "pairwise_wins": 5,
+      "supported_direction_family_groups": [
+        "diagonal",
+        "horizontal",
+        "locational",
+        "vertical_forward"
+      ],
+      "supported_direction_family_macro_accuracy": 0.9591673200658901,
+      "supported_direction_family_macro_rank": 4,
+      "supported_exact_category_groups": [
+        "scalar:{down-right}",
+        "scalar:{down}",
+        "scalar:{left}",
+        "scalar:{locational}",
+        "scalar:{right}",
+        "scalar:{straight-right}",
+        "scalar:{straight}"
+      ],
+      "supported_exact_category_macro_accuracy": 0.9377340719502084,
+      "supported_exact_macro_rank": 4,
+      "total": 1100
+    },
+    {
+      "condition": "raw_crops_only",
+      "correct": 1030,
+      "display_name": "Raw crops only",
+      "errors": 70,
+      "image_macro_accuracy": 0.9265494540783558,
+      "image_macro_rank": 7,
+      "micro_accuracy": 0.9363636363636364,
+      "micro_rank": 6,
+      "pairwise_losses": 5,
+      "pairwise_ties": 0,
+      "pairwise_wins": 1,
+      "supported_direction_family_groups": [
+        "diagonal",
+        "horizontal",
+        "locational",
+        "vertical_forward"
+      ],
+      "supported_direction_family_macro_accuracy": 0.903839021345521,
+      "supported_direction_family_macro_rank": 6,
+      "supported_exact_category_groups": [
+        "scalar:{down-right}",
+        "scalar:{down}",
+        "scalar:{left}",
+        "scalar:{locational}",
+        "scalar:{right}",
+        "scalar:{straight-right}",
+        "scalar:{straight}"
+      ],
+      "supported_exact_category_macro_accuracy": 0.8976381948201247,
+      "supported_exact_macro_rank": 6,
+      "total": 1100
+    },
+    {
+      "condition": "rectified_crops_only",
+      "correct": 1023,
+      "display_name": "Rectified crops only",
+      "errors": 77,
+      "image_macro_accuracy": 0.932209377007065,
+      "image_macro_rank": 6,
+      "micro_accuracy": 0.93,
+      "micro_rank": 7,
+      "pairwise_losses": 6,
+      "pairwise_ties": 0,
+      "pairwise_wins": 0,
+      "supported_direction_family_groups": [
+        "diagonal",
+        "horizontal",
+        "locational",
+        "vertical_forward"
+      ],
+      "supported_direction_family_macro_accuracy": 0.9019800145811195,
+      "supported_direction_family_macro_rank": 7,
+      "supported_exact_category_groups": [
+        "scalar:{down-right}",
+        "scalar:{down}",
+        "scalar:{left}",
+        "scalar:{locational}",
+        "scalar:{right}",
+        "scalar:{straight-right}",
+        "scalar:{straight}"
+      ],
+      "supported_exact_category_macro_accuracy": 0.8871280406418961,
+      "supported_exact_macro_rank": 7,
+      "total": 1100
+    },
+    {
+      "condition": "original_raw_no_annotation",
+      "correct": 1058,
+      "display_name": "Original + raw crops",
+      "errors": 42,
+      "image_macro_accuracy": 0.9746628131021196,
+      "image_macro_rank": 3,
+      "micro_accuracy": 0.9618181818181818,
+      "micro_rank": 3,
+      "pairwise_losses": 2,
+      "pairwise_ties": 0,
+      "pairwise_wins": 4,
+      "supported_direction_family_groups": [
+        "diagonal",
+        "horizontal",
+        "locational",
+        "vertical_forward"
+      ],
+      "supported_direction_family_macro_accuracy": 0.9657070725307527,
+      "supported_direction_family_macro_rank": 2,
+      "supported_exact_category_groups": [
+        "scalar:{down-right}",
+        "scalar:{down}",
+        "scalar:{left}",
+        "scalar:{locational}",
+        "scalar:{right}",
+        "scalar:{straight-right}",
+        "scalar:{straight}"
+      ],
+      "supported_exact_category_macro_accuracy": 0.9465696616422218,
+      "supported_exact_macro_rank": 3,
+      "total": 1100
+    },
+    {
+      "condition": "original_rectified_no_annotation",
+      "correct": 1052,
+      "display_name": "Original + rectified crops",
+      "errors": 48,
+      "image_macro_accuracy": 0.9769933021378108,
+      "image_macro_rank": 2,
+      "micro_accuracy": 0.9563636363636364,
+      "micro_rank": 4,
+      "pairwise_losses": 3,
+      "pairwise_ties": 0,
+      "pairwise_wins": 3,
+      "supported_direction_family_groups": [
+        "diagonal",
+        "horizontal",
+        "locational",
+        "vertical_forward"
+      ],
+      "supported_direction_family_macro_accuracy": 0.9629329199723509,
+      "supported_direction_family_macro_rank": 3,
+      "supported_exact_category_groups": [
+        "scalar:{down-right}",
+        "scalar:{down}",
+        "scalar:{left}",
+        "scalar:{locational}",
+        "scalar:{right}",
+        "scalar:{straight-right}",
+        "scalar:{straight}"
+      ],
+      "supported_exact_category_macro_accuracy": 0.9548760984795811,
+      "supported_exact_macro_rank": 2,
+      "total": 1100
+    },
+    {
+      "condition": "raw_crop_multiview",
+      "correct": 1046,
+      "display_name": "Annotated original + raw crops",
+      "errors": 54,
+      "image_macro_accuracy": 0.9707874575649141,
+      "image_macro_rank": 5,
+      "micro_accuracy": 0.9509090909090909,
+      "micro_rank": 5,
+      "pairwise_losses": 4,
+      "pairwise_ties": 0,
+      "pairwise_wins": 2,
+      "supported_direction_family_groups": [
+        "diagonal",
+        "horizontal",
+        "locational",
+        "vertical_forward"
+      ],
+      "supported_direction_family_macro_accuracy": 0.9463554079102573,
+      "supported_direction_family_macro_rank": 5,
+      "supported_exact_category_groups": [
+        "scalar:{down-right}",
+        "scalar:{down}",
+        "scalar:{left}",
+        "scalar:{locational}",
+        "scalar:{right}",
+        "scalar:{straight-right}",
+        "scalar:{straight}"
+      ],
+      "supported_exact_category_macro_accuracy": 0.9365989265511302,
+      "supported_exact_macro_rank": 5,
+      "total": 1100
+    },
+    {
+      "condition": "full_multiview",
+      "correct": 1083,
+      "display_name": "Full multiview",
+      "errors": 17,
+      "image_macro_accuracy": 0.9835099550417471,
+      "image_macro_rank": 1,
+      "micro_accuracy": 0.9845454545454545,
+      "micro_rank": 1,
+      "pairwise_losses": 0,
+      "pairwise_ties": 0,
+      "pairwise_wins": 6,
+      "supported_direction_family_groups": [
+        "diagonal",
+        "horizontal",
+        "locational",
+        "vertical_forward"
+      ],
+      "supported_direction_family_macro_accuracy": 0.9738253859354098,
+      "supported_direction_family_macro_rank": 1,
+      "supported_exact_category_groups": [
+        "scalar:{down-right}",
+        "scalar:{down}",
+        "scalar:{left}",
+        "scalar:{locational}",
+        "scalar:{right}",
+        "scalar:{straight-right}",
+        "scalar:{straight}"
+      ],
+      "supported_exact_category_macro_accuracy": 0.9706045514972762,
+      "supported_exact_macro_rank": 1,
+      "total": 1100
+    }
+  ],
+  "configuration": {
+    "bootstrap_generator": "NumPy PCG64",
+    "bootstrap_replicates": 100000,
+    "bootstrap_seed": 20260723,
+    "class_grouping_rules": {
+      "exact": "Scalar references retain their single required direction; alternatives and joint-required references retain the complete deduplicated answer set and semantic type.",
+      "families": {
+        "diagonal": "straight-left, straight-right, down-left, or down-right scalar references or combinations confined to diagonal labels",
+        "horizontal": "left, right, or multi-label combinations containing only left/right",
+        "locational": "locational references",
+        "mixed_multi_direction": "multi-label references whose labels span more than one family",
+        "u_turn_other": "u-turn; retained separately rather than forced into vertical/forward",
+        "unknown_uncertain": "unknown or uncertain references",
+        "vertical_forward": "straight or down scalar references or combinations confined to those labels"
+      },
+      "multi_family_rule": "Any multi-label reference spanning constituent direction families is assigned to mixed_multi_direction."
+    },
+    "cluster_randomization_base_seed": 20260723,
+    "cluster_randomization_exact_nonzero_cluster_limit": 22,
+    "cluster_randomization_monte_carlo_draws": 1000000,
+    "condition_display_names": {
+      "full_multiview": "Full multiview",
+      "original_only": "Original only",
+      "original_raw_no_annotation": "Original + raw crops",
+      "original_rectified_no_annotation": "Original + rectified crops",
+      "raw_crop_multiview": "Annotated original + raw crops",
+      "raw_crops_only": "Raw crops only",
+      "rectified_crops_only": "Rectified crops only"
+    },
+    "conditions": [
+      "original_only",
+      "raw_crops_only",
+      "rectified_crops_only",
+      "original_raw_no_annotation",
+      "original_rectified_no_annotation",
+      "raw_crop_multiview",
+      "full_multiview"
+    ],
+    "highly_unstable_prediction_definition": "at least four distinct deduplicated prediction sets across seven conditions",
+    "multiplicity_adjustment": "Holm across all 21 pairwise comparisons",
+    "other_pairwise_comparisons": "exploratory",
+    "paired_odds_ratio_interval": "large-sample log interval when both discordant cells are nonzero; otherwise omitted",
+    "primary_comparison": [
+      "original_only",
+      "full_multiview"
+    ],
+    "supported_group_minimum_questions": 10
+  },
+  "error_overlap": {
+    "all_seven_correct": 930,
+    "all_seven_incorrect": 2,
+    "correct_count_distribution_0_through_7": {
+      "0": 2,
+      "1": 6,
+      "2": 4,
+      "3": 9,
+      "4": 8,
+      "5": 72,
+      "6": 69,
+      "7": 930
+    },
+    "correctness_varied": 168,
+    "errors_shared_by_all_seven": 2,
+    "full_alone_correct": [],
+    "full_alone_incorrect": [
+      {
+        "identifier": "IMG_3624.JPG",
+        "question": "Where are Deliveries?"
+      }
+    ],
+    "highly_unstable_predictions": [
+      {
+        "identifier": "IMG_3617.JPG",
+        "predictions": {
+          "full_multiview": "right",
+          "original_only": "left",
+          "original_raw_no_annotation": "down",
+          "original_rectified_no_annotation": "right",
+          "raw_crop_multiview": "down",
+          "raw_crops_only": "down-right",
+          "rectified_crops_only": "right"
+        },
+        "question": "Where is Resident Life & Student Dining Services?",
+        "unique_prediction_sets": 4
+      }
+    ],
+    "persistent_errors": [
+      {
+        "identifier": "IMG_3406.JPG",
+        "question": "Where is Mathematical Sciences?"
+      },
+      {
+        "identifier": "IMG_3502.JPG",
+        "question": "Where is 1W19?"
+      }
+    ],
+    "shared_pairwise_error_counts": {
+      "full_multiview": {
+        "original_only": 8,
+        "original_raw_no_annotation": 11,
+        "original_rectified_no_annotation": 13,
+        "raw_crop_multiview": 12,
+        "raw_crops_only": 11,
+        "rectified_crops_only": 9
+      },
+      "original_only": {
+        "full_multiview": 8,
+        "original_raw_no_annotation": 21,
+        "original_rectified_no_annotation": 9,
+        "raw_crop_multiview": 17,
+        "raw_crops_only": 11,
+        "rectified_crops_only": 10
+      },
+      "original_raw_no_annotation": {
+        "full_multiview": 11,
+        "original_only": 21,
+        "original_rectified_no_annotation": 28,
+        "raw_crop_multiview": 17,
+        "raw_crops_only": 14,
+        "rectified_crops_only": 16
+      },
+      "original_rectified_no_annotation": {
+        "full_multiview": 13,
+        "original_only": 9,
+        "original_raw_no_annotation": 28,
+        "raw_crop_multiview": 13,
+        "raw_crops_only": 13,
+        "rectified_crops_only": 8
+      },
+      "raw_crop_multiview": {
+        "full_multiview": 12,
+        "original_only": 17,
+        "original_raw_no_annotation": 17,
+        "original_rectified_no_annotation": 13,
+        "raw_crops_only": 16,
+        "rectified_crops_only": 13
+      },
+      "raw_crops_only": {
+        "full_multiview": 11,
+        "original_only": 11,
+        "original_raw_no_annotation": 14,
+        "original_rectified_no_annotation": 13,
+        "raw_crop_multiview": 16,
+        "rectified_crops_only": 52
+      },
+      "rectified_crops_only": {
+        "full_multiview": 9,
+        "original_only": 10,
+        "original_raw_no_annotation": 16,
+        "original_rectified_no_annotation": 8,
+        "raw_crop_multiview": 13,
+        "raw_crops_only": 52
+      }
+    },
+    "unique_errors_by_condition": {
+      "full_multiview": [
+        {
+          "identifier": "IMG_3624.JPG",
+          "question": "Where are Deliveries?"
+        }
+      ],
+      "original_only": [
+        {
+          "identifier": "IMG_3347.JPG",
+          "question": "Where is 1201 - 1301?"
+        },
+        {
+          "identifier": "IMG_3347.JPG",
+          "question": "Where is 1201?"
+        },
+        {
+          "identifier": "IMG_3347.JPG",
+          "question": "Where is 1301?"
+        },
+        {
+          "identifier": "IMG_3457.JPG",
+          "question": "Where is 3039-3051?"
+        },
+        {
+          "identifier": "IMG_3545.JPG",
+          "question": "Where is Exit?"
+        },
+        {
+          "identifier": "IMG_3617.JPG",
+          "question": "Where is Financial Aid?"
+        },
+        {
+          "identifier": "IMG_3617.JPG",
+          "question": "Where is Public Safety & Public Access?"
+        },
+        {
+          "identifier": "IMG_3620.JPG",
+          "question": "Where is Financial Aid?"
+        },
+        {
+          "identifier": "IMG_3620.JPG",
+          "question": "Where is Public Safety & Public Access?"
+        }
+      ],
+      "original_raw_no_annotation": [],
+      "original_rectified_no_annotation": [
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Auditorium?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Computer Lab?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Economics Department Office (Room 3504)?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Economics Department Office?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Lobby?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Men's Room?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Room 3100?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Room 3210?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Room 3400?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Room 3510?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Rooms 3100 to 3210?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Rooms 3400 to 3510?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is Russell Sage Lab. 3rd Floor?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is SAGE 3101 Computer Lab/Classroom?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is SAGE 3303 Auditorium?"
+        },
+        {
+          "identifier": "IMG_3319.JPG",
+          "question": "Where is The Beanery Cafe?"
+        }
+      ],
+      "raw_crop_multiview": [
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is 4100 to 4306?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is 4400 to 4711?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Elevator?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Room 4100?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Room 4101?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Room 4112?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Room 4203?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Room 4306?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Room 4400?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Room 4510?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Room 4711?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Russell Sage Laboratory 4th Floor?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is SAGE 4101 Classroom?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is SAGE 4112 Classroom?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is SAGE 4203 Classroom?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is SAGE 4510 Classroom?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is SAGE 4711 Classroom?"
+        },
+        {
+          "identifier": "IMG_3323.JPG",
+          "question": "Where is Women's Room?"
+        },
+        {
+          "identifier": "IMG_3406.JPG",
+          "question": "Where is 3rd Floor?"
+        },
+        {
+          "identifier": "IMG_3406.JPG",
+          "question": "Where is Mathematical Sciences Office?"
+        },
+        {
+          "identifier": "IMG_3406.JPG",
+          "question": "Where is Room 301?"
+        },
+        {
+          "identifier": "IMG_3484.JPG",
+          "question": "Where is Design Lab?"
+        },
+        {
+          "identifier": "IMG_3484.JPG",
+          "question": "Where is JEC 3232?"
+        },
+        {
+          "identifier": "IMG_3484.JPG",
+          "question": "Where is THE DESIGN LAB?"
+        },
+        {
+          "identifier": "IMG_3485.JPG",
+          "question": "Where is JEC 3232?"
+        }
+      ],
+      "raw_crops_only": [
+        {
+          "identifier": "IMG_3379.JPG",
+          "question": "Where is CONTRACTS AND GRANTS?"
+        },
+        {
+          "identifier": "IMG_3423.JPG",
+          "question": "Where is Men's Restroom?"
+        },
+        {
+          "identifier": "IMG_3474.JPG",
+          "question": "Where is Communications Center?"
+        },
+        {
+          "identifier": "IMG_3474.JPG",
+          "question": "Where is Tunnel to Communications Center?"
+        },
+        {
+          "identifier": "IMG_3504.JPG",
+          "question": "Where is Earth Sciences?"
+        },
+        {
+          "identifier": "IMG_3504.JPG",
+          "question": "Where is Environmental Sciences?"
+        }
+      ],
+      "rectified_crops_only": [
+        {
+          "identifier": "IMG_3402.JPG",
+          "question": "Where is 3rd Floor?"
+        },
+        {
+          "identifier": "IMG_3402.JPG",
+          "question": "Where is Mathematical Sciences Office?"
+        },
+        {
+          "identifier": "IMG_3402.JPG",
+          "question": "Where is Room 301?"
+        },
+        {
+          "identifier": "IMG_3443.JPG",
+          "question": "Where is 4034?"
+        },
+        {
+          "identifier": "IMG_3443.JPG",
+          "question": "Where is 4040?"
+        },
+        {
+          "identifier": "IMG_3443.JPG",
+          "question": "Where is 4050?"
+        },
+        {
+          "identifier": "IMG_3444.JPG",
+          "question": "Where is 3039?"
+        },
+        {
+          "identifier": "IMG_3444.JPG",
+          "question": "Where is 3045?"
+        },
+        {
+          "identifier": "IMG_3444.JPG",
+          "question": "Where is 3051?"
+        },
+        {
+          "identifier": "IMG_3503.JPG",
+          "question": "Where is Environmental Sciences?"
+        },
+        {
+          "identifier": "IMG_3648.JPG",
+          "question": "Where is Cogswell Conference Room?"
+        },
+        {
+          "identifier": "IMG_3680.JPG",
+          "question": "Where is Room 308?"
+        }
+      ]
+    }
+  },
+  "generated_at": "2026-07-23T15:00:00-04:00",
+  "input_verification": {
+    "duplicate_corrected_assignments": 0,
+    "expected_correct_totals": {
+      "full_multiview": 1083,
+      "original_only": 1065,
+      "original_raw_no_annotation": 1058,
+      "original_rectified_no_annotation": 1052,
+      "raw_crop_multiview": 1046,
+      "raw_crops_only": 1030,
+      "rectified_crops_only": 1023
+    },
+    "independent_scoring_mismatches": 0,
+    "missing_or_extra_assignments_by_condition": {
+      "full_multiview": {
+        "extra": 0,
+        "missing": 0
+      },
+      "original_only": {
+        "extra": 0,
+        "missing": 0
+      },
+      "original_raw_no_annotation": {
+        "extra": 0,
+        "missing": 0
+      },
+      "original_rectified_no_annotation": {
+        "extra": 0,
+        "missing": 0
+      },
+      "raw_crop_multiview": {
+        "extra": 0,
+        "missing": 0
+      },
+      "raw_crops_only": {
+        "extra": 0,
+        "missing": 0
+      },
+      "rectified_crops_only": {
+        "extra": 0,
+        "missing": 0
+      }
+    },
+    "observed_correct_totals": {
+      "full_multiview": 1083,
+      "original_only": 1065,
+      "original_raw_no_annotation": 1058,
+      "original_rectified_no_annotation": 1052,
+      "raw_crop_multiview": 1046,
+      "raw_crops_only": 1030,
+      "rectified_crops_only": 1023
+    },
+    "passed": true,
+    "questions": 1100,
+    "stored_prediction_duplicate_assignments": {
+      "full_multiview": 0,
+      "original_only": 0,
+      "original_raw_no_annotation": 0,
+      "original_rectified_no_annotation": 0,
+      "raw_crop_multiview": 0,
+      "raw_crops_only": 0,
+      "rectified_crops_only": 0
+    },
+    "stored_prediction_mismatches": 0,
+    "unique_images": 346
+  },
+  "inputs": {
+    "class_analysis_results": {
+      "bytes": 31445,
+      "path": "outputs/corrected_evaluation/v2/class_analysis/class_analysis_results.json",
+      "sha256": "8d835102004de607e3d1e8c6ae2b7c5061db1e318843f857dcb2fe678702d958"
+    },
+    "corrected_per_question": {
+      "bytes": 1375785,
+      "path": "outputs/corrected_evaluation/v2/still_corrected_per_question.json",
+      "sha256": "279874bdd88bff12cbfa719db2aa25a2242d98996d657cef701c822ed635a812"
+    },
+    "corrected_reference_manifest": {
+      "bytes": 4370,
+      "path": "experiments/evaluation/corrected_reference_manifest_v2.json",
+      "sha256": "fe053e1c5dce3c7f4843b1f43353a1e40732fda52b6e2f072c69620d5b785e06"
+    },
+    "corrected_summary": {
+      "bytes": 32053,
+      "path": "outputs/corrected_evaluation/v2/still_corrected_summary.json",
+      "sha256": "d07a9ecba0df3ab263ca7fe872c473b93f290eb13ccea882366e96a2ea9d8e21"
+    },
+    "stored_predictions_full_multiview": {
+      "bytes": 778458,
+      "path": "outputs/still_ablation/full/results/full_multiview.json",
+      "sha256": "0cbba77d60502af0034e4406e3145cac1996147c1be99fc16431bfb532294e6c"
+    },
+    "stored_predictions_original_only": {
+      "bytes": 576104,
+      "path": "outputs/still_ablation/full/results/original_only.json",
+      "sha256": "5281dad4c7229a2887f3b758d3982bc9477cb88894a8fcb4b8f39c25cd071c43"
+    },
+    "stored_predictions_original_raw_no_annotation": {
+      "bytes": 714932,
+      "path": "outputs/still_ablation/full/results/original_raw_no_annotation.json",
+      "sha256": "e61545429ce3fc4dfe01945a41c4cf2b4c201bfc2b6a7f355af844e77714dac5"
+    },
+    "stored_predictions_original_rectified_no_annotation": {
+      "bytes": 649543,
+      "path": "outputs/still_ablation/full/results/original_rectified_no_annotation.json",
+      "sha256": "4094823e2578d48a49caed78e8c17e981a68192e6ce7def76393476dff5f4de5"
+    },
+    "stored_predictions_raw_crop_multiview": {
+      "bytes": 795380,
+      "path": "outputs/still_ablation/full/results/raw_crop_multiview.json",
+      "sha256": "6000f7ebc11ca98875b085ff17d8015774aacbc2896368c70639f2fb2ef89989"
+    },
+    "stored_predictions_raw_crops_only": {
+      "bytes": 630300,
+      "path": "outputs/still_ablation/full/results/raw_crops_only.json",
+      "sha256": "f1774fe9c23e11589636fe096b5194e4068934791b16337ac5cef9a751da4a98"
+    },
+    "stored_predictions_rectified_crops_only": {
+      "bytes": 792770,
+      "path": "outputs/still_ablation/full/results/rectified_crops_only.json",
+      "sha256": "3a5d8f0458e3dd968d9469662569c55a6449900112a17dfac7afeabc585ddf19"
+    }
+  },
+  "interpretable_contrasts": [
+    {
+      "cluster_bootstrap_95_ci": [
+        -0.02645985401459854,
+        0.012115705046739497
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "cluster_randomization_p_value": 0.5929031372070312,
+      "contrast_id": "A",
+      "contrast_name": "crop_only_rectification",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "diagonal": 1,
+          "horizontal": 14,
+          "mixed_multi_direction": 1,
+          "vertical_forward": 2
+        },
+        "worsened": {
+          "horizontal": 21,
+          "locational": 1,
+          "vertical_forward": 3
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{down}": 2,
+          "scalar:{left}": 3,
+          "scalar:{right}": 11,
+          "scalar:{straight-left}": 1
+        },
+        "worsened": {
+          "scalar:{down}": 3,
+          "scalar:{left}": 1,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 20
+        }
+      },
+      "first_condition": "raw_crops_only",
+      "first_display": "Raw crops only",
+      "images_with_both": 0,
+      "images_with_improvements": 11,
+      "images_with_regressions": 10,
+      "improved_questions": 18,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{down}": 2,
+          "scalar:{left}": 3,
+          "scalar:{right}": 11,
+          "scalar:{straight-left}": 1
+        },
+        "largest_count": 11,
+        "largest_fraction": 0.6111111111111112,
+        "top_three_fraction": 0.8888888888888888,
+        "total": 18
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3364.JPG": 1,
+          "IMG_3379.JPG": 1,
+          "IMG_3393.JPG": 1,
+          "IMG_3423.JPG": 1,
+          "IMG_3432.JPG": 2,
+          "IMG_3433.JPG": 2,
+          "IMG_3434.JPG": 2,
+          "IMG_3465.JPG": 2,
+          "IMG_3474.JPG": 2,
+          "IMG_3504.JPG": 2,
+          "IMG_3617.JPG": 2
+        },
+        "largest_count": 2,
+        "largest_fraction": 0.1111111111111111,
+        "top_three_fraction": 0.3333333333333333,
+        "total": 18
+      },
+      "net_gain_questions": -7,
+      "pairwise_comparison_id": "raw_crops_only__vs__rectified_crops_only",
+      "second_condition": "rectified_crops_only",
+      "second_display": "Rectified crops only",
+      "worsened_questions": 25
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        -0.04038652050761083,
+        0.018165304268846504
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "cluster_randomization_p_value": 0.9599609375,
+      "contrast_id": "B",
+      "contrast_name": "unannotated_scene_rectification",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "horizontal": 11,
+          "vertical_forward": 3
+        },
+        "worsened": {
+          "horizontal": 17,
+          "locational": 1,
+          "vertical_forward": 2
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "scalar:{down}": 3,
+          "scalar:{left}": 1,
+          "scalar:{right}": 10
+        },
+        "worsened": {
+          "scalar:{left}": 10,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 7,
+          "scalar:{straight}": 2
+        }
+      },
+      "first_condition": "original_raw_no_annotation",
+      "first_display": "Original + raw crops",
+      "images_with_both": 0,
+      "images_with_improvements": 7,
+      "images_with_regressions": 4,
+      "improved_questions": 14,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "scalar:{down}": 3,
+          "scalar:{left}": 1,
+          "scalar:{right}": 10
+        },
+        "largest_count": 10,
+        "largest_fraction": 0.7142857142857143,
+        "top_three_fraction": 1.0,
+        "total": 14
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3308.JPG": 1,
+          "IMG_3349.JPG": 3,
+          "IMG_3432.JPG": 2,
+          "IMG_3443.JPG": 3,
+          "IMG_3483.JPG": 3,
+          "IMG_3503.JPG": 1,
+          "IMG_3617.JPG": 1
+        },
+        "largest_count": 3,
+        "largest_fraction": 0.21428571428571427,
+        "top_three_fraction": 0.6428571428571429,
+        "total": 14
+      },
+      "net_gain_questions": -6,
+      "pairwise_comparison_id": "original_raw_no_annotation__vs__original_rectified_no_annotation",
+      "second_condition": "original_rectified_no_annotation",
+      "second_display": "Original + rectified crops",
+      "worsened_questions": 20
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        0.007368372588930895,
+        0.0726950354609929
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 0.1768798828125,
+      "cluster_randomization_p_value": 0.00982666015625,
+      "contrast_id": "C",
+      "contrast_name": "annotated_scene_rectification",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "diagonal": 2,
+          "horizontal": 35,
+          "locational": 2,
+          "mixed_multi_direction": 1,
+          "vertical_forward": 2
+        },
+        "worsened": {
+          "horizontal": 2,
+          "locational": 1,
+          "vertical_forward": 2
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{down}": 2,
+          "scalar:{left}": 9,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 26,
+          "scalar:{straight-right}": 2
+        },
+        "worsened": {
+          "scalar:{locational}": 1,
+          "scalar:{right}": 2,
+          "scalar:{straight}": 2
+        }
+      },
+      "first_condition": "raw_crop_multiview",
+      "first_display": "Annotated original + raw crops",
+      "images_with_both": 1,
+      "images_with_improvements": 12,
+      "images_with_regressions": 4,
+      "improved_questions": 42,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{down}": 2,
+          "scalar:{left}": 9,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 26,
+          "scalar:{straight-right}": 2
+        },
+        "largest_count": 26,
+        "largest_fraction": 0.6190476190476191,
+        "top_three_fraction": 0.8809523809523809,
+        "total": 42
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3311.JPG": 1,
+          "IMG_3323.JPG": 18,
+          "IMG_3364.JPG": 1,
+          "IMG_3391.JPG": 1,
+          "IMG_3393.JPG": 2,
+          "IMG_3406.JPG": 3,
+          "IMG_3442.JPG": 3,
+          "IMG_3443.JPG": 3,
+          "IMG_3465.JPG": 2,
+          "IMG_3484.JPG": 3,
+          "IMG_3485.JPG": 3,
+          "IMG_3617.JPG": 2
+        },
+        "largest_count": 18,
+        "largest_fraction": 0.42857142857142855,
+        "top_three_fraction": 0.5714285714285714,
+        "total": 42
+      },
+      "net_gain_questions": 37,
+      "pairwise_comparison_id": "raw_crop_multiview__vs__full_multiview",
+      "second_condition": "full_multiview",
+      "second_display": "Full multiview",
+      "worsened_questions": 5
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        -0.03926714108041964,
+        0.01609657947686117
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "cluster_randomization_p_value": 0.9261474609375,
+      "contrast_id": "D",
+      "contrast_name": "add_raw_crops_to_original",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "diagonal": 1,
+          "horizontal": 5,
+          "locational": 1,
+          "u_turn_other": 4,
+          "vertical_forward": 3
+        },
+        "worsened": {
+          "horizontal": 18,
+          "locational": 1,
+          "vertical_forward": 2
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "scalar:{down}": 3,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 5,
+          "scalar:{straight-right}": 1,
+          "scalar:{u-turn}": 4
+        },
+        "worsened": {
+          "scalar:{down}": 2,
+          "scalar:{left}": 9,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 9
+        }
+      },
+      "first_condition": "original_only",
+      "first_display": "Original only",
+      "images_with_both": 0,
+      "images_with_improvements": 8,
+      "images_with_regressions": 6,
+      "improved_questions": 14,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "scalar:{down}": 3,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 5,
+          "scalar:{straight-right}": 1,
+          "scalar:{u-turn}": 4
+        },
+        "largest_count": 5,
+        "largest_fraction": 0.35714285714285715,
+        "top_three_fraction": 0.8571428571428571,
+        "total": 14
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3347.JPG": 3,
+          "IMG_3391.JPG": 1,
+          "IMG_3397.JPG": 1,
+          "IMG_3442.JPG": 3,
+          "IMG_3457.JPG": 1,
+          "IMG_3545.JPG": 1,
+          "IMG_3617.JPG": 2,
+          "IMG_3620.JPG": 2
+        },
+        "largest_count": 3,
+        "largest_fraction": 0.21428571428571427,
+        "top_three_fraction": 0.5714285714285714,
+        "total": 14
+      },
+      "net_gain_questions": -7,
+      "pairwise_comparison_id": "original_only__vs__original_raw_no_annotation",
+      "second_condition": "original_raw_no_annotation",
+      "second_display": "Original + raw crops",
+      "worsened_questions": 21
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        -0.05719392314566577,
+        0.024193548387096774
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "cluster_randomization_p_value": 0.5784263610839844,
+      "contrast_id": "E",
+      "contrast_name": "add_rectified_crops_to_original",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "diagonal": 1,
+          "horizontal": 14,
+          "locational": 1,
+          "u_turn_other": 4,
+          "vertical_forward": 6
+        },
+        "worsened": {
+          "horizontal": 33,
+          "locational": 2,
+          "vertical_forward": 4
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "scalar:{down}": 6,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 14,
+          "scalar:{straight-right}": 1,
+          "scalar:{u-turn}": 4
+        },
+        "worsened": {
+          "scalar:{down}": 2,
+          "scalar:{left}": 18,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 15,
+          "scalar:{straight}": 2
+        }
+      },
+      "first_condition": "original_only",
+      "first_display": "Original only",
+      "images_with_both": 1,
+      "images_with_improvements": 12,
+      "images_with_regressions": 8,
+      "improved_questions": 26,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "scalar:{down}": 6,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 14,
+          "scalar:{straight-right}": 1,
+          "scalar:{u-turn}": 4
+        },
+        "largest_count": 14,
+        "largest_fraction": 0.5384615384615384,
+        "top_three_fraction": 0.9230769230769231,
+        "total": 26
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3347.JPG": 3,
+          "IMG_3349.JPG": 3,
+          "IMG_3391.JPG": 1,
+          "IMG_3397.JPG": 1,
+          "IMG_3432.JPG": 2,
+          "IMG_3442.JPG": 3,
+          "IMG_3443.JPG": 3,
+          "IMG_3457.JPG": 1,
+          "IMG_3483.JPG": 3,
+          "IMG_3545.JPG": 1,
+          "IMG_3617.JPG": 3,
+          "IMG_3620.JPG": 2
+        },
+        "largest_count": 3,
+        "largest_fraction": 0.11538461538461539,
+        "top_three_fraction": 0.34615384615384615,
+        "total": 26
+      },
+      "net_gain_questions": -13,
+      "pairwise_comparison_id": "original_only__vs__original_rectified_no_annotation",
+      "second_condition": "original_rectified_no_annotation",
+      "second_display": "Original + rectified crops",
+      "worsened_questions": 39
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        -0.056487578119124957,
+        0.032461677186654644
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "cluster_randomization_p_value": 0.6075286865234375,
+      "contrast_id": "F",
+      "contrast_name": "annotate_scene_with_raw_crops",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "horizontal": 21,
+          "locational": 1,
+          "vertical_forward": 3
+        },
+        "worsened": {
+          "diagonal": 3,
+          "horizontal": 31,
+          "locational": 2,
+          "mixed_multi_direction": 1
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "scalar:{down}": 3,
+          "scalar:{left}": 8,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 13
+        },
+        "worsened": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{left}": 9,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 22,
+          "scalar:{straight-right}": 3
+        }
+      },
+      "first_condition": "original_raw_no_annotation",
+      "first_display": "Original + raw crops",
+      "images_with_both": 0,
+      "images_with_improvements": 6,
+      "images_with_regressions": 11,
+      "improved_questions": 25,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "scalar:{down}": 3,
+          "scalar:{left}": 8,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 13
+        },
+        "largest_count": 13,
+        "largest_fraction": 0.52,
+        "top_three_fraction": 0.96,
+        "total": 25
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3320.JPG": 15,
+          "IMG_3349.JPG": 3,
+          "IMG_3432.JPG": 2,
+          "IMG_3483.JPG": 3,
+          "IMG_3503.JPG": 1,
+          "IMG_3551.JPG": 1
+        },
+        "largest_count": 15,
+        "largest_fraction": 0.6,
+        "top_three_fraction": 0.84,
+        "total": 25
+      },
+      "net_gain_questions": -12,
+      "pairwise_comparison_id": "original_raw_no_annotation__vs__raw_crop_multiview",
+      "second_condition": "raw_crop_multiview",
+      "second_display": "Annotated original + raw crops",
+      "worsened_questions": 37
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        -0.002785515320334262,
+        0.07122780635445503
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "cluster_randomization_p_value": 0.3046875,
+      "contrast_id": "G",
+      "contrast_name": "annotation_correspondence_with_rectified_crops",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "horizontal": 31,
+          "locational": 2,
+          "vertical_forward": 2
+        },
+        "worsened": {
+          "diagonal": 1,
+          "horizontal": 2,
+          "locational": 1
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "scalar:{down}": 2,
+          "scalar:{left}": 18,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 13
+        },
+        "worsened": {
+          "scalar:{left}": 1,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 1,
+          "scalar:{straight-right}": 1
+        }
+      },
+      "first_condition": "original_rectified_no_annotation",
+      "first_display": "Original + rectified crops",
+      "images_with_both": 0,
+      "images_with_improvements": 5,
+      "images_with_regressions": 3,
+      "improved_questions": 35,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "scalar:{down}": 2,
+          "scalar:{left}": 18,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 13
+        },
+        "largest_count": 18,
+        "largest_fraction": 0.5142857142857142,
+        "top_three_fraction": 0.9428571428571428,
+        "total": 35
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3311.JPG": 1,
+          "IMG_3319.JPG": 16,
+          "IMG_3320.JPG": 15,
+          "IMG_3465.JPG": 2,
+          "IMG_3551.JPG": 1
+        },
+        "largest_count": 16,
+        "largest_fraction": 0.45714285714285713,
+        "top_three_fraction": 0.9428571428571428,
+        "total": 35
+      },
+      "net_gain_questions": 31,
+      "pairwise_comparison_id": "original_rectified_no_annotation__vs__full_multiview",
+      "second_condition": "full_multiview",
+      "second_display": "Full multiview",
+      "worsened_questions": 4
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        0.0018050134605931813,
+        0.03292568203198495
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 0.8369140625,
+      "cluster_randomization_p_value": 0.05230712890625,
+      "contrast_id": "H1",
+      "contrast_name": "full_vs_original",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "diagonal": 1,
+          "horizontal": 14,
+          "u_turn_other": 4,
+          "vertical_forward": 8
+        },
+        "worsened": {
+          "diagonal": 1,
+          "horizontal": 4,
+          "vertical_forward": 4
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "scalar:{down}": 8,
+          "scalar:{right}": 14,
+          "scalar:{straight-right}": 1,
+          "scalar:{u-turn}": 4
+        },
+        "worsened": {
+          "scalar:{down}": 2,
+          "scalar:{left}": 1,
+          "scalar:{right}": 3,
+          "scalar:{straight-right}": 1,
+          "scalar:{straight}": 2
+        }
+      },
+      "first_condition": "original_only",
+      "first_display": "Original only",
+      "images_with_both": 1,
+      "images_with_improvements": 12,
+      "images_with_regressions": 7,
+      "improved_questions": 27,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "scalar:{down}": 8,
+          "scalar:{right}": 14,
+          "scalar:{straight-right}": 1,
+          "scalar:{u-turn}": 4
+        },
+        "largest_count": 14,
+        "largest_fraction": 0.5185185185185185,
+        "top_three_fraction": 0.9629629629629629,
+        "total": 27
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3347.JPG": 3,
+          "IMG_3349.JPG": 3,
+          "IMG_3391.JPG": 1,
+          "IMG_3432.JPG": 2,
+          "IMG_3442.JPG": 3,
+          "IMG_3443.JPG": 3,
+          "IMG_3457.JPG": 1,
+          "IMG_3465.JPG": 2,
+          "IMG_3483.JPG": 3,
+          "IMG_3545.JPG": 1,
+          "IMG_3617.JPG": 3,
+          "IMG_3620.JPG": 2
+        },
+        "largest_count": 3,
+        "largest_fraction": 0.1111111111111111,
+        "top_three_fraction": 0.3333333333333333,
+        "total": 27
+      },
+      "net_gain_questions": 18,
+      "pairwise_comparison_id": "original_only__vs__full_multiview",
+      "second_condition": "full_multiview",
+      "second_display": "Full multiview",
+      "worsened_questions": 9
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        0.026052104208416832,
+        0.07459677419354839
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 0.000146999853000147,
+      "cluster_randomization_p_value": 6.999993000007e-06,
+      "contrast_id": "H2",
+      "contrast_name": "full_vs_raw_crops",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "diagonal": 5,
+          "horizontal": 43,
+          "locational": 1,
+          "mixed_multi_direction": 2,
+          "vertical_forward": 8
+        },
+        "worsened": {
+          "horizontal": 5,
+          "locational": 1
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "alternatives:{straight,straight-right}": 2,
+          "scalar:{down}": 4,
+          "scalar:{left}": 25,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 18,
+          "scalar:{straight-left}": 1,
+          "scalar:{straight-right}": 4,
+          "scalar:{straight}": 4
+        },
+        "worsened": {
+          "scalar:{left}": 1,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 4
+        }
+      },
+      "first_condition": "raw_crops_only",
+      "first_display": "Raw crops only",
+      "images_with_both": 1,
+      "images_with_improvements": 28,
+      "images_with_regressions": 6,
+      "improved_questions": 59,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "alternatives:{straight,straight-right}": 2,
+          "scalar:{down}": 4,
+          "scalar:{left}": 25,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 18,
+          "scalar:{straight-left}": 1,
+          "scalar:{straight-right}": 4,
+          "scalar:{straight}": 4
+        },
+        "largest_count": 25,
+        "largest_fraction": 0.423728813559322,
+        "top_three_fraction": 0.7966101694915254,
+        "total": 59
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3360.JPG": 1,
+          "IMG_3364.JPG": 1,
+          "IMG_3379.JPG": 1,
+          "IMG_3382.JPG": 1,
+          "IMG_3390.JPG": 1,
+          "IMG_3393.JPG": 4,
+          "IMG_3395.JPG": 3,
+          "IMG_3397.JPG": 4,
+          "IMG_3419.JPG": 1,
+          "IMG_3423.JPG": 1,
+          "IMG_3432.JPG": 2,
+          "IMG_3465.JPG": 2,
+          "IMG_3474.JPG": 2,
+          "IMG_3481.JPG": 3,
+          "IMG_3504.JPG": 2,
+          "IMG_3526.JPG": 1,
+          "IMG_3527.JPG": 1,
+          "IMG_3551.JPG": 2,
+          "IMG_3556.JPG": 5,
+          "IMG_3577.JPG": 1,
+          "IMG_3595.JPG": 1,
+          "IMG_3601.JPG": 1,
+          "IMG_3604.JPG": 1,
+          "IMG_3617.JPG": 2,
+          "IMG_3665.JPG": 3,
+          "IMG_3669.JPG": 2,
+          "IMG_3670.JPG": 2,
+          "IMG_3696.JPG": 8
+        },
+        "largest_count": 8,
+        "largest_fraction": 0.13559322033898305,
+        "top_three_fraction": 0.288135593220339,
+        "total": 59
+      },
+      "net_gain_questions": 53,
+      "pairwise_comparison_id": "raw_crops_only__vs__full_multiview",
+      "second_condition": "full_multiview",
+      "second_display": "Full multiview",
+      "worsened_questions": 6
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        0.029438001784121322,
+        0.08354872116636643
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 0.00021999978000021998,
+      "cluster_randomization_p_value": 1.0999989000011e-05,
+      "contrast_id": "H3",
+      "contrast_name": "full_vs_rectified_crops",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "diagonal": 4,
+          "horizontal": 52,
+          "locational": 2,
+          "mixed_multi_direction": 1,
+          "vertical_forward": 9
+        },
+        "worsened": {
+          "horizontal": 7,
+          "locational": 1
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{down}": 5,
+          "scalar:{left}": 22,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 30,
+          "scalar:{straight-right}": 4,
+          "scalar:{straight}": 4
+        },
+        "worsened": {
+          "scalar:{locational}": 1,
+          "scalar:{right}": 7
+        }
+      },
+      "first_condition": "rectified_crops_only",
+      "first_display": "Rectified crops only",
+      "images_with_both": 1,
+      "images_with_improvements": 29,
+      "images_with_regressions": 6,
+      "improved_questions": 68,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{down}": 5,
+          "scalar:{left}": 22,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 30,
+          "scalar:{straight-right}": 4,
+          "scalar:{straight}": 4
+        },
+        "largest_count": 30,
+        "largest_fraction": 0.4411764705882353,
+        "top_three_fraction": 0.8382352941176471,
+        "total": 68
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3349.JPG": 3,
+          "IMG_3360.JPG": 1,
+          "IMG_3382.JPG": 1,
+          "IMG_3390.JPG": 1,
+          "IMG_3393.JPG": 3,
+          "IMG_3395.JPG": 3,
+          "IMG_3397.JPG": 4,
+          "IMG_3402.JPG": 3,
+          "IMG_3419.JPG": 1,
+          "IMG_3443.JPG": 6,
+          "IMG_3444.JPG": 3,
+          "IMG_3481.JPG": 3,
+          "IMG_3483.JPG": 2,
+          "IMG_3485.JPG": 2,
+          "IMG_3503.JPG": 2,
+          "IMG_3526.JPG": 1,
+          "IMG_3527.JPG": 1,
+          "IMG_3551.JPG": 2,
+          "IMG_3556.JPG": 5,
+          "IMG_3577.JPG": 1,
+          "IMG_3595.JPG": 1,
+          "IMG_3601.JPG": 1,
+          "IMG_3604.JPG": 1,
+          "IMG_3648.JPG": 1,
+          "IMG_3665.JPG": 3,
+          "IMG_3669.JPG": 2,
+          "IMG_3670.JPG": 2,
+          "IMG_3680.JPG": 1,
+          "IMG_3696.JPG": 8
+        },
+        "largest_count": 8,
+        "largest_fraction": 0.11764705882352941,
+        "top_three_fraction": 0.27941176470588236,
+        "total": 68
+      },
+      "net_gain_questions": 60,
+      "pairwise_comparison_id": "rectified_crops_only__vs__full_multiview",
+      "second_condition": "full_multiview",
+      "second_display": "Full multiview",
+      "worsened_questions": 8
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        0.0,
+        0.05575547788460272
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "cluster_randomization_p_value": 0.099853515625,
+      "contrast_id": "H4",
+      "contrast_name": "full_vs_original_raw",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "horizontal": 25,
+          "locational": 1,
+          "vertical_forward": 5
+        },
+        "worsened": {
+          "diagonal": 1,
+          "horizontal": 2,
+          "locational": 1,
+          "vertical_forward": 2
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "scalar:{down}": 5,
+          "scalar:{left}": 8,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 17
+        },
+        "worsened": {
+          "scalar:{locational}": 1,
+          "scalar:{right}": 2,
+          "scalar:{straight-right}": 1,
+          "scalar:{straight}": 2
+        }
+      },
+      "first_condition": "original_raw_no_annotation",
+      "first_display": "Original + raw crops",
+      "images_with_both": 0,
+      "images_with_improvements": 9,
+      "images_with_regressions": 4,
+      "improved_questions": 31,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "scalar:{down}": 5,
+          "scalar:{left}": 8,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 17
+        },
+        "largest_count": 17,
+        "largest_fraction": 0.5483870967741935,
+        "top_three_fraction": 0.967741935483871,
+        "total": 31
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3320.JPG": 15,
+          "IMG_3349.JPG": 3,
+          "IMG_3432.JPG": 2,
+          "IMG_3443.JPG": 3,
+          "IMG_3465.JPG": 2,
+          "IMG_3483.JPG": 3,
+          "IMG_3503.JPG": 1,
+          "IMG_3551.JPG": 1,
+          "IMG_3617.JPG": 1
+        },
+        "largest_count": 15,
+        "largest_fraction": 0.4838709677419355,
+        "top_three_fraction": 0.6774193548387096,
+        "total": 31
+      },
+      "net_gain_questions": 25,
+      "pairwise_comparison_id": "original_raw_no_annotation__vs__full_multiview",
+      "second_condition": "full_multiview",
+      "second_display": "Full multiview",
+      "worsened_questions": 6
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        -0.002785515320334262,
+        0.07122780635445503
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "cluster_randomization_p_value": 0.3046875,
+      "contrast_id": "H5",
+      "contrast_name": "full_vs_original_rectified",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "horizontal": 31,
+          "locational": 2,
+          "vertical_forward": 2
+        },
+        "worsened": {
+          "diagonal": 1,
+          "horizontal": 2,
+          "locational": 1
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "scalar:{down}": 2,
+          "scalar:{left}": 18,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 13
+        },
+        "worsened": {
+          "scalar:{left}": 1,
+          "scalar:{locational}": 1,
+          "scalar:{right}": 1,
+          "scalar:{straight-right}": 1
+        }
+      },
+      "first_condition": "original_rectified_no_annotation",
+      "first_display": "Original + rectified crops",
+      "images_with_both": 0,
+      "images_with_improvements": 5,
+      "images_with_regressions": 3,
+      "improved_questions": 35,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "scalar:{down}": 2,
+          "scalar:{left}": 18,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 13
+        },
+        "largest_count": 18,
+        "largest_fraction": 0.5142857142857142,
+        "top_three_fraction": 0.9428571428571428,
+        "total": 35
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3311.JPG": 1,
+          "IMG_3319.JPG": 16,
+          "IMG_3320.JPG": 15,
+          "IMG_3465.JPG": 2,
+          "IMG_3551.JPG": 1
+        },
+        "largest_count": 16,
+        "largest_fraction": 0.45714285714285713,
+        "top_three_fraction": 0.9428571428571428,
+        "total": 35
+      },
+      "net_gain_questions": 31,
+      "pairwise_comparison_id": "original_rectified_no_annotation__vs__full_multiview",
+      "second_condition": "full_multiview",
+      "second_display": "Full multiview",
+      "worsened_questions": 4
+    },
+    {
+      "cluster_bootstrap_95_ci": [
+        0.007368372588930895,
+        0.0726950354609929
+      ],
+      "cluster_randomization_holm_adjusted_p_value_21": 0.1768798828125,
+      "cluster_randomization_p_value": 0.00982666015625,
+      "contrast_id": "H6",
+      "contrast_name": "full_vs_annotated_raw",
+      "difference_direction": "second minus first",
+      "discordances_by_direction_family": {
+        "improved": {
+          "diagonal": 2,
+          "horizontal": 35,
+          "locational": 2,
+          "mixed_multi_direction": 1,
+          "vertical_forward": 2
+        },
+        "worsened": {
+          "horizontal": 2,
+          "locational": 1,
+          "vertical_forward": 2
+        }
+      },
+      "discordances_by_exact_category": {
+        "improved": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{down}": 2,
+          "scalar:{left}": 9,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 26,
+          "scalar:{straight-right}": 2
+        },
+        "worsened": {
+          "scalar:{locational}": 1,
+          "scalar:{right}": 2,
+          "scalar:{straight}": 2
+        }
+      },
+      "first_condition": "raw_crop_multiview",
+      "first_display": "Annotated original + raw crops",
+      "images_with_both": 1,
+      "images_with_improvements": 12,
+      "images_with_regressions": 4,
+      "improved_questions": 42,
+      "improvement_concentration_by_exact_category": {
+        "counts": {
+          "alternatives:{straight,straight-right}": 1,
+          "scalar:{down}": 2,
+          "scalar:{left}": 9,
+          "scalar:{locational}": 2,
+          "scalar:{right}": 26,
+          "scalar:{straight-right}": 2
+        },
+        "largest_count": 26,
+        "largest_fraction": 0.6190476190476191,
+        "top_three_fraction": 0.8809523809523809,
+        "total": 42
+      },
+      "improvement_concentration_by_image": {
+        "counts": {
+          "IMG_3311.JPG": 1,
+          "IMG_3323.JPG": 18,
+          "IMG_3364.JPG": 1,
+          "IMG_3391.JPG": 1,
+          "IMG_3393.JPG": 2,
+          "IMG_3406.JPG": 3,
+          "IMG_3442.JPG": 3,
+          "IMG_3443.JPG": 3,
+          "IMG_3465.JPG": 2,
+          "IMG_3484.JPG": 3,
+          "IMG_3485.JPG": 3,
+          "IMG_3617.JPG": 2
+        },
+        "largest_count": 18,
+        "largest_fraction": 0.42857142857142855,
+        "top_three_fraction": 0.5714285714285714,
+        "total": 42
+      },
+      "net_gain_questions": 37,
+      "pairwise_comparison_id": "raw_crop_multiview__vs__full_multiview",
+      "second_condition": "full_multiview",
+      "second_display": "Full multiview",
+      "worsened_questions": 5
+    }
+  ],
+  "interpretation_constraints": {
+    "contrast_c": "observed difference associated with rectification when the annotated scene is held constant",
+    "contrast_g": "observed difference associated with replacing the original scene with the annotated/correspondence-bearing scene while rectified crops are supplied; annotation and correspondence are not independently separated",
+    "design_does_not_establish": "an independently identified causal contribution of correspondence, annotation, rectification, localization, or supplied-image count",
+    "design_establishes": "comparative performance among seven fixed representation bundles under a common benchmark, preprocessing cache, prompt, and VLM configuration"
+  },
+  "pairwise_comparisons": [
+    {
+      "absolute_accuracy_difference_percentage_points": -3.1818181818181817,
+      "both_correct": 1006,
+      "both_incorrect": 11,
+      "cluster_randomization_holm_adjusted_p_value_21": 0.41908358091641906,
+      "comparison_id": "original_only__vs__raw_crops_only",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9681818181818181,
+      "first_condition": "original_only",
+      "first_correct": 1065,
+      "first_display": "Original only",
+      "first_only_correct": 59,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.03191488320293744,
+        "bootstrap_standard_error": 0.014057878241612986,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.031818181818181815,
+        "percentile_95_confidence_interval": [
+          -0.06094188769869104,
+          -0.0057859209257473485
+        ],
+        "percentile_99_confidence_interval": [
+          -0.07129455909943715,
+          0.0018467220683287165
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.99305,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 24651,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 0.0001550620244135669,
+        "nonzero_image_clusters": 37,
+        "observed_correct_count_difference": -35,
+        "observed_micro_accuracy_difference": -0.031818181818181815,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 0.02465197534802465
+      },
+      "mcnemar_exact_two_sided_p_value": 0.00015455941078329165,
+      "mcnemar_holm_adjusted_p_value_21": 0.0023183911617493747,
+      "net_correct_difference": -35,
+      "prediction_differences": 85,
+      "primary_comparison": false,
+      "second_accuracy": 0.9363636363636364,
+      "second_condition": "raw_crops_only",
+      "second_correct": 1030,
+      "second_display": "Raw crops only",
+      "second_only_correct": 24
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": -3.8181818181818183,
+      "both_correct": 998,
+      "both_incorrect": 10,
+      "cluster_randomization_holm_adjusted_p_value_21": 0.17616782383217616,
+      "comparison_id": "original_only__vs__rectified_crops_only",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9681818181818181,
+      "first_condition": "original_only",
+      "first_correct": 1065,
+      "first_display": "Original only",
+      "first_only_correct": 67,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.03818559630540165,
+        "bootstrap_standard_error": 0.014652364115984817,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.038181818181818185,
+        "percentile_95_confidence_interval": [
+          -0.068334937439846,
+          -0.010912608225108245
+        ],
+        "percentile_99_confidence_interval": [
+          -0.07858546168958742,
+          -0.002835458802961962
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.9977,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 9271,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 9.584368382912487e-05,
+        "nonzero_image_clusters": 42,
+        "observed_correct_count_difference": -42,
+        "observed_micro_accuracy_difference": -0.038181818181818185,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 0.009271990728009272
+      },
+      "mcnemar_exact_two_sided_p_value": 1.3815919196387045e-05,
+      "mcnemar_holm_adjusted_p_value_21": 0.00023487062633857978,
+      "net_correct_difference": -42,
+      "prediction_differences": 96,
+      "primary_comparison": false,
+      "second_accuracy": 0.93,
+      "second_condition": "rectified_crops_only",
+      "second_correct": 1023,
+      "second_display": "Rectified crops only",
+      "second_only_correct": 25
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": -0.6363636363636364,
+      "both_correct": 1044,
+      "both_incorrect": 21,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "original_only__vs__original_raw_no_annotation",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9681818181818181,
+      "first_condition": "original_only",
+      "first_correct": 1065,
+      "first_display": "Original only",
+      "first_only_correct": 21,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.0062424054528369315,
+        "bootstrap_standard_error": 0.014596069154053242,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.006363636363636364,
+        "percentile_95_confidence_interval": [
+          -0.03926714108041964,
+          0.01609657947686117
+        ],
+        "percentile_99_confidence_interval": [
+          -0.0525892096746721,
+          0.020776959817487353
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.62827,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 16384,
+        "draws": null,
+        "extreme_assignments": 15174,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 14,
+        "observed_correct_count_difference": -7,
+        "observed_micro_accuracy_difference": -0.006363636363636364,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.9261474609375
+      },
+      "mcnemar_exact_two_sided_p_value": 0.31050465907901525,
+      "mcnemar_holm_adjusted_p_value_21": 1.0,
+      "net_correct_difference": -7,
+      "prediction_differences": 36,
+      "primary_comparison": false,
+      "second_accuracy": 0.9618181818181818,
+      "second_condition": "original_raw_no_annotation",
+      "second_correct": 1058,
+      "second_display": "Original + raw crops",
+      "second_only_correct": 14
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": -1.1818181818181819,
+      "both_correct": 1026,
+      "both_incorrect": 9,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "original_only__vs__original_rectified_no_annotation",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9681818181818181,
+      "first_condition": "original_only",
+      "first_correct": 1065,
+      "first_display": "Original only",
+      "first_only_correct": 39,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.011626943084222413,
+        "bootstrap_standard_error": 0.02109899415983934,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.011818181818181818,
+        "percentile_95_confidence_interval": [
+          -0.05719392314566577,
+          0.024193548387096774
+        ],
+        "percentile_99_confidence_interval": [
+          -0.07379151937428487,
+          0.031818181818181815
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.69457,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 524288,
+        "draws": null,
+        "extreme_assignments": 303262,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 19,
+        "observed_correct_count_difference": -13,
+        "observed_micro_accuracy_difference": -0.011818181818181818,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.5784263610839844
+      },
+      "mcnemar_exact_two_sided_p_value": 0.13603239487789212,
+      "mcnemar_holm_adjusted_p_value_21": 0.8215911118194096,
+      "net_correct_difference": -13,
+      "prediction_differences": 67,
+      "primary_comparison": false,
+      "second_accuracy": 0.9563636363636364,
+      "second_condition": "original_rectified_no_annotation",
+      "second_correct": 1052,
+      "second_display": "Original + rectified crops",
+      "second_only_correct": 26
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": -1.7272727272727273,
+      "both_correct": 1028,
+      "both_incorrect": 17,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "original_only__vs__raw_crop_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9681818181818181,
+      "first_condition": "original_only",
+      "first_correct": 1065,
+      "first_display": "Original only",
+      "first_only_correct": 37,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.01709303677699344,
+        "bootstrap_standard_error": 0.017893303110140948,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.017272727272727273,
+        "percentile_95_confidence_interval": [
+          -0.05725190839694656,
+          0.011131725417439703
+        ],
+        "percentile_99_confidence_interval": [
+          -0.07282430265320677,
+          0.017117194290774164
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.8356,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 262144,
+        "draws": null,
+        "extreme_assignments": 131072,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 18,
+        "observed_correct_count_difference": -19,
+        "observed_micro_accuracy_difference": -0.017272727272727273,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.5
+      },
+      "mcnemar_exact_two_sided_p_value": 0.014453833533827731,
+      "mcnemar_holm_adjusted_p_value_21": 0.1445383353382773,
+      "net_correct_difference": -19,
+      "prediction_differences": 58,
+      "primary_comparison": false,
+      "second_accuracy": 0.9509090909090909,
+      "second_condition": "raw_crop_multiview",
+      "second_correct": 1046,
+      "second_display": "Annotated original + raw crops",
+      "second_only_correct": 18
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 1.6363636363636365,
+      "both_correct": 1056,
+      "both_incorrect": 8,
+      "cluster_randomization_holm_adjusted_p_value_21": 0.8369140625,
+      "comparison_id": "original_only__vs__full_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": false,
+      "first_accuracy": 0.9681818181818181,
+      "first_condition": "original_only",
+      "first_correct": 1065,
+      "first_display": "Original only",
+      "first_only_correct": 9,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.016423791560846435,
+        "bootstrap_standard_error": 0.007983144179292216,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.016363636363636365,
+        "percentile_95_confidence_interval": [
+          0.0018050134605931813,
+          0.03292568203198495
+        ],
+        "percentile_99_confidence_interval": [
+          -0.002092116273948463,
+          0.03899722841225628
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.01602,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 262144,
+        "draws": null,
+        "extreme_assignments": 13712,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 18,
+        "observed_correct_count_difference": 18,
+        "observed_micro_accuracy_difference": 0.016363636363636365,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.05230712890625
+      },
+      "mcnemar_exact_two_sided_p_value": 0.00393317302223295,
+      "mcnemar_holm_adjusted_p_value_21": 0.0471980762667954,
+      "net_correct_difference": 18,
+      "prediction_differences": 40,
+      "primary_comparison": true,
+      "second_accuracy": 0.9845454545454545,
+      "second_condition": "full_multiview",
+      "second_correct": 1083,
+      "second_display": "Full multiview",
+      "second_only_correct": 27
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": -0.6363636363636364,
+      "both_correct": 1005,
+      "both_incorrect": 52,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "raw_crops_only__vs__rectified_crops_only",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9363636363636364,
+      "first_condition": "raw_crops_only",
+      "first_correct": 1030,
+      "first_display": "Raw crops only",
+      "first_only_correct": 25,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.006270713102464208,
+        "bootstrap_standard_error": 0.00982713866315704,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.006363636363636364,
+        "percentile_95_confidence_interval": [
+          -0.02645985401459854,
+          0.012115705046739497
+        ],
+        "percentile_99_confidence_interval": [
+          -0.03357909706746916,
+          0.017543940720563034
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.74919,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 2097152,
+        "draws": null,
+        "extreme_assignments": 1243408,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 21,
+        "observed_correct_count_difference": -7,
+        "observed_micro_accuracy_difference": -0.006363636363636364,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.5929031372070312
+      },
+      "mcnemar_exact_two_sided_p_value": 0.3603776529357674,
+      "mcnemar_holm_adjusted_p_value_21": 1.0,
+      "net_correct_difference": -7,
+      "prediction_differences": 47,
+      "primary_comparison": false,
+      "second_accuracy": 0.93,
+      "second_condition": "rectified_crops_only",
+      "second_correct": 1023,
+      "second_display": "Rectified crops only",
+      "second_only_correct": 18
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 2.5454545454545454,
+      "both_correct": 1002,
+      "both_incorrect": 14,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "raw_crops_only__vs__original_raw_no_annotation",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9363636363636364,
+      "first_condition": "raw_crops_only",
+      "first_correct": 1030,
+      "first_display": "Raw crops only",
+      "first_only_correct": 28,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.025672477750100512,
+        "bootstrap_standard_error": 0.019326777947458476,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.025454545454545455,
+        "percentile_95_confidence_interval": [
+          -0.014406970529851869,
+          0.06171648987463838
+        ],
+        "percentile_99_confidence_interval": [
+          -0.02911738322086786,
+          0.07279031039719425
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.09917,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 218428,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 0.00041317971663073333,
+        "nonzero_image_clusters": 35,
+        "observed_correct_count_difference": 28,
+        "observed_micro_accuracy_difference": 0.025454545454545455,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 0.21842878157121842
+      },
+      "mcnemar_exact_two_sided_p_value": 0.0029853231844472294,
+      "mcnemar_holm_adjusted_p_value_21": 0.038809201397813985,
+      "net_correct_difference": 28,
+      "prediction_differences": 86,
+      "primary_comparison": false,
+      "second_accuracy": 0.9618181818181818,
+      "second_condition": "original_raw_no_annotation",
+      "second_correct": 1058,
+      "second_display": "Original + raw crops",
+      "second_only_correct": 56
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 2.0,
+      "both_correct": 995,
+      "both_incorrect": 13,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "raw_crops_only__vs__original_rectified_no_annotation",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9363636363636364,
+      "first_condition": "raw_crops_only",
+      "first_correct": 1030,
+      "first_display": "Raw crops only",
+      "first_only_correct": 35,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.020287940118715028,
+        "bootstrap_standard_error": 0.02375573731795664,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.02,
+        "percentile_95_confidence_interval": [
+          -0.029250578591154836,
+          0.06320754716981132
+        ],
+        "percentile_99_confidence_interval": [
+          -0.04690144927536229,
+          0.07540401127489688
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.19911,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 446939,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 0.000497176368893608,
+        "nonzero_image_clusters": 33,
+        "observed_correct_count_difference": 22,
+        "observed_micro_accuracy_difference": 0.02,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 0.4469395530604469
+      },
+      "mcnemar_exact_two_sided_p_value": 0.02801690195894669,
+      "mcnemar_holm_adjusted_p_value_21": 0.2521521176305202,
+      "net_correct_difference": 22,
+      "prediction_differences": 92,
+      "primary_comparison": false,
+      "second_accuracy": 0.9563636363636364,
+      "second_condition": "original_rectified_no_annotation",
+      "second_correct": 1052,
+      "second_display": "Original + rectified crops",
+      "second_only_correct": 57
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 1.4545454545454546,
+      "both_correct": 992,
+      "both_incorrect": 16,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "raw_crops_only__vs__raw_crop_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9363636363636364,
+      "first_condition": "raw_crops_only",
+      "first_correct": 1030,
+      "first_display": "Raw crops only",
+      "first_only_correct": 38,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.014821846425944002,
+        "bootstrap_standard_error": 0.02131801840279395,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.014545454545454545,
+        "percentile_95_confidence_interval": [
+          -0.03069777641778865,
+          0.05322128851540616
+        ],
+        "percentile_99_confidence_interval": [
+          -0.04773465886987974,
+          0.06424879790082191
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.23824,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 588438,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 0.0004921162516947168,
+        "nonzero_image_clusters": 36,
+        "observed_correct_count_difference": 16,
+        "observed_micro_accuracy_difference": 0.014545454545454545,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 0.5884384115615885
+      },
+      "mcnemar_exact_two_sided_p_value": 0.11737015883134423,
+      "mcnemar_holm_adjusted_p_value_21": 0.8215911118194096,
+      "net_correct_difference": 16,
+      "prediction_differences": 96,
+      "primary_comparison": false,
+      "second_accuracy": 0.9509090909090909,
+      "second_condition": "raw_crop_multiview",
+      "second_correct": 1046,
+      "second_display": "Annotated original + raw crops",
+      "second_only_correct": 54
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 4.818181818181818,
+      "both_correct": 1024,
+      "both_incorrect": 11,
+      "cluster_randomization_holm_adjusted_p_value_21": 0.000146999853000147,
+      "comparison_id": "raw_crops_only__vs__full_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9363636363636364,
+      "first_condition": "raw_crops_only",
+      "first_correct": 1030,
+      "first_display": "Raw crops only",
+      "first_only_correct": 6,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.04833867476378388,
+        "bootstrap_standard_error": 0.01240854133484742,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.04818181818181818,
+        "percentile_95_confidence_interval": [
+          0.026052104208416832,
+          0.07459677419354839
+        ],
+        "percentile_99_confidence_interval": [
+          0.020480854853072127,
+          0.08438409311348205
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.0,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 6,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 2.6457394051886516e-06,
+        "nonzero_image_clusters": 33,
+        "observed_correct_count_difference": 53,
+        "observed_micro_accuracy_difference": 0.04818181818181818,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 6.999993000007e-06
+      },
+      "mcnemar_exact_two_sided_p_value": 4.964650327128617e-12,
+      "mcnemar_holm_adjusted_p_value_21": 9.929300654257234e-11,
+      "net_correct_difference": 53,
+      "prediction_differences": 66,
+      "primary_comparison": false,
+      "second_accuracy": 0.9845454545454545,
+      "second_condition": "full_multiview",
+      "second_correct": 1083,
+      "second_display": "Full multiview",
+      "second_only_correct": 59
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 3.1818181818181817,
+      "both_correct": 997,
+      "both_incorrect": 16,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "rectified_crops_only__vs__original_raw_no_annotation",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.93,
+      "first_condition": "rectified_crops_only",
+      "first_correct": 1023,
+      "first_display": "Rectified crops only",
+      "first_only_correct": 26,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.031943190852564717,
+        "bootstrap_standard_error": 0.019301400945566108,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.031818181818181815,
+        "percentile_95_confidence_interval": [
+          -0.008234293112829727,
+          0.06785714285714285
+        ],
+        "percentile_99_confidence_interval": [
+          -0.022840181769379506,
+          0.07859361289994048
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.05717,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 106483,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 0.0003084557971456821,
+        "nonzero_image_clusters": 36,
+        "observed_correct_count_difference": 35,
+        "observed_micro_accuracy_difference": 0.031818181818181815,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 0.10648389351610649
+      },
+      "mcnemar_exact_two_sided_p_value": 0.00022368935609481816,
+      "mcnemar_holm_adjusted_p_value_21": 0.0031316509853274543,
+      "net_correct_difference": 35,
+      "prediction_differences": 92,
+      "primary_comparison": false,
+      "second_accuracy": 0.9618181818181818,
+      "second_condition": "original_raw_no_annotation",
+      "second_correct": 1058,
+      "second_display": "Original + raw crops",
+      "second_only_correct": 61
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 2.6363636363636362,
+      "both_correct": 983,
+      "both_incorrect": 8,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "rectified_crops_only__vs__original_rectified_no_annotation",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.93,
+      "first_condition": "rectified_crops_only",
+      "first_correct": 1023,
+      "first_display": "Rectified crops only",
+      "first_only_correct": 40,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.026558653221179243,
+        "bootstrap_standard_error": 0.02480157717404561,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.026363636363636363,
+        "percentile_95_confidence_interval": [
+          -0.025021570319240724,
+          0.0718503937007874
+        ],
+        "percentile_99_confidence_interval": [
+          -0.042298497143235254,
+          0.08510648249507403
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.14839,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 327390,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 0.00046926090812248546,
+        "nonzero_image_clusters": 38,
+        "observed_correct_count_difference": 29,
+        "observed_micro_accuracy_difference": 0.026363636363636363,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 0.3273906726093274
+      },
+      "mcnemar_exact_two_sided_p_value": 0.007040750835507646,
+      "mcnemar_holm_adjusted_p_value_21": 0.07744825919058411,
+      "net_correct_difference": 29,
+      "prediction_differences": 111,
+      "primary_comparison": false,
+      "second_accuracy": 0.9563636363636364,
+      "second_condition": "original_rectified_no_annotation",
+      "second_correct": 1052,
+      "second_display": "Original + rectified crops",
+      "second_only_correct": 69
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 2.090909090909091,
+      "both_correct": 982,
+      "both_incorrect": 13,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "rectified_crops_only__vs__raw_crop_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.93,
+      "first_condition": "rectified_crops_only",
+      "first_correct": 1023,
+      "first_display": "Rectified crops only",
+      "first_only_correct": 41,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.02109255952840821,
+        "bootstrap_standard_error": 0.02186091660652371,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.02090909090909091,
+        "percentile_95_confidence_interval": [
+          -0.025556764314621873,
+          0.06057945566286216
+        ],
+        "percentile_99_confidence_interval": [
+          -0.04279836992201886,
+          0.07265781228288892
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.16761,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 407137,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 0.000491300653331827,
+        "nonzero_image_clusters": 41,
+        "observed_correct_count_difference": 23,
+        "observed_micro_accuracy_difference": 0.02090909090909091,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 0.40713759286240714
+      },
+      "mcnemar_exact_two_sided_p_value": 0.03130178457554001,
+      "mcnemar_holm_adjusted_p_value_21": 0.2521521176305202,
+      "net_correct_difference": 23,
+      "prediction_differences": 112,
+      "primary_comparison": false,
+      "second_accuracy": 0.9509090909090909,
+      "second_condition": "raw_crop_multiview",
+      "second_correct": 1046,
+      "second_display": "Annotated original + raw crops",
+      "second_only_correct": 64
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 5.454545454545454,
+      "both_correct": 1015,
+      "both_incorrect": 9,
+      "cluster_randomization_holm_adjusted_p_value_21": 0.00021999978000021998,
+      "comparison_id": "rectified_crops_only__vs__full_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.93,
+      "first_condition": "rectified_crops_only",
+      "first_correct": 1023,
+      "first_display": "Rectified crops only",
+      "first_only_correct": 8,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.05460938786624808,
+        "bootstrap_standard_error": 0.013810872968321829,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.05454545454545454,
+        "percentile_95_confidence_interval": [
+          0.029438001784121322,
+          0.08354872116636643
+        ],
+        "percentile_99_confidence_interval": [
+          0.02254983471197183,
+          0.09384786794993198
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.0,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": null,
+        "draws": 1000000,
+        "extreme_draws": 10,
+        "method": "Monte Carlo image-cluster label-swap randomization",
+        "monte_carlo_standard_error": 3.316603232283898e-06,
+        "nonzero_image_clusters": 34,
+        "observed_correct_count_difference": 60,
+        "observed_micro_accuracy_difference": 0.05454545454545454,
+        "plus_one_correction": true,
+        "seed": 20260723,
+        "test_status": "monte_carlo",
+        "two_sided_p_value": 1.0999989000011e-05
+      },
+      "mcnemar_exact_two_sided_p_value": 5.632907524806409e-13,
+      "mcnemar_holm_adjusted_p_value_21": 1.1829105802093459e-11,
+      "net_correct_difference": 60,
+      "prediction_differences": 78,
+      "primary_comparison": false,
+      "second_accuracy": 0.9845454545454545,
+      "second_condition": "full_multiview",
+      "second_correct": 1083,
+      "second_display": "Full multiview",
+      "second_only_correct": 68
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": -0.5454545454545454,
+      "both_correct": 1038,
+      "both_incorrect": 28,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "original_raw_no_annotation__vs__original_rectified_no_annotation",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9618181818181818,
+      "first_condition": "original_raw_no_annotation",
+      "first_correct": 1058,
+      "first_display": "Original + raw crops",
+      "first_only_correct": 20,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.0053845376313854795,
+        "bootstrap_standard_error": 0.015465914677669581,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.005454545454545455,
+        "percentile_95_confidence_interval": [
+          -0.04038652050761083,
+          0.018165304268846504
+        ],
+        "percentile_99_confidence_interval": [
+          -0.054770375437594936,
+          0.02310536044362292
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.59997,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 2048,
+        "draws": null,
+        "extreme_assignments": 1966,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 11,
+        "observed_correct_count_difference": -6,
+        "observed_micro_accuracy_difference": -0.005454545454545455,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.9599609375
+      },
+      "mcnemar_exact_two_sided_p_value": 0.39152830513194203,
+      "mcnemar_holm_adjusted_p_value_21": 1.0,
+      "net_correct_difference": -6,
+      "prediction_differences": 36,
+      "primary_comparison": false,
+      "second_accuracy": 0.9563636363636364,
+      "second_condition": "original_rectified_no_annotation",
+      "second_correct": 1052,
+      "second_display": "Original + rectified crops",
+      "second_only_correct": 14
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": -1.0909090909090908,
+      "both_correct": 1021,
+      "both_incorrect": 17,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "original_raw_no_annotation__vs__raw_crop_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9618181818181818,
+      "first_condition": "original_raw_no_annotation",
+      "first_correct": 1058,
+      "first_display": "Original + raw crops",
+      "first_only_correct": 37,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.010850631324156512,
+        "bootstrap_standard_error": 0.022383540889497174,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.01090909090909091,
+        "percentile_95_confidence_interval": [
+          -0.056487578119124957,
+          0.032461677186654644
+        ],
+        "percentile_99_confidence_interval": [
+          -0.07283654195796455,
+          0.04627780475959216
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.69443,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 131072,
+        "draws": null,
+        "extreme_assignments": 79630,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 17,
+        "observed_correct_count_difference": -12,
+        "observed_micro_accuracy_difference": -0.01090909090909091,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.6075286865234375
+      },
+      "mcnemar_exact_two_sided_p_value": 0.16188140552559765,
+      "mcnemar_holm_adjusted_p_value_21": 0.8215911118194096,
+      "net_correct_difference": -12,
+      "prediction_differences": 64,
+      "primary_comparison": false,
+      "second_accuracy": 0.9509090909090909,
+      "second_condition": "raw_crop_multiview",
+      "second_correct": 1046,
+      "second_display": "Annotated original + raw crops",
+      "second_only_correct": 25
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 2.272727272727273,
+      "both_correct": 1052,
+      "both_incorrect": 11,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "original_raw_no_annotation__vs__full_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9618181818181818,
+      "first_condition": "original_raw_no_annotation",
+      "first_correct": 1058,
+      "first_display": "Original + raw crops",
+      "first_only_correct": 6,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.02266619701368337,
+        "bootstrap_standard_error": 0.014693033267549619,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.022727272727272728,
+        "percentile_95_confidence_interval": [
+          0.0,
+          0.05575547788460272
+        ],
+        "percentile_99_confidence_interval": [
+          -0.0037986885198545515,
+          0.06931534403471483
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.02799,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 8192,
+        "draws": null,
+        "extreme_assignments": 818,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 13,
+        "observed_correct_count_difference": 25,
+        "observed_micro_accuracy_difference": 0.022727272727272728,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.099853515625
+      },
+      "mcnemar_exact_two_sided_p_value": 4.12575900554657e-05,
+      "mcnemar_holm_adjusted_p_value_21": 0.0006601214408874512,
+      "net_correct_difference": 25,
+      "prediction_differences": 40,
+      "primary_comparison": false,
+      "second_accuracy": 0.9845454545454545,
+      "second_condition": "full_multiview",
+      "second_correct": 1083,
+      "second_display": "Full multiview",
+      "second_only_correct": 31
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": -0.5454545454545454,
+      "both_correct": 1011,
+      "both_incorrect": 13,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "original_rectified_no_annotation__vs__raw_crop_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9563636363636364,
+      "first_condition": "original_rectified_no_annotation",
+      "first_correct": 1052,
+      "first_display": "Original + rectified crops",
+      "first_only_correct": 41,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": -0.005466093692771031,
+        "bootstrap_standard_error": 0.02647462714999706,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": -0.005454545454545455,
+        "percentile_95_confidence_interval": [
+          -0.05708848715509039,
+          0.04737335002673935
+        ],
+        "percentile_99_confidence_interval": [
+          -0.07434959599373252,
+          0.06468087338193723
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.59556,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 65536,
+        "draws": null,
+        "extreme_assignments": 61628,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 16,
+        "observed_correct_count_difference": -6,
+        "observed_micro_accuracy_difference": -0.005454545454545455,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.94036865234375
+      },
+      "mcnemar_exact_two_sided_p_value": 0.5665734423986847,
+      "mcnemar_holm_adjusted_p_value_21": 1.0,
+      "net_correct_difference": -6,
+      "prediction_differences": 78,
+      "primary_comparison": false,
+      "second_accuracy": 0.9509090909090909,
+      "second_condition": "raw_crop_multiview",
+      "second_correct": 1046,
+      "second_display": "Annotated original + raw crops",
+      "second_only_correct": 35
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 2.8181818181818183,
+      "both_correct": 1048,
+      "both_incorrect": 13,
+      "cluster_randomization_holm_adjusted_p_value_21": 1.0,
+      "comparison_id": "original_rectified_no_annotation__vs__full_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9563636363636364,
+      "first_condition": "original_rectified_no_annotation",
+      "first_correct": 1052,
+      "first_display": "Original + rectified crops",
+      "first_only_correct": 4,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.02805073464506885,
+        "bootstrap_standard_error": 0.01959394897468841,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.028181818181818183,
+        "percentile_95_confidence_interval": [
+          -0.002785515320334262,
+          0.07122780635445503
+        ],
+        "percentile_99_confidence_interval": [
+          -0.005692615060145162,
+          0.08688115191611114
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.07397,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 256,
+        "draws": null,
+        "extreme_assignments": 78,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 8,
+        "observed_correct_count_difference": 31,
+        "observed_micro_accuracy_difference": 0.028181818181818183,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.3046875
+      },
+      "mcnemar_exact_two_sided_p_value": 3.353161446284503e-07,
+      "mcnemar_holm_adjusted_p_value_21": 6.035690603312105e-06,
+      "net_correct_difference": 31,
+      "prediction_differences": 40,
+      "primary_comparison": false,
+      "second_accuracy": 0.9845454545454545,
+      "second_condition": "full_multiview",
+      "second_correct": 1083,
+      "second_display": "Full multiview",
+      "second_only_correct": 35
+    },
+    {
+      "absolute_accuracy_difference_percentage_points": 3.3636363636363638,
+      "both_correct": 1041,
+      "both_incorrect": 12,
+      "cluster_randomization_holm_adjusted_p_value_21": 0.1768798828125,
+      "comparison_id": "raw_crop_multiview__vs__full_multiview",
+      "difference_direction": "second minus first",
+      "exploratory": true,
+      "first_accuracy": 0.9509090909090909,
+      "first_condition": "raw_crop_multiview",
+      "first_correct": 1046,
+      "first_display": "Annotated original + raw crops",
+      "first_only_correct": 5,
+      "image_cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.03351682833783987,
+        "bootstrap_standard_error": 0.017265704459709003,
+        "generator": "NumPy PCG64",
+        "observed_micro_accuracy_difference": 0.03363636363636364,
+        "percentile_95_confidence_interval": [
+          0.007368372588930895,
+          0.0726950354609929
+        ],
+        "percentile_99_confidence_interval": [
+          0.002944062806673209,
+          0.08764618937792927
+        ],
+        "proportion_less_than_or_equal_to_zero": 0.00117,
+        "replicates": 100000,
+        "seed": 20260723
+      },
+      "image_cluster_randomization": {
+        "assignments": 32768,
+        "draws": null,
+        "extreme_assignments": 322,
+        "method": "exact dynamic-programming enumeration of image-cluster label swaps",
+        "monte_carlo_standard_error": null,
+        "nonzero_image_clusters": 15,
+        "observed_correct_count_difference": 37,
+        "observed_micro_accuracy_difference": 0.03363636363636364,
+        "seed": null,
+        "test_status": "exact",
+        "two_sided_p_value": 0.00982666015625
+      },
+      "mcnemar_exact_two_sided_p_value": 2.4579776436439715e-08,
+      "mcnemar_holm_adjusted_p_value_21": 4.670157522923546e-07,
+      "net_correct_difference": 37,
+      "prediction_differences": 49,
+      "primary_comparison": false,
+      "second_accuracy": 0.9845454545454545,
+      "second_condition": "full_multiview",
+      "second_correct": 1083,
+      "second_display": "Full multiview",
+      "second_only_correct": 42
+    }
+  ],
+  "practical_effects_full_vs_alternatives": [
+    {
+      "absolute_error_count_reduction": 18,
+      "alternative_condition": "original_only",
+      "alternative_display": "Original only",
+      "alternative_errors": 35,
+      "full_accuracy_gain_percentage_points": 1.6363636363636365,
+      "full_errors": 17,
+      "paired_odds_ratio_full_advantage": {
+        "estimate": 3.0,
+        "interval_95": [
+          1.4108915355382718,
+          6.378945350016857
+        ],
+        "method": "large-sample log paired-odds-ratio interval from discordant cells"
+      },
+      "relative_error_reduction": 0.5142857142857142
+    },
+    {
+      "absolute_error_count_reduction": 53,
+      "alternative_condition": "raw_crops_only",
+      "alternative_display": "Raw crops only",
+      "alternative_errors": 70,
+      "full_accuracy_gain_percentage_points": 4.818181818181818,
+      "full_errors": 17,
+      "paired_odds_ratio_full_advantage": {
+        "estimate": 9.833333333333334,
+        "interval_95": [
+          4.245778709592548,
+          22.774254396721453
+        ],
+        "method": "large-sample log paired-odds-ratio interval from discordant cells"
+      },
+      "relative_error_reduction": 0.7571428571428571
+    },
+    {
+      "absolute_error_count_reduction": 60,
+      "alternative_condition": "rectified_crops_only",
+      "alternative_display": "Rectified crops only",
+      "alternative_errors": 77,
+      "full_accuracy_gain_percentage_points": 5.454545454545454,
+      "full_errors": 17,
+      "paired_odds_ratio_full_advantage": {
+        "estimate": 8.5,
+        "interval_95": [
+          4.085669158227119,
+          17.683761754060185
+        ],
+        "method": "large-sample log paired-odds-ratio interval from discordant cells"
+      },
+      "relative_error_reduction": 0.7792207792207793
+    },
+    {
+      "absolute_error_count_reduction": 25,
+      "alternative_condition": "original_raw_no_annotation",
+      "alternative_display": "Original + raw crops",
+      "alternative_errors": 42,
+      "full_accuracy_gain_percentage_points": 2.272727272727273,
+      "full_errors": 17,
+      "paired_odds_ratio_full_advantage": {
+        "estimate": 5.166666666666667,
+        "interval_95": [
+          2.1555903138932884,
+          12.38382092941894
+        ],
+        "method": "large-sample log paired-odds-ratio interval from discordant cells"
+      },
+      "relative_error_reduction": 0.5952380952380952
+    },
+    {
+      "absolute_error_count_reduction": 31,
+      "alternative_condition": "original_rectified_no_annotation",
+      "alternative_display": "Original + rectified crops",
+      "alternative_errors": 48,
+      "full_accuracy_gain_percentage_points": 2.8181818181818183,
+      "full_errors": 17,
+      "paired_odds_ratio_full_advantage": {
+        "estimate": 8.75,
+        "interval_95": [
+          3.1098899197132264,
+          24.619038607983946
+        ],
+        "method": "large-sample log paired-odds-ratio interval from discordant cells"
+      },
+      "relative_error_reduction": 0.6458333333333334
+    },
+    {
+      "absolute_error_count_reduction": 37,
+      "alternative_condition": "raw_crop_multiview",
+      "alternative_display": "Annotated original + raw crops",
+      "alternative_errors": 54,
+      "full_accuracy_gain_percentage_points": 3.3636363636363638,
+      "full_errors": 17,
+      "paired_odds_ratio_full_advantage": {
+        "estimate": 8.4,
+        "interval_95": [
+          3.3234450927002945,
+          21.23098111504231
+        ],
+        "method": "large-sample log paired-odds-ratio interval from discordant cells"
+      },
+      "relative_error_reduction": 0.6851851851851852
+    }
+  ],
+  "schema_version": 1,
+  "scoring_manifest": {
+    "author_adjudication_date": "2026-07-22",
+    "name": "TRB corrected reference semantics",
+    "schema_version": 2
+  },
+  "script_sha256": "f3dea4fd3f45c44078ae961bb4a0da8f44c3a14d11b77efd12f59a45c85483b9"
+}

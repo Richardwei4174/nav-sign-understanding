@@ -1,0 +1,183 @@
+{
+  "analysis_name": "corrected still-image Full multiview vs Original only, image-cluster aware",
+  "cluster_paired_randomization_test": {
+    "assignments": 262144,
+    "cluster_size_handling": "Each image's contribution is its Full-correct count minus its Original-correct count across all questions in that image. A label swap negates that entire contribution. The total question denominator remains fixed because swapping labels does not change cluster sizes.",
+    "extreme_assignments": 13712,
+    "fixed_question_denominator": 1100,
+    "method": "exact paired image-cluster label-swap enumeration",
+    "monte_carlo_standard_error": null,
+    "nonzero_clusters_enumerated": 18,
+    "observed_micro_accuracy_difference": 0.016363636363636365,
+    "observed_numerator_full_minus_original_correct": 18,
+    "two_sided_p_value": 0.05230712890625
+  },
+  "generated_at": "2026-07-23T17:32:06Z",
+  "image_clusters": {
+    "count": 346,
+    "questions_per_image": {
+      "distribution": {
+        "1": 120,
+        "10": 3,
+        "12": 1,
+        "13": 4,
+        "14": 3,
+        "15": 4,
+        "16": 1,
+        "18": 2,
+        "19": 1,
+        "2": 88,
+        "3": 61,
+        "4": 14,
+        "5": 12,
+        "6": 7,
+        "7": 12,
+        "8": 5,
+        "9": 8
+      },
+      "maximum": 19,
+      "mean": 3.179190751445087,
+      "median": 2.0,
+      "minimum": 1
+    }
+  },
+  "image_win_loss_sign_test": {
+    "exact_two_sided_p_value": 0.480682373046875,
+    "full_winning_images": 11,
+    "interpretation_scope": "Coarse sensitivity analysis; it ignores the magnitude of each image-level difference and the number of question-level changes.",
+    "non_tied_images": 18,
+    "original_winning_images": 7,
+    "tied_images_excluded": 328
+  },
+  "input_verification": {
+    "both_correct": 1056,
+    "both_incorrect": 8,
+    "conflicting_composite_identifier_assignments": 0,
+    "conflicting_explicit_question_id_assignments": null,
+    "duplicated_composite_question_identifiers": 0,
+    "expected_counts_matched": true,
+    "explicit_question_id_field_present": false,
+    "explicit_question_id_limitation": "The corrected artifact has no global explicit question_id field, so conflicts for such an identifier cannot be tested. Composite (image identifier, question text) keys are unique.",
+    "full_correct": 1083,
+    "full_only_correct": 27,
+    "images": 346,
+    "missing_image_identifiers": 0,
+    "one_outcome_per_condition_per_question": true,
+    "original_correct": 1065,
+    "original_only_correct": 9,
+    "question_identifier_used": "composite (image identifier, question text)",
+    "questions": 1100,
+    "stored_predictions_match_corrected_rows": true
+  },
+  "inputs": {
+    "corrected_per_question_evaluation": {
+      "bytes": 1375785,
+      "path": "outputs/corrected_evaluation/v2/still_corrected_per_question.json",
+      "sha256": "279874bdd88bff12cbfa719db2aa25a2242d98996d657cef701c822ed635a812"
+    },
+    "corrected_reference_manifest": {
+      "bytes": 4370,
+      "path": "experiments/evaluation/corrected_reference_manifest_v2.json",
+      "sha256": "fe053e1c5dce3c7f4843b1f43353a1e40732fda52b6e2f072c69620d5b785e06"
+    },
+    "corrected_summary": {
+      "bytes": 32053,
+      "path": "outputs/corrected_evaluation/v2/still_corrected_summary.json",
+      "sha256": "d07a9ecba0df3ab263ca7fe872c473b93f290eb13ccea882366e96a2ea9d8e21"
+    },
+    "stored_full_multiview_predictions": {
+      "bytes": 778458,
+      "path": "outputs/still_ablation/full/results/full_multiview.json",
+      "sha256": "0cbba77d60502af0034e4406e3145cac1996147c1be99fc16431bfb532294e6c"
+    },
+    "stored_original_only_predictions": {
+      "bytes": 576104,
+      "path": "outputs/still_ablation/full/results/original_only.json",
+      "sha256": "5281dad4c7229a2887f3b758d3982bc9477cb88894a8fcb4b8f39c25cd071c43"
+    }
+  },
+  "interpretation": {
+    "concentration": "Only 18 of 346 images are non-tied. Full wins 11 and Original wins 7; the aggregate gain is influenced by larger improvements within some Full-winning images rather than broad image-level dominance.",
+    "conclusion": "The observed Full-multiview improvement has qualified support after image clustering: the primary 95% micro cluster-bootstrap interval excludes zero, but its 99% interval includes zero, the exact cluster randomization p-value is slightly above 0.05, and the macro-image bootstrap interval and image sign test include or support the null.",
+    "independence_caveat": "Clustering does not prove independence and cannot address dependence across photographs of the same physical sign."
+  },
+  "macro_image_analysis": {
+    "bootstrap_mean_macro_difference": 0.00954678139049454,
+    "bootstrap_standard_error": 0.00817703543447903,
+    "full_macro_average_image_accuracy": 0.9835099550417471,
+    "full_winning_images": 11,
+    "mean_per_image_difference": 0.009481374438021837,
+    "median_per_image_difference": 0.0,
+    "observed_macro_average_difference": 0.009481374438021883,
+    "original_macro_average_image_accuracy": 0.9740285806037252,
+    "original_winning_images": 7,
+    "per_image_difference_distribution": {
+      "-0.0666666666667": 1,
+      "-0.111111111111": 1,
+      "-0.125": 1,
+      "-0.25": 1,
+      "-1": 3,
+      "0": 328,
+      "0.333333333333": 2,
+      "0.4": 1,
+      "0.5": 3,
+      "0.6": 1,
+      "0.666666666667": 1,
+      "1": 3
+    },
+    "percentile_95_confidence_interval": [
+      -0.00646294958253049,
+      0.02568260276172122
+    ],
+    "percentile_99_confidence_interval": [
+      -0.011488439306358381,
+      0.031149646756583174
+    ],
+    "proportion_difference_less_than_or_equal_to_zero": 0.12026,
+    "tied_images": 328
+  },
+  "micro_accuracy_cluster_bootstrap": {
+    "bca_interval": null,
+    "bca_note": "Not reported; percentile intervals are the prespecified primary intervals.",
+    "bootstrap_full_mean_accuracy": 0.9845497311757748,
+    "bootstrap_mean_difference": 0.016423791560846435,
+    "bootstrap_original_mean_accuracy": 0.9681259396149282,
+    "bootstrap_standard_error": 0.007983144179292216,
+    "estimand": "question-level micro accuracy, Full minus Original",
+    "full_observed_accuracy": 0.9845454545454545,
+    "observed_difference": 0.016363636363636358,
+    "original_observed_accuracy": 0.9681818181818181,
+    "percentile_95_confidence_interval": [
+      0.0018050134605932058,
+      0.03292568203198487
+    ],
+    "percentile_99_confidence_interval": [
+      -0.002092116273948441,
+      0.038997228412256245
+    ],
+    "proportion_difference_less_than_or_equal_to_zero": 0.01602,
+    "replicates_difference_less_than_or_equal_to_zero": 1602
+  },
+  "physical_sign_clustering": {
+    "analysis_performed": false,
+    "limitation": "Image-level clustering retains questions from one image together but does not account for dependence among different photographs of the same physical sign.",
+    "reason": "No verified physical-sign identifier linking repeated photographs exists in the benchmark artifacts. No mapping was inferred from filenames or visual similarity.",
+    "reliable_mapping_found": false
+  },
+  "randomness": {
+    "bootstrap_replicates": 100000,
+    "bootstrap_resampled_unit": "source image",
+    "clusters_per_replicate": 346,
+    "generator": "numpy.random.Generator(PCG64)",
+    "seed": 20260723
+  },
+  "schema_version": 1,
+  "scoring_manifest": {
+    "author_adjudication_date": "2026-07-22",
+    "name": "TRB corrected reference semantics",
+    "schema_version": 2,
+    "sha256": "fe053e1c5dce3c7f4843b1f43353a1e40732fda52b6e2f072c69620d5b785e06"
+  },
+  "script_sha256": "3a263cd7b10d2dbaee8825df35af768c365cc47249fad314431bec1ba07d9c0e",
+  "script_version": "1.0.0"
+}

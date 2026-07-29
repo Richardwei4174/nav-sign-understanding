@@ -1,0 +1,1010 @@
+{
+  "analysis_version": "1.0.0",
+  "configuration": {
+    "bootstrap_generator": "NumPy Generator PCG64",
+    "bootstrap_replicates": 100000,
+    "family_bootstrap_minimum_questions": 30,
+    "family_bootstrap_minimum_represented_images": 10,
+    "grouping_rules": {
+      "exact": "Scalar references retain their single required direction; alternatives and joint-required references retain the complete deduplicated answer set and semantic type.",
+      "families": {
+        "diagonal": "straight-left, straight-right, down-left, or down-right scalar references or combinations confined to diagonal labels",
+        "horizontal": "left, right, or multi-label combinations containing only left/right",
+        "locational": "locational references",
+        "mixed_multi_direction": "multi-label references whose labels span more than one family",
+        "u_turn_other": "u-turn; retained separately rather than forced into vertical/forward",
+        "unknown_uncertain": "unknown or uncertain references",
+        "vertical_forward": "straight or down scalar references or combinations confined to those labels"
+      },
+      "multi_family_rule": "Any multi-label reference spanning constituent direction families is assigned to mixed_multi_direction."
+    },
+    "seed": 20260723,
+    "supported_exact_category_minimum_questions": 10
+  },
+  "direction_families": {
+    "diagonal": {
+      "benchmark_percentage": 3.1818181818181817,
+      "cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.00010219715689254237,
+        "bootstrap_standard_error": 0.04199618456599655,
+        "interpretation": "exploratory; no multiplicity adjustment was applied",
+        "observed_difference": 0.0,
+        "percentile_95_confidence_interval": [
+          -0.08571428571428572,
+          0.08571428571428572
+        ],
+        "performed": true,
+        "proportion_less_than_or_equal_to_zero": 0.64944,
+        "questions": 35,
+        "replicates": 100000,
+        "represented_images": 21,
+        "seed": 20260723
+      },
+      "definition": "straight-left, straight-right, down-left, or down-right scalar references or combinations confined to diagonal labels",
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 0.9714285714285714,
+        "correct": 34,
+        "errors": 1,
+        "total": 35
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 0.9714285714285714,
+        "correct": 34,
+        "errors": 1,
+        "total": 35
+      },
+      "paired": {
+        "both_correct": 33,
+        "both_incorrect": 0,
+        "full_only_correct": 1,
+        "original_only_correct": 1
+      },
+      "questions": 35,
+      "questions_per_represented_image": {
+        "maximum": 3,
+        "mean": 1.6666666666666667,
+        "median": 1,
+        "minimum": 1
+      },
+      "represented_images": 21
+    },
+    "horizontal": {
+      "benchmark_percentage": 82.54545454545455,
+      "cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.011047184318525652,
+        "bootstrap_standard_error": 0.006748939058562614,
+        "interpretation": "exploratory; no multiplicity adjustment was applied",
+        "observed_difference": 0.011013215859030838,
+        "percentile_95_confidence_interval": [
+          -0.0010953202763205928,
+          0.02536997885835095
+        ],
+        "performed": true,
+        "proportion_less_than_or_equal_to_zero": 0.04791,
+        "questions": 908,
+        "replicates": 100000,
+        "represented_images": 298,
+        "seed": 20260723
+      },
+      "definition": "left, right, or multi-label combinations containing only left/right",
+      "error_count_reduction_full_vs_original": 10,
+      "full": {
+        "accuracy": 0.987885462555066,
+        "correct": 897,
+        "errors": 11,
+        "total": 908
+      },
+      "full_minus_original_accuracy_percentage_points": 1.1013215859030812,
+      "original": {
+        "accuracy": 0.9768722466960352,
+        "correct": 887,
+        "errors": 21,
+        "total": 908
+      },
+      "paired": {
+        "both_correct": 883,
+        "both_incorrect": 7,
+        "full_only_correct": 14,
+        "original_only_correct": 4
+      },
+      "questions": 908,
+      "questions_per_represented_image": {
+        "maximum": 18,
+        "mean": 3.046979865771812,
+        "median": 2.0,
+        "minimum": 1
+      },
+      "represented_images": 298
+    },
+    "locational": {
+      "benchmark_percentage": 5.545454545454546,
+      "cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.0,
+        "bootstrap_standard_error": 0.0,
+        "interpretation": "exploratory; no multiplicity adjustment was applied",
+        "observed_difference": 0.0,
+        "percentile_95_confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "performed": true,
+        "proportion_less_than_or_equal_to_zero": 1.0,
+        "questions": 61,
+        "replicates": 100000,
+        "represented_images": 54,
+        "seed": 20260723
+      },
+      "definition": "locational references",
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 0.9836065573770492,
+        "correct": 60,
+        "errors": 1,
+        "total": 61
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 0.9836065573770492,
+        "correct": 60,
+        "errors": 1,
+        "total": 61
+      },
+      "paired": {
+        "both_correct": 60,
+        "both_incorrect": 1,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 61,
+      "questions_per_represented_image": {
+        "maximum": 3,
+        "mean": 1.1296296296296295,
+        "median": 1.0,
+        "minimum": 1
+      },
+      "represented_images": 54
+    },
+    "mixed_multi_direction": {
+      "benchmark_percentage": 0.36363636363636365,
+      "cluster_bootstrap": {
+        "performed": false,
+        "questions": 4,
+        "reason": "Exploratory subgroup interval requires at least 30 questions and 10 represented images.",
+        "represented_images": 4
+      },
+      "definition": "multi-label references whose labels span more than one family",
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 4,
+        "errors": 0,
+        "total": 4
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 1.0,
+        "correct": 4,
+        "errors": 0,
+        "total": 4
+      },
+      "paired": {
+        "both_correct": 4,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 4,
+      "questions_per_represented_image": {
+        "maximum": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1
+      },
+      "represented_images": 4
+    },
+    "u_turn_other": {
+      "benchmark_percentage": 0.7272727272727273,
+      "cluster_bootstrap": {
+        "performed": false,
+        "questions": 8,
+        "reason": "Exploratory subgroup interval requires at least 30 questions and 10 represented images.",
+        "represented_images": 5
+      },
+      "definition": "u-turn; retained separately rather than forced into vertical/forward",
+      "error_count_reduction_full_vs_original": 4,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 8,
+        "errors": 0,
+        "total": 8
+      },
+      "full_minus_original_accuracy_percentage_points": 50.0,
+      "original": {
+        "accuracy": 0.5,
+        "correct": 4,
+        "errors": 4,
+        "total": 8
+      },
+      "paired": {
+        "both_correct": 4,
+        "both_incorrect": 0,
+        "full_only_correct": 4,
+        "original_only_correct": 0
+      },
+      "questions": 8,
+      "questions_per_represented_image": {
+        "maximum": 2,
+        "mean": 1.6,
+        "median": 2,
+        "minimum": 1
+      },
+      "represented_images": 5
+    },
+    "unknown_uncertain": {
+      "benchmark_percentage": 0.0,
+      "cluster_bootstrap": {
+        "performed": false,
+        "questions": 0,
+        "reason": "Exploratory subgroup interval requires at least 30 questions and 10 represented images.",
+        "represented_images": 0
+      },
+      "definition": "unknown or uncertain references",
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": null,
+        "correct": 0,
+        "errors": 0,
+        "total": 0
+      },
+      "full_minus_original_accuracy_percentage_points": null,
+      "original": {
+        "accuracy": null,
+        "correct": 0,
+        "errors": 0,
+        "total": 0
+      },
+      "paired": {
+        "both_correct": 0,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 0,
+      "questions_per_represented_image": {
+        "maximum": null,
+        "mean": null,
+        "median": null,
+        "minimum": null
+      },
+      "represented_images": 0
+    },
+    "vertical_forward": {
+      "benchmark_percentage": 7.636363636363637,
+      "cluster_bootstrap": {
+        "bootstrap_mean_difference": 0.047754582431128303,
+        "bootstrap_standard_error": 0.06491840386621399,
+        "interpretation": "exploratory; no multiplicity adjustment was applied",
+        "observed_difference": 0.047619047619047616,
+        "percentile_95_confidence_interval": [
+          -0.07317073170731707,
+          0.18181818181818182
+        ],
+        "performed": true,
+        "proportion_less_than_or_equal_to_zero": 0.26391,
+        "questions": 84,
+        "replicates": 100000,
+        "represented_images": 40,
+        "seed": 20260723
+      },
+      "definition": "straight or down scalar references or combinations confined to those labels",
+      "error_count_reduction_full_vs_original": 4,
+      "full": {
+        "accuracy": 0.9523809523809523,
+        "correct": 80,
+        "errors": 4,
+        "total": 84
+      },
+      "full_minus_original_accuracy_percentage_points": 4.761904761904756,
+      "original": {
+        "accuracy": 0.9047619047619048,
+        "correct": 76,
+        "errors": 8,
+        "total": 84
+      },
+      "paired": {
+        "both_correct": 72,
+        "both_incorrect": 0,
+        "full_only_correct": 8,
+        "original_only_correct": 4
+      },
+      "questions": 84,
+      "questions_per_represented_image": {
+        "maximum": 4,
+        "mean": 2.1,
+        "median": 2.0,
+        "minimum": 1
+      },
+      "represented_images": 40
+    }
+  },
+  "discordant_question_count": 36,
+  "error_rate_framing": {
+    "absolute_error_reduction": 18,
+    "confirmed_35_to_17_equals_51_43_percent": true,
+    "full_errors": 17,
+    "original_errors": 35,
+    "relative_error_reduction": 0.5142857142857142,
+    "relative_error_reduction_percentage": 51.42857142857143,
+    "supported_direction_families": {
+      "diagonal": {
+        "absolute_error_reduction": 0,
+        "full_errors": 1,
+        "original_errors": 1,
+        "questions": 35,
+        "relative_error_reduction": 0.0
+      },
+      "horizontal": {
+        "absolute_error_reduction": 10,
+        "full_errors": 11,
+        "original_errors": 21,
+        "questions": 908,
+        "relative_error_reduction": 0.47619047619047616
+      },
+      "locational": {
+        "absolute_error_reduction": 0,
+        "full_errors": 1,
+        "original_errors": 1,
+        "questions": 61,
+        "relative_error_reduction": 0.0
+      },
+      "vertical_forward": {
+        "absolute_error_reduction": 4,
+        "full_errors": 4,
+        "original_errors": 8,
+        "questions": 84,
+        "relative_error_reduction": 0.5
+      }
+    }
+  },
+  "exact_categories": {
+    "alternatives:{straight,straight-right}": {
+      "answer_set": [
+        "straight",
+        "straight-right"
+      ],
+      "benchmark_percentage": 0.2727272727272727,
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 3,
+        "errors": 0,
+        "total": 3
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 1.0,
+        "correct": 3,
+        "errors": 0,
+        "total": 3
+      },
+      "paired": {
+        "both_correct": 3,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 3,
+      "questions_per_represented_image": {
+        "maximum": 1,
+        "mean": 1.0,
+        "median": 1,
+        "minimum": 1
+      },
+      "reference_type": "alternatives",
+      "represented_images": 3
+    },
+    "joint_required:{down,right}": {
+      "answer_set": [
+        "down",
+        "right"
+      ],
+      "benchmark_percentage": 0.09090909090909091,
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 1,
+        "errors": 0,
+        "total": 1
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 1.0,
+        "correct": 1,
+        "errors": 0,
+        "total": 1
+      },
+      "paired": {
+        "both_correct": 1,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 1,
+      "questions_per_represented_image": {
+        "maximum": 1,
+        "mean": 1.0,
+        "median": 1,
+        "minimum": 1
+      },
+      "reference_type": "joint_required",
+      "represented_images": 1
+    },
+    "joint_required:{left,right}": {
+      "answer_set": [
+        "left",
+        "right"
+      ],
+      "benchmark_percentage": 0.36363636363636365,
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 4,
+        "errors": 0,
+        "total": 4
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 1.0,
+        "correct": 4,
+        "errors": 0,
+        "total": 4
+      },
+      "paired": {
+        "both_correct": 4,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 4,
+      "questions_per_represented_image": {
+        "maximum": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1
+      },
+      "reference_type": "joint_required",
+      "represented_images": 4
+    },
+    "scalar:{down-left}": {
+      "answer_set": [
+        "down-left"
+      ],
+      "benchmark_percentage": 0.18181818181818182,
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 2,
+        "errors": 0,
+        "total": 2
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 1.0,
+        "correct": 2,
+        "errors": 0,
+        "total": 2
+      },
+      "paired": {
+        "both_correct": 2,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 2,
+      "questions_per_represented_image": {
+        "maximum": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 2
+    },
+    "scalar:{down-right}": {
+      "answer_set": [
+        "down-right"
+      ],
+      "benchmark_percentage": 0.9090909090909091,
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "errors": 0,
+        "total": 10
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 1.0,
+        "correct": 10,
+        "errors": 0,
+        "total": 10
+      },
+      "paired": {
+        "both_correct": 10,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 10,
+      "questions_per_represented_image": {
+        "maximum": 3,
+        "mean": 1.6666666666666667,
+        "median": 1.0,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 6
+    },
+    "scalar:{down}": {
+      "answer_set": [
+        "down"
+      ],
+      "benchmark_percentage": 2.272727272727273,
+      "error_count_reduction_full_vs_original": 6,
+      "full": {
+        "accuracy": 0.92,
+        "correct": 23,
+        "errors": 2,
+        "total": 25
+      },
+      "full_minus_original_accuracy_percentage_points": 24.0,
+      "original": {
+        "accuracy": 0.68,
+        "correct": 17,
+        "errors": 8,
+        "total": 25
+      },
+      "paired": {
+        "both_correct": 15,
+        "both_incorrect": 0,
+        "full_only_correct": 8,
+        "original_only_correct": 2
+      },
+      "questions": 25,
+      "questions_per_represented_image": {
+        "maximum": 3,
+        "mean": 2.0833333333333335,
+        "median": 2.0,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 12
+    },
+    "scalar:{left}": {
+      "answer_set": [
+        "left"
+      ],
+      "benchmark_percentage": 43.81818181818182,
+      "error_count_reduction_full_vs_original": -1,
+      "full": {
+        "accuracy": 0.995850622406639,
+        "correct": 480,
+        "errors": 2,
+        "total": 482
+      },
+      "full_minus_original_accuracy_percentage_points": -0.20746887966804906,
+      "original": {
+        "accuracy": 0.9979253112033195,
+        "correct": 481,
+        "errors": 1,
+        "total": 482
+      },
+      "paired": {
+        "both_correct": 480,
+        "both_incorrect": 1,
+        "full_only_correct": 0,
+        "original_only_correct": 1
+      },
+      "questions": 482,
+      "questions_per_represented_image": {
+        "maximum": 9,
+        "mean": 2.5235602094240837,
+        "median": 2,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 191
+    },
+    "scalar:{locational}": {
+      "answer_set": [
+        "locational"
+      ],
+      "benchmark_percentage": 5.545454545454546,
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 0.9836065573770492,
+        "correct": 60,
+        "errors": 1,
+        "total": 61
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 0.9836065573770492,
+        "correct": 60,
+        "errors": 1,
+        "total": 61
+      },
+      "paired": {
+        "both_correct": 60,
+        "both_incorrect": 1,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 61,
+      "questions_per_represented_image": {
+        "maximum": 3,
+        "mean": 1.1296296296296295,
+        "median": 1.0,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 54
+    },
+    "scalar:{right}": {
+      "answer_set": [
+        "right"
+      ],
+      "benchmark_percentage": 38.36363636363637,
+      "error_count_reduction_full_vs_original": 11,
+      "full": {
+        "accuracy": 0.9786729857819905,
+        "correct": 413,
+        "errors": 9,
+        "total": 422
+      },
+      "full_minus_original_accuracy_percentage_points": 2.6066350710900466,
+      "original": {
+        "accuracy": 0.95260663507109,
+        "correct": 402,
+        "errors": 20,
+        "total": 422
+      },
+      "paired": {
+        "both_correct": 399,
+        "both_incorrect": 6,
+        "full_only_correct": 14,
+        "original_only_correct": 3
+      },
+      "questions": 422,
+      "questions_per_represented_image": {
+        "maximum": 11,
+        "mean": 2.62111801242236,
+        "median": 2,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 161
+    },
+    "scalar:{straight-left}": {
+      "answer_set": [
+        "straight-left"
+      ],
+      "benchmark_percentage": 0.2727272727272727,
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 3,
+        "errors": 0,
+        "total": 3
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 1.0,
+        "correct": 3,
+        "errors": 0,
+        "total": 3
+      },
+      "paired": {
+        "both_correct": 3,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 0
+      },
+      "questions": 3,
+      "questions_per_represented_image": {
+        "maximum": 1,
+        "mean": 1.0,
+        "median": 1,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 3
+    },
+    "scalar:{straight-right}": {
+      "answer_set": [
+        "straight-right"
+      ],
+      "benchmark_percentage": 1.8181818181818181,
+      "error_count_reduction_full_vs_original": 0,
+      "full": {
+        "accuracy": 0.95,
+        "correct": 19,
+        "errors": 1,
+        "total": 20
+      },
+      "full_minus_original_accuracy_percentage_points": 0.0,
+      "original": {
+        "accuracy": 0.95,
+        "correct": 19,
+        "errors": 1,
+        "total": 20
+      },
+      "paired": {
+        "both_correct": 18,
+        "both_incorrect": 0,
+        "full_only_correct": 1,
+        "original_only_correct": 1
+      },
+      "questions": 20,
+      "questions_per_represented_image": {
+        "maximum": 3,
+        "mean": 1.4285714285714286,
+        "median": 1.0,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 14
+    },
+    "scalar:{straight}": {
+      "answer_set": [
+        "straight"
+      ],
+      "benchmark_percentage": 5.363636363636363,
+      "error_count_reduction_full_vs_original": -2,
+      "full": {
+        "accuracy": 0.9661016949152542,
+        "correct": 57,
+        "errors": 2,
+        "total": 59
+      },
+      "full_minus_original_accuracy_percentage_points": -3.3898305084745783,
+      "original": {
+        "accuracy": 1.0,
+        "correct": 59,
+        "errors": 0,
+        "total": 59
+      },
+      "paired": {
+        "both_correct": 57,
+        "both_incorrect": 0,
+        "full_only_correct": 0,
+        "original_only_correct": 2
+      },
+      "questions": 59,
+      "questions_per_represented_image": {
+        "maximum": 3,
+        "mean": 1.84375,
+        "median": 2.0,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 32
+    },
+    "scalar:{u-turn}": {
+      "answer_set": [
+        "u-turn"
+      ],
+      "benchmark_percentage": 0.7272727272727273,
+      "error_count_reduction_full_vs_original": 4,
+      "full": {
+        "accuracy": 1.0,
+        "correct": 8,
+        "errors": 0,
+        "total": 8
+      },
+      "full_minus_original_accuracy_percentage_points": 50.0,
+      "original": {
+        "accuracy": 0.5,
+        "correct": 4,
+        "errors": 4,
+        "total": 8
+      },
+      "paired": {
+        "both_correct": 4,
+        "both_incorrect": 0,
+        "full_only_correct": 4,
+        "original_only_correct": 0
+      },
+      "questions": 8,
+      "questions_per_represented_image": {
+        "maximum": 2,
+        "mean": 1.6,
+        "median": 2,
+        "minimum": 1
+      },
+      "reference_type": "scalar",
+      "represented_images": 5
+    }
+  },
+  "generated_at": "2026-07-23T12:00:00-04:00",
+  "improvement_concentration": {
+    "any_left_or_right_fraction_of_net_gain": 0.5555555555555556,
+    "any_left_or_right_reference_net_gain": 10,
+    "full_only_corrections": 27,
+    "full_only_corrections_by_exact_category": {
+      "scalar:{down}": 8,
+      "scalar:{right}": 14,
+      "scalar:{straight-right}": 1,
+      "scalar:{u-turn}": 4
+    },
+    "horizontal_family_net_gain": 10,
+    "horizontal_fraction_of_net_gain": 0.5555555555555556,
+    "net_gain_questions": 18,
+    "original_only_wins": 9,
+    "original_only_wins_by_exact_category": {
+      "scalar:{down}": 2,
+      "scalar:{left}": 1,
+      "scalar:{right}": 3,
+      "scalar:{straight-right}": 1,
+      "scalar:{straight}": 2
+    },
+    "supported_exact_category_direction": {
+      "scalar:{down-right}": "ties",
+      "scalar:{down}": "improves",
+      "scalar:{left}": "worsens",
+      "scalar:{locational}": "ties",
+      "scalar:{right}": "improves",
+      "scalar:{straight-right}": "ties",
+      "scalar:{straight}": "worsens"
+    }
+  },
+  "input_verification": {
+    "both_correct": 1056,
+    "both_incorrect": 8,
+    "full_correct": 1083,
+    "full_only_correct": 27,
+    "images": 346,
+    "original_correct": 1065,
+    "original_only_correct": 9,
+    "passed": true,
+    "questions": 1100
+  },
+  "inputs": {
+    "corrected_per_question": {
+      "bytes": 1375785,
+      "path": "outputs/corrected_evaluation/v2/still_corrected_per_question.json",
+      "sha256": "279874bdd88bff12cbfa719db2aa25a2242d98996d657cef701c822ed635a812"
+    },
+    "corrected_reference_manifest": {
+      "bytes": 4370,
+      "path": "experiments/evaluation/corrected_reference_manifest_v2.json",
+      "sha256": "fe053e1c5dce3c7f4843b1f43353a1e40732fda52b6e2f072c69620d5b785e06"
+    },
+    "corrected_summary": {
+      "bytes": 32053,
+      "path": "outputs/corrected_evaluation/v2/still_corrected_summary.json",
+      "sha256": "d07a9ecba0df3ab263ca7fe872c473b93f290eb13ccea882366e96a2ea9d8e21"
+    },
+    "stored_full_predictions": {
+      "bytes": 778458,
+      "path": "outputs/still_ablation/full/results/full_multiview.json",
+      "sha256": "0cbba77d60502af0034e4406e3145cac1996147c1be99fc16431bfb532294e6c"
+    },
+    "stored_original_predictions": {
+      "bytes": 576104,
+      "path": "outputs/still_ablation/full/results/original_only.json",
+      "sha256": "5281dad4c7229a2887f3b758d3982bc9477cb88894a8fcb4b8f39c25cd071c43"
+    }
+  },
+  "label_presence_nonexclusive": {
+    "left": 486,
+    "left_and_right": 4,
+    "left_or_right_union": 909,
+    "note": "These counts are nonexclusive except for the explicitly reported union. Summing left and right double-counts references containing both.",
+    "right": 427
+  },
+  "performance_summaries": {
+    "direction_families_nonempty": {
+      "balanced_accuracy_note": "For these mutually exclusive reference categories, balanced accuracy is the unweighted mean of per-category correctness rates and is numerically identical to the reported unweighted macro accuracy. This is category-level correctness, not constituent-label recall.",
+      "excluded_groups": [
+        "unknown_uncertain"
+      ],
+      "full_minus_original_unweighted_macro_percentage_points": 9.31053772463465,
+      "full_support_weighted_macro_accuracy": 0.9845454545454545,
+      "full_unweighted_macro_accuracy": 0.9825502572902732,
+      "included_groups": 6,
+      "included_questions": 1100,
+      "minimum_support": 1,
+      "original_support_weighted_macro_accuracy": 0.9681818181818181,
+      "original_unweighted_macro_accuracy": 0.8894448800439267
+    },
+    "direction_families_supported_only": {
+      "balanced_accuracy_note": "For these mutually exclusive reference categories, balanced accuracy is the unweighted mean of per-category correctness rates and is numerically identical to the reported unweighted macro accuracy. This is category-level correctness, not constituent-label recall.",
+      "excluded_groups": [
+        "unknown_uncertain",
+        "mixed_multi_direction",
+        "u_turn_other"
+      ],
+      "full_minus_original_unweighted_macro_percentage_points": 1.4658065869519676,
+      "full_support_weighted_macro_accuracy": 0.984375,
+      "full_unweighted_macro_accuracy": 0.9738253859354098,
+      "included_groups": 4,
+      "included_questions": 1088,
+      "minimum_support": 10,
+      "original_support_weighted_macro_accuracy": 0.9715073529411765,
+      "original_unweighted_macro_accuracy": 0.9591673200658901
+    },
+    "exact_all_observed_categories": {
+      "balanced_accuracy_note": "For these mutually exclusive reference categories, balanced accuracy is the unweighted mean of per-category correctness rates and is numerically identical to the reported unweighted macro accuracy. This is category-level correctness, not constituent-label recall.",
+      "excluded_groups": [],
+      "full_minus_original_unweighted_macro_percentage_points": 5.616102744842111,
+      "full_support_weighted_macro_accuracy": 0.9845454545454545,
+      "full_unweighted_macro_accuracy": 0.9841716815754563,
+      "included_groups": 13,
+      "included_questions": 1100,
+      "minimum_support": 1,
+      "original_support_weighted_macro_accuracy": 0.9681818181818181,
+      "original_unweighted_macro_accuracy": 0.9280106541270352
+    },
+    "exact_rare_categories_only": {
+      "balanced_accuracy_note": "For these mutually exclusive reference categories, balanced accuracy is the unweighted mean of per-category correctness rates and is numerically identical to the reported unweighted macro accuracy. This is category-level correctness, not constituent-label recall.",
+      "excluded_groups": [],
+      "full_minus_original_unweighted_macro_percentage_points": 8.333333333333337,
+      "full_support_weighted_macro_accuracy": 1.0,
+      "full_unweighted_macro_accuracy": 1.0,
+      "included_groups": 6,
+      "included_questions": 21,
+      "minimum_support": 1,
+      "original_support_weighted_macro_accuracy": 0.8095238095238095,
+      "original_unweighted_macro_accuracy": 0.9166666666666666
+    },
+    "exact_supported_categories_only": {
+      "balanced_accuracy_note": "For these mutually exclusive reference categories, balanced accuracy is the unweighted mean of per-category correctness rates and is numerically identical to the reported unweighted macro accuracy. This is category-level correctness, not constituent-label recall.",
+      "excluded_groups": [
+        "alternatives:{straight,straight-right}",
+        "joint_required:{down,right}",
+        "joint_required:{left,right}",
+        "scalar:{down-left}",
+        "scalar:{straight-left}",
+        "scalar:{u-turn}"
+      ],
+      "full_minus_original_unweighted_macro_percentage_points": 3.2870479547067677,
+      "full_support_weighted_macro_accuracy": 0.9842446709916589,
+      "full_unweighted_macro_accuracy": 0.9706045514972761,
+      "included_groups": 7,
+      "included_questions": 1079,
+      "minimum_support": 10,
+      "original_support_weighted_macro_accuracy": 0.9712696941612604,
+      "original_unweighted_macro_accuracy": 0.9377340719502084
+    },
+    "micro": {
+      "difference_percentage_points": 1.6363636363636365,
+      "full_accuracy": 0.9845454545454545,
+      "original_accuracy": 0.9681818181818181
+    },
+    "undefined_handling": "The zero-support unknown_uncertain family is shown with null accuracy and excluded from macro means. All 13 observed exact categories are nonempty. Support-weighted macro over all nonempty groups equals micro accuracy by construction."
+  },
+  "rare_exact_categories": {
+    "benchmark_percentage": 1.9090909090909092,
+    "categories": [
+      "alternatives:{straight,straight-right}",
+      "joint_required:{down,right}",
+      "joint_required:{left,right}",
+      "scalar:{down-left}",
+      "scalar:{straight-left}",
+      "scalar:{u-turn}"
+    ],
+    "category_count": 6,
+    "questions": 21,
+    "threshold": "fewer than 10 questions"
+  },
+  "schema_version": 1,
+  "scoring_manifest": {
+    "name": "TRB corrected reference semantics",
+    "schema_version": 2,
+    "sha256": "fe053e1c5dce3c7f4843b1f43353a1e40732fda52b6e2f072c69620d5b785e06"
+  },
+  "script_sha256": "f5770956771edab3b815760d8384e3e4f64087fc9344836ef31323842f57096d"
+}

@@ -1,0 +1,626 @@
+comparison_identifier,comparison_name,image_identifier,question,reference_type,admissible_or_required_reference_set,exact_direction_category,direction_family,first_condition,first_prediction,first_correct,second_condition,second_prediction,second_correct,change
+A,crop_only_rectification,IMG_3308.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""left""",True,rectified_crops_only,"[""left"", ""locational""]",False,worsened
+A,crop_only_rectification,IMG_3349.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""down""",True,rectified_crops_only,"""down-right""",False,worsened
+A,crop_only_rectification,IMG_3349.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""down""",True,rectified_crops_only,"""down-right""",False,worsened
+A,crop_only_rectification,IMG_3349.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""down""",True,rectified_crops_only,"""down-right""",False,worsened
+A,crop_only_rectification,IMG_3364.JPG,Where is CONFERENCE ROOM?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,rectified_crops_only,"""left""",True,improved
+A,crop_only_rectification,IMG_3379.JPG,Where is CONTRACTS AND GRANTS?,scalar,straight-left,scalar:{straight-left},diagonal,raw_crops_only,"""left""",False,rectified_crops_only,"""straight-left""",True,improved
+A,crop_only_rectification,IMG_3393.JPG,Where is 4th floor?,alternatives,straight|straight-right,"alternatives:{straight,straight-right}",mixed_multi_direction,raw_crops_only,"[""straight"", ""down""]",False,rectified_crops_only,"""straight""",True,improved
+A,crop_only_rectification,IMG_3402.JPG,Where is 3rd Floor?,scalar,locational,scalar:{locational},locational,raw_crops_only,"""locational""",True,rectified_crops_only,"""ERROR""",False,worsened
+A,crop_only_rectification,IMG_3402.JPG,Where is Mathematical Sciences Office?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""ERROR""",False,worsened
+A,crop_only_rectification,IMG_3402.JPG,Where is Mathematical Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""ERROR""",False,worsened
+A,crop_only_rectification,IMG_3402.JPG,Where is Room 301?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""ERROR""",False,worsened
+A,crop_only_rectification,IMG_3423.JPG,Where is Men's Restroom?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""straight-right""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3432.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""left""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3432.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""left""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3433.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""left""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3433.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""left""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3434.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""left""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3434.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""left""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight""",False,worsened
+A,crop_only_rectification,IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight""",False,worsened
+A,crop_only_rectification,IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight""",False,worsened
+A,crop_only_rectification,IMG_3443.JPG,Where is 4034?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight-right""",False,worsened
+A,crop_only_rectification,IMG_3443.JPG,Where is 4040?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight-right""",False,worsened
+A,crop_only_rectification,IMG_3443.JPG,Where is 4050?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight-right""",False,worsened
+A,crop_only_rectification,IMG_3444.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight""",False,worsened
+A,crop_only_rectification,IMG_3444.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight""",False,worsened
+A,crop_only_rectification,IMG_3444.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""straight""",False,worsened
+A,crop_only_rectification,IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""down-left""",False,rectified_crops_only,"""down""",True,improved
+A,crop_only_rectification,IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""down-left""",False,rectified_crops_only,"""down""",True,improved
+A,crop_only_rectification,IMG_3474.JPG,Where is Communications Center?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""straight-left""",False,rectified_crops_only,"""left""",True,improved
+A,crop_only_rectification,IMG_3474.JPG,Where is Tunnel to Communications Center?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""straight-left""",False,rectified_crops_only,"""left""",True,improved
+A,crop_only_rectification,IMG_3483.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""locational""",False,worsened
+A,crop_only_rectification,IMG_3483.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""locational""",False,worsened
+A,crop_only_rectification,IMG_3485.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""locational""",False,worsened
+A,crop_only_rectification,IMG_3485.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""locational""",False,worsened
+A,crop_only_rectification,IMG_3503.JPG,Where is Earth Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""unknown""",False,worsened
+A,crop_only_rectification,IMG_3503.JPG,Where is Environmental Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""unknown""",False,worsened
+A,crop_only_rectification,IMG_3504.JPG,Where is Earth Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3504.JPG,Where is Environmental Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3617.JPG,Where is Admissions?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""down-right""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""down-right""",False,rectified_crops_only,"""right""",True,improved
+A,crop_only_rectification,IMG_3648.JPG,Where is Cogswell Conference Room?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""locational""",False,worsened
+A,crop_only_rectification,IMG_3680.JPG,Where is Room 308?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,rectified_crops_only,"""locational""",False,worsened
+B,unannotated_scene_rectification,IMG_3308.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"[""left"", ""locational""]",False,original_rectified_no_annotation,"""left""",True,improved
+B,unannotated_scene_rectification,IMG_3311.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"[""left"", ""locational""]",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Economics Department Office (Room 3504)?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_raw_no_annotation,"""locational""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3319.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+B,unannotated_scene_rectification,IMG_3349.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+B,unannotated_scene_rectification,IMG_3349.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+B,unannotated_scene_rectification,IMG_3349.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+B,unannotated_scene_rectification,IMG_3391.JPG,Where is 2nd Floor?,scalar,straight,scalar:{straight},vertical_forward,original_raw_no_annotation,"""straight""",True,original_rectified_no_annotation,"""straight-right""",False,worsened
+B,unannotated_scene_rectification,IMG_3391.JPG,Where is 3rd Floor?,scalar,straight,scalar:{straight},vertical_forward,original_raw_no_annotation,"""straight""",True,original_rectified_no_annotation,"""straight-right""",False,worsened
+B,unannotated_scene_rectification,IMG_3432.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""left""",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3432.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""left""",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3483.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3483.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3483.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3503.JPG,Where is Earth Sciences?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""unknown""",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""down""",False,original_rectified_no_annotation,"""right""",True,improved
+B,unannotated_scene_rectification,IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+C,annotated_scene_rectification,IMG_3311.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"[""left"", ""locational""]",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is 4100 to 4306?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is 4400 to 4711?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Elevator?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Room 4100?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Room 4101?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Room 4112?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Room 4203?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Room 4306?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Room 4400?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Room 4510?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Room 4711?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Russell Sage Laboratory 4th Floor?,scalar,locational,scalar:{locational},locational,raw_crop_multiview,"""ERROR""",False,full_multiview,"""locational""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is SAGE 4101 Classroom?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is SAGE 4112 Classroom?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is SAGE 4203 Classroom?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is SAGE 4510 Classroom?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is SAGE 4711 Classroom?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3323.JPG,Where is Women's Room?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3364.JPG,Where is CONFERENCE ROOM?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""unknown""",False,full_multiview,"""left""",True,improved
+C,annotated_scene_rectification,IMG_3391.JPG,Where is 2nd Floor?,scalar,straight,scalar:{straight},vertical_forward,raw_crop_multiview,"""straight""",True,full_multiview,"""straight-right""",False,worsened
+C,annotated_scene_rectification,IMG_3391.JPG,Where is 3rd Floor?,scalar,straight,scalar:{straight},vertical_forward,raw_crop_multiview,"""straight""",True,full_multiview,"""straight-right""",False,worsened
+C,annotated_scene_rectification,IMG_3391.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,raw_crop_multiview,"[""straight-right"", ""locational""]",False,full_multiview,"""straight-right""",True,improved
+C,annotated_scene_rectification,IMG_3393.JPG,Where is 4th floor?,alternatives,straight|straight-right,"alternatives:{straight,straight-right}",mixed_multi_direction,raw_crop_multiview,"[""straight"", ""down""]",False,full_multiview,"""straight""",True,improved
+C,annotated_scene_rectification,IMG_3393.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,raw_crop_multiview,"""down""",False,full_multiview,"""straight-right""",True,improved
+C,annotated_scene_rectification,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,raw_crop_multiview,"""locational""",True,full_multiview,"""right""",False,worsened
+C,annotated_scene_rectification,IMG_3406.JPG,Where is 3rd Floor?,scalar,locational,scalar:{locational},locational,raw_crop_multiview,"""ERROR""",False,full_multiview,"""locational""",True,improved
+C,annotated_scene_rectification,IMG_3406.JPG,Where is Mathematical Sciences Office?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3406.JPG,Where is Room 301?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3442.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3442.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3442.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,raw_crop_multiview,"""down-left""",False,full_multiview,"""down""",True,improved
+C,annotated_scene_rectification,IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,raw_crop_multiview,"""down-left""",False,full_multiview,"""down""",True,improved
+C,annotated_scene_rectification,IMG_3484.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3484.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3484.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3485.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3485.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3485.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3617.JPG,Where is Admissions?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""down-right""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""down""",False,full_multiview,"""right""",True,improved
+C,annotated_scene_rectification,IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""right""",True,full_multiview,"""ERROR""",False,worsened
+C,annotated_scene_rectification,IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""right""",True,full_multiview,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3308.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"[""left"", ""locational""]",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_only,"""locational""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3320.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""ERROR""",False,worsened
+D,add_raw_crops_to_original,IMG_3347.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_raw_no_annotation,"""down""",True,improved
+D,add_raw_crops_to_original,IMG_3347.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_raw_no_annotation,"""down""",True,improved
+D,add_raw_crops_to_original,IMG_3347.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_raw_no_annotation,"""down""",True,improved
+D,add_raw_crops_to_original,IMG_3391.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,original_only,"[""straight-right"", ""locational""]",False,original_raw_no_annotation,"""straight-right""",True,improved
+D,add_raw_crops_to_original,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,original_only,"""straight-right""",False,original_raw_no_annotation,"""locational""",True,improved
+D,add_raw_crops_to_original,IMG_3402.JPG,Where is Mathematical Sciences?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""unknown""",False,worsened
+D,add_raw_crops_to_original,IMG_3442.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_raw_no_annotation,"""right""",True,improved
+D,add_raw_crops_to_original,IMG_3442.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_raw_no_annotation,"""right""",True,improved
+D,add_raw_crops_to_original,IMG_3442.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_raw_no_annotation,"""right""",True,improved
+D,add_raw_crops_to_original,IMG_3457.JPG,Where is 3039-3051?,scalar,right,scalar:{right},horizontal,original_only,"""straight-right""",False,original_raw_no_annotation,"""right""",True,improved
+D,add_raw_crops_to_original,IMG_3464.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,original_only,"""down""",True,original_raw_no_annotation,"""down-left""",False,worsened
+D,add_raw_crops_to_original,IMG_3464.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,original_only,"""down""",True,original_raw_no_annotation,"""down-left""",False,worsened
+D,add_raw_crops_to_original,IMG_3503.JPG,Where is Earth Sciences?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""unknown""",False,worsened
+D,add_raw_crops_to_original,IMG_3545.JPG,Where is Exit?,scalar,right,scalar:{right},horizontal,original_only,"""locational""",False,original_raw_no_annotation,"""right""",True,improved
+D,add_raw_crops_to_original,IMG_3551.JPG,Where is Mechatronics?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_raw_no_annotation,"""unknown""",False,worsened
+D,add_raw_crops_to_original,IMG_3617.JPG,Where is Financial Aid?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""straight""",False,original_raw_no_annotation,"""u-turn""",True,improved
+D,add_raw_crops_to_original,IMG_3617.JPG,Where is Public Safety & Public Access?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,original_raw_no_annotation,"""u-turn""",True,improved
+D,add_raw_crops_to_original,IMG_3620.JPG,Where is Financial Aid?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,original_raw_no_annotation,"""u-turn""",True,improved
+D,add_raw_crops_to_original,IMG_3620.JPG,Where is Public Safety & Public Access?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,original_raw_no_annotation,"""u-turn""",True,improved
+E,add_rectified_crops_to_original,IMG_3311.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"[""left"", ""locational""]",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Economics Department Office (Room 3504)?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_only,"""locational""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3319.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_only,"""locational""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3320.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+E,add_rectified_crops_to_original,IMG_3347.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+E,add_rectified_crops_to_original,IMG_3347.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+E,add_rectified_crops_to_original,IMG_3347.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+E,add_rectified_crops_to_original,IMG_3349.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+E,add_rectified_crops_to_original,IMG_3349.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+E,add_rectified_crops_to_original,IMG_3349.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,original_rectified_no_annotation,"""down""",True,improved
+E,add_rectified_crops_to_original,IMG_3391.JPG,Where is 2nd Floor?,scalar,straight,scalar:{straight},vertical_forward,original_only,"""straight""",True,original_rectified_no_annotation,"""straight-right""",False,worsened
+E,add_rectified_crops_to_original,IMG_3391.JPG,Where is 3rd Floor?,scalar,straight,scalar:{straight},vertical_forward,original_only,"""straight""",True,original_rectified_no_annotation,"""straight-right""",False,worsened
+E,add_rectified_crops_to_original,IMG_3391.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,original_only,"[""straight-right"", ""locational""]",False,original_rectified_no_annotation,"""straight-right""",True,improved
+E,add_rectified_crops_to_original,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,original_only,"""straight-right""",False,original_rectified_no_annotation,"""locational""",True,improved
+E,add_rectified_crops_to_original,IMG_3402.JPG,Where is Mathematical Sciences?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""unknown""",False,worsened
+E,add_rectified_crops_to_original,IMG_3432.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,original_only,"""left""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3432.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,original_only,"""left""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3442.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3442.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3442.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3457.JPG,Where is 3039-3051?,scalar,right,scalar:{right},horizontal,original_only,"""straight-right""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3464.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,original_only,"""down""",True,original_rectified_no_annotation,"""down-left""",False,worsened
+E,add_rectified_crops_to_original,IMG_3464.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,original_only,"""down""",True,original_rectified_no_annotation,"""down-left""",False,worsened
+E,add_rectified_crops_to_original,IMG_3483.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,original_only,"[""left"", ""right""]",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3483.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,original_only,"[""left"", ""right""]",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3483.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,original_only,"[""left"", ""right""]",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3545.JPG,Where is Exit?,scalar,right,scalar:{right},horizontal,original_only,"""locational""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3551.JPG,Where is Mechatronics?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""unknown""",False,worsened
+E,add_rectified_crops_to_original,IMG_3617.JPG,Where is Financial Aid?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""straight""",False,original_rectified_no_annotation,"""u-turn""",True,improved
+E,add_rectified_crops_to_original,IMG_3617.JPG,Where is Public Safety & Public Access?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,original_rectified_no_annotation,"""u-turn""",True,improved
+E,add_rectified_crops_to_original,IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,original_only,"""left""",False,original_rectified_no_annotation,"""right""",True,improved
+E,add_rectified_crops_to_original,IMG_3620.JPG,Where is Financial Aid?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,original_rectified_no_annotation,"""u-turn""",True,improved
+E,add_rectified_crops_to_original,IMG_3620.JPG,Where is Public Safety & Public Access?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,original_rectified_no_annotation,"""u-turn""",True,improved
+E,add_rectified_crops_to_original,IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,original_rectified_no_annotation,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3311.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"[""left"", ""locational""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""left""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""left""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""left""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""left""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""left""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""left""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""left""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""locational""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""left""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3320.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is 4100 to 4306?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is 4400 to 4711?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Elevator?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Room 4100?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Room 4101?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Room 4112?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Room 4203?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Room 4306?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Room 4400?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Room 4510?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Room 4711?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Russell Sage Laboratory 4th Floor?,scalar,locational,scalar:{locational},locational,original_raw_no_annotation,"""locational""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is SAGE 4101 Classroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is SAGE 4112 Classroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is SAGE 4203 Classroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is SAGE 4510 Classroom?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is SAGE 4711 Classroom?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3323.JPG,Where is Women's Room?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3349.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,raw_crop_multiview,"""down""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3349.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,raw_crop_multiview,"""down""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3349.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,raw_crop_multiview,"""down""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3364.JPG,Where is CONFERENCE ROOM?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""left""",True,raw_crop_multiview,"""unknown""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3391.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,original_raw_no_annotation,"""straight-right""",True,raw_crop_multiview,"[""straight-right"", ""locational""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3393.JPG,Where is 4th floor?,alternatives,straight|straight-right,"alternatives:{straight,straight-right}",mixed_multi_direction,original_raw_no_annotation,"[""straight"", ""straight-right""]",True,raw_crop_multiview,"[""straight"", ""down""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3393.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,original_raw_no_annotation,"""straight-right""",True,raw_crop_multiview,"""down""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3397.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,original_raw_no_annotation,"""straight-right""",True,raw_crop_multiview,"""straight""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3406.JPG,Where is 3rd Floor?,scalar,locational,scalar:{locational},locational,original_raw_no_annotation,"""locational""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3406.JPG,Where is Mathematical Sciences Office?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3406.JPG,Where is Room 301?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""ERROR""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3432.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""left""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3432.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""left""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3442.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""straight""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3442.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""straight""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3442.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""straight""",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3483.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3483.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3483.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3484.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"[""left"", ""right""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3484.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"[""left"", ""right""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3484.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"[""left"", ""right""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3485.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"[""left"", ""right""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3485.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"[""left"", ""right""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3485.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"[""left"", ""right""]",False,worsened
+F,annotate_scene_with_raw_crops,IMG_3503.JPG,Where is Earth Sciences?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""unknown""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3551.JPG,Where is Mechatronics?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""unknown""",False,raw_crop_multiview,"""right""",True,improved
+F,annotate_scene_with_raw_crops,IMG_3617.JPG,Where is Admissions?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,raw_crop_multiview,"""down-right""",False,worsened
+G,annotation_correspondence_with_rectified_crops,IMG_3308.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""left""",True,full_multiview,"[""left"", ""locational""]",False,worsened
+G,annotation_correspondence_with_rectified_crops,IMG_3311.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"[""left"", ""locational""]",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Economics Department Office (Room 3504)?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""locational""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3319.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""locational""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3320.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,original_rectified_no_annotation,"""locational""",True,full_multiview,"""right""",False,worsened
+G,annotation_correspondence_with_rectified_crops,IMG_3397.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,original_rectified_no_annotation,"""straight-right""",True,full_multiview,"""straight""",False,worsened
+G,annotation_correspondence_with_rectified_crops,IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,original_rectified_no_annotation,"""down-left""",False,full_multiview,"""down""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,original_rectified_no_annotation,"""down-left""",False,full_multiview,"""down""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3551.JPG,Where is Mechatronics?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""unknown""",False,full_multiview,"""right""",True,improved
+G,annotation_correspondence_with_rectified_crops,IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H1,full_vs_original,IMG_3308.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_only,"""left""",True,full_multiview,"[""left"", ""locational""]",False,worsened
+H1,full_vs_original,IMG_3347.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H1,full_vs_original,IMG_3347.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H1,full_vs_original,IMG_3347.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H1,full_vs_original,IMG_3349.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H1,full_vs_original,IMG_3349.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H1,full_vs_original,IMG_3349.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H1,full_vs_original,IMG_3391.JPG,Where is 2nd Floor?,scalar,straight,scalar:{straight},vertical_forward,original_only,"""straight""",True,full_multiview,"""straight-right""",False,worsened
+H1,full_vs_original,IMG_3391.JPG,Where is 3rd Floor?,scalar,straight,scalar:{straight},vertical_forward,original_only,"""straight""",True,full_multiview,"""straight-right""",False,worsened
+H1,full_vs_original,IMG_3391.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,original_only,"[""straight-right"", ""locational""]",False,full_multiview,"""straight-right""",True,improved
+H1,full_vs_original,IMG_3397.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,original_only,"""straight-right""",True,full_multiview,"""straight""",False,worsened
+H1,full_vs_original,IMG_3402.JPG,Where is Mathematical Sciences?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,full_multiview,"""unknown""",False,worsened
+H1,full_vs_original,IMG_3432.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,original_only,"""left""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3432.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,original_only,"""left""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3442.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3442.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3442.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,original_only,"""straight""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3457.JPG,Where is 3039-3051?,scalar,right,scalar:{right},horizontal,original_only,"""straight-right""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3464.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,original_only,"""down""",True,full_multiview,"""down-left""",False,worsened
+H1,full_vs_original,IMG_3464.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,original_only,"""down""",True,full_multiview,"""down-left""",False,worsened
+H1,full_vs_original,IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-left""",False,full_multiview,"""down""",True,improved
+H1,full_vs_original,IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,original_only,"""down-left""",False,full_multiview,"""down""",True,improved
+H1,full_vs_original,IMG_3483.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,original_only,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3483.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,original_only,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3483.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,original_only,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3545.JPG,Where is Exit?,scalar,right,scalar:{right},horizontal,original_only,"""locational""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3617.JPG,Where is Financial Aid?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""straight""",False,full_multiview,"""u-turn""",True,improved
+H1,full_vs_original,IMG_3617.JPG,Where is Public Safety & Public Access?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,full_multiview,"""u-turn""",True,improved
+H1,full_vs_original,IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,original_only,"""left""",False,full_multiview,"""right""",True,improved
+H1,full_vs_original,IMG_3620.JPG,Where is Financial Aid?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,full_multiview,"""u-turn""",True,improved
+H1,full_vs_original,IMG_3620.JPG,Where is Public Safety & Public Access?,scalar,u-turn,scalar:{u-turn},u_turn_other,original_only,"""left""",False,full_multiview,"""u-turn""",True,improved
+H1,full_vs_original,IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H1,full_vs_original,IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,original_only,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H2,full_vs_raw_crops,IMG_3308.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""left""",True,full_multiview,"[""left"", ""locational""]",False,worsened
+H2,full_vs_raw_crops,IMG_3360.JPG,Where is Exit?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3364.JPG,Where is CONFERENCE ROOM?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3379.JPG,Where is CONTRACTS AND GRANTS?,scalar,straight-left,scalar:{straight-left},diagonal,raw_crops_only,"""left""",False,full_multiview,"""straight-left""",True,improved
+H2,full_vs_raw_crops,IMG_3382.JPG,Where is ARTS?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""locational""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3390.JPG,Where is ARTS?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3393.JPG,Where is 4th floor?,alternatives,straight|straight-right,"alternatives:{straight,straight-right}",mixed_multi_direction,raw_crops_only,"[""straight"", ""down""]",False,full_multiview,"""straight""",True,improved
+H2,full_vs_raw_crops,IMG_3393.JPG,Where is Ladies' Restroom?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3393.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,raw_crops_only,"""down""",False,full_multiview,"""straight-right""",True,improved
+H2,full_vs_raw_crops,IMG_3393.JPG,Where is Men's Restroom?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""unknown""",False,full_multiview,"""down""",True,improved
+H2,full_vs_raw_crops,IMG_3395.JPG,Where is 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,raw_crops_only,"""locational""",False,full_multiview,"""straight-right""",True,improved
+H2,full_vs_raw_crops,IMG_3395.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,raw_crops_only,"""locational""",False,full_multiview,"""straight-right""",True,improved
+H2,full_vs_raw_crops,IMG_3395.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,raw_crops_only,"""locational""",False,full_multiview,"""straight-right""",True,improved
+H2,full_vs_raw_crops,IMG_3397.JPG,Where is 1st floor?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""unknown""",False,full_multiview,"""down""",True,improved
+H2,full_vs_raw_crops,IMG_3397.JPG,Where is 2nd floor?,scalar,straight,scalar:{straight},vertical_forward,raw_crops_only,"""unknown""",False,full_multiview,"""straight""",True,improved
+H2,full_vs_raw_crops,IMG_3397.JPG,Where is 3rd floor?,scalar,straight,scalar:{straight},vertical_forward,raw_crops_only,"""unknown""",False,full_multiview,"""straight""",True,improved
+H2,full_vs_raw_crops,IMG_3397.JPG,Where is 4th floor?,alternatives,straight|straight-right,"alternatives:{straight,straight-right}",mixed_multi_direction,raw_crops_only,"""unknown""",False,full_multiview,"""straight""",True,improved
+H2,full_vs_raw_crops,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,raw_crops_only,"""locational""",True,full_multiview,"""right""",False,worsened
+H2,full_vs_raw_crops,IMG_3402.JPG,Where is Mathematical Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,full_multiview,"""unknown""",False,worsened
+H2,full_vs_raw_crops,IMG_3411.JPG,Where is Mathematical Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,full_multiview,"""unknown""",False,worsened
+H2,full_vs_raw_crops,IMG_3419.JPG,Where is Women's Restroom?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3423.JPG,Where is Men's Restroom?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""straight-right""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3432.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""left""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3432.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""left""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""down-left""",False,full_multiview,"""down""",True,improved
+H2,full_vs_raw_crops,IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,raw_crops_only,"""down-left""",False,full_multiview,"""down""",True,improved
+H2,full_vs_raw_crops,IMG_3474.JPG,Where is Communications Center?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""straight-left""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3474.JPG,Where is Tunnel to Communications Center?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""straight-left""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3481.JPG,Where is 2100-2119?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""down-left""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3481.JPG,Where is Room 2100?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""down-left""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3481.JPG,Where is Room 2119?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""down-left""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3504.JPG,Where is Earth Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3504.JPG,Where is Environmental Sciences?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3526.JPG,Where is 7100-7119?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""straight-left""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3527.JPG,Where is 7100-7119?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""straight-left""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3551.JPG,Where is Mechatronics Lab?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3551.JPG,Where is Mechatronics?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3556.JPG,Where is 3300-3321?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3556.JPG,Where is 3300?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3556.JPG,Where is 3321?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3556.JPG,Where is Room 3300?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3556.JPG,Where is Room 3321?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3577.JPG,Where is Ricketts Building?,scalar,locational,scalar:{locational},locational,raw_crops_only,"""ERROR""",False,full_multiview,"""locational""",True,improved
+H2,full_vs_raw_crops,IMG_3595.JPG,Where are the restrooms?,scalar,straight,scalar:{straight},vertical_forward,raw_crops_only,"""ERROR""",False,full_multiview,"""straight""",True,improved
+H2,full_vs_raw_crops,IMG_3601.JPG,Where is 3418?,scalar,straight,scalar:{straight},vertical_forward,raw_crops_only,"""right""",False,full_multiview,"""straight""",True,improved
+H2,full_vs_raw_crops,IMG_3604.JPG,Where is the PUB Entrance?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3617.JPG,Where is Admissions?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""down-right""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""down-right""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H2,full_vs_raw_crops,IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H2,full_vs_raw_crops,IMG_3665.JPG,Where is Room 101?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3665.JPG,Where is Room 109?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3665.JPG,Where is the emergency exit?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3669.JPG,Where is Room 230?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3669.JPG,Where is Room 239?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3670.JPG,Where is Room 201?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3670.JPG,Where is Room 208?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3696.JPG,Where is Religious and Spiritual Life?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3696.JPG,Where is Student Success?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3696.JPG,Where is Suite 4100?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3696.JPG,Where is Suite 4200?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3696.JPG,Where is Suite 4600?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3696.JPG,Where is Suite 4629?,scalar,left,scalar:{left},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H2,full_vs_raw_crops,IMG_3696.JPG,Where is the Counseling Center?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H2,full_vs_raw_crops,IMG_3696.JPG,Where is the Dean of Students Office?,scalar,right,scalar:{right},horizontal,raw_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3349.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,rectified_crops_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H3,full_vs_rectified_crops,IMG_3349.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,rectified_crops_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H3,full_vs_rectified_crops,IMG_3349.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,rectified_crops_only,"""down-right""",False,full_multiview,"""down""",True,improved
+H3,full_vs_rectified_crops,IMG_3360.JPG,Where is Exit?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3382.JPG,Where is ARTS?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""locational""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3390.JPG,Where is ARTS?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3393.JPG,Where is Ladies' Restroom?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3393.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,rectified_crops_only,"""locational""",False,full_multiview,"""straight-right""",True,improved
+H3,full_vs_rectified_crops,IMG_3393.JPG,Where is Men's Restroom?,scalar,down,scalar:{down},vertical_forward,rectified_crops_only,"""unknown""",False,full_multiview,"""down""",True,improved
+H3,full_vs_rectified_crops,IMG_3395.JPG,Where is 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,rectified_crops_only,"""locational""",False,full_multiview,"""straight-right""",True,improved
+H3,full_vs_rectified_crops,IMG_3395.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,rectified_crops_only,"""locational""",False,full_multiview,"""straight-right""",True,improved
+H3,full_vs_rectified_crops,IMG_3395.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,rectified_crops_only,"""locational""",False,full_multiview,"""straight-right""",True,improved
+H3,full_vs_rectified_crops,IMG_3397.JPG,Where is 1st floor?,scalar,down,scalar:{down},vertical_forward,rectified_crops_only,"""unknown""",False,full_multiview,"""down""",True,improved
+H3,full_vs_rectified_crops,IMG_3397.JPG,Where is 2nd floor?,scalar,straight,scalar:{straight},vertical_forward,rectified_crops_only,"""unknown""",False,full_multiview,"""straight""",True,improved
+H3,full_vs_rectified_crops,IMG_3397.JPG,Where is 3rd floor?,scalar,straight,scalar:{straight},vertical_forward,rectified_crops_only,"""unknown""",False,full_multiview,"""straight""",True,improved
+H3,full_vs_rectified_crops,IMG_3397.JPG,Where is 4th floor?,alternatives,straight|straight-right,"alternatives:{straight,straight-right}",mixed_multi_direction,rectified_crops_only,"""unknown""",False,full_multiview,"""straight""",True,improved
+H3,full_vs_rectified_crops,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,rectified_crops_only,"""locational""",True,full_multiview,"""right""",False,worsened
+H3,full_vs_rectified_crops,IMG_3402.JPG,Where is 3rd Floor?,scalar,locational,scalar:{locational},locational,rectified_crops_only,"""ERROR""",False,full_multiview,"""locational""",True,improved
+H3,full_vs_rectified_crops,IMG_3402.JPG,Where is Mathematical Sciences Office?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3402.JPG,Where is Room 301?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3411.JPG,Where is Mathematical Sciences?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""right""",True,full_multiview,"""unknown""",False,worsened
+H3,full_vs_rectified_crops,IMG_3419.JPG,Where is Women's Restroom?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3433.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""right""",True,full_multiview,"""left""",False,worsened
+H3,full_vs_rectified_crops,IMG_3433.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""right""",True,full_multiview,"""left""",False,worsened
+H3,full_vs_rectified_crops,IMG_3434.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""right""",True,full_multiview,"""left""",False,worsened
+H3,full_vs_rectified_crops,IMG_3434.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""right""",True,full_multiview,"""left""",False,worsened
+H3,full_vs_rectified_crops,IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3443.JPG,Where is 4034?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight-right""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3443.JPG,Where is 4040?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight-right""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3443.JPG,Where is 4050?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight-right""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3444.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3444.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3444.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""straight""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3481.JPG,Where is 2100-2119?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3481.JPG,Where is Room 2100?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3481.JPG,Where is Room 2119?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3483.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""locational""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3483.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""locational""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3485.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""locational""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3485.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""locational""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3503.JPG,Where is Earth Sciences?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3503.JPG,Where is Environmental Sciences?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3526.JPG,Where is 7100-7119?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""straight-left""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3527.JPG,Where is 7100-7119?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""straight-left""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3551.JPG,Where is Mechatronics Lab?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3551.JPG,Where is Mechatronics?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3556.JPG,Where is 3300-3321?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3556.JPG,Where is 3300?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3556.JPG,Where is 3321?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3556.JPG,Where is Room 3300?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3556.JPG,Where is Room 3321?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3577.JPG,Where is Ricketts Building?,scalar,locational,scalar:{locational},locational,rectified_crops_only,"""ERROR""",False,full_multiview,"""locational""",True,improved
+H3,full_vs_rectified_crops,IMG_3595.JPG,Where are the restrooms?,scalar,straight,scalar:{straight},vertical_forward,rectified_crops_only,"""ERROR""",False,full_multiview,"""straight""",True,improved
+H3,full_vs_rectified_crops,IMG_3601.JPG,Where is 3418?,scalar,straight,scalar:{straight},vertical_forward,rectified_crops_only,"""right""",False,full_multiview,"""straight""",True,improved
+H3,full_vs_rectified_crops,IMG_3604.JPG,Where is the PUB Entrance?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H3,full_vs_rectified_crops,IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H3,full_vs_rectified_crops,IMG_3648.JPG,Where is Cogswell Conference Room?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""locational""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3665.JPG,Where is Room 101?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3665.JPG,Where is Room 109?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3665.JPG,Where is the emergency exit?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3669.JPG,Where is Room 230?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3669.JPG,Where is Room 239?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3670.JPG,Where is Room 201?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3670.JPG,Where is Room 208?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""unknown""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3680.JPG,Where is Room 308?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""locational""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3696.JPG,Where is Religious and Spiritual Life?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3696.JPG,Where is Student Success?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3696.JPG,Where is Suite 4100?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3696.JPG,Where is Suite 4200?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3696.JPG,Where is Suite 4600?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3696.JPG,Where is Suite 4629?,scalar,left,scalar:{left},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""left""",True,improved
+H3,full_vs_rectified_crops,IMG_3696.JPG,Where is the Counseling Center?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H3,full_vs_rectified_crops,IMG_3696.JPG,Where is the Dean of Students Office?,scalar,right,scalar:{right},horizontal,rectified_crops_only,"""ERROR""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""locational""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H4,full_vs_original_raw,IMG_3320.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3349.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,full_multiview,"""down""",True,improved
+H4,full_vs_original_raw,IMG_3349.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,full_multiview,"""down""",True,improved
+H4,full_vs_original_raw,IMG_3349.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-right""",False,full_multiview,"""down""",True,improved
+H4,full_vs_original_raw,IMG_3391.JPG,Where is 2nd Floor?,scalar,straight,scalar:{straight},vertical_forward,original_raw_no_annotation,"""straight""",True,full_multiview,"""straight-right""",False,worsened
+H4,full_vs_original_raw,IMG_3391.JPG,Where is 3rd Floor?,scalar,straight,scalar:{straight},vertical_forward,original_raw_no_annotation,"""straight""",True,full_multiview,"""straight-right""",False,worsened
+H4,full_vs_original_raw,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,original_raw_no_annotation,"""locational""",True,full_multiview,"""right""",False,worsened
+H4,full_vs_original_raw,IMG_3397.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,original_raw_no_annotation,"""straight-right""",True,full_multiview,"""straight""",False,worsened
+H4,full_vs_original_raw,IMG_3432.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""left""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3432.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""left""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""straight""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""straight""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""straight""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-left""",False,full_multiview,"""down""",True,improved
+H4,full_vs_original_raw,IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,original_raw_no_annotation,"""down-left""",False,full_multiview,"""down""",True,improved
+H4,full_vs_original_raw,IMG_3483.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3483.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3483.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3503.JPG,Where is Earth Sciences?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""unknown""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3551.JPG,Where is Mechatronics?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""unknown""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""down""",False,full_multiview,"""right""",True,improved
+H4,full_vs_original_raw,IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H4,full_vs_original_raw,IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,original_raw_no_annotation,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H5,full_vs_original_rectified,IMG_3308.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""left""",True,full_multiview,"[""left"", ""locational""]",False,worsened
+H5,full_vs_original_rectified,IMG_3311.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"[""left"", ""locational""]",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Economics Department Office (Room 3504)?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""locational""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3319.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Auditorium?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Computer Lab?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Economics Department Office?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Lobby?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Men's Room?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Room 3100?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Room 3210?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Room 3400?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Room 3510?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Rooms 3100 to 3210?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Rooms 3400 to 3510?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is Russell Sage Lab. 3rd Floor?,scalar,locational,scalar:{locational},locational,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""locational""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is SAGE 3101 Computer Lab/Classroom?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is SAGE 3303 Auditorium?,scalar,left,scalar:{left},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""left""",True,improved
+H5,full_vs_original_rectified,IMG_3320.JPG,Where is The Beanery Cafe?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""ERROR""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,original_rectified_no_annotation,"""locational""",True,full_multiview,"""right""",False,worsened
+H5,full_vs_original_rectified,IMG_3397.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,original_rectified_no_annotation,"""straight-right""",True,full_multiview,"""straight""",False,worsened
+H5,full_vs_original_rectified,IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,original_rectified_no_annotation,"""down-left""",False,full_multiview,"""down""",True,improved
+H5,full_vs_original_rectified,IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,original_rectified_no_annotation,"""down-left""",False,full_multiview,"""down""",True,improved
+H5,full_vs_original_rectified,IMG_3551.JPG,Where is Mechatronics?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""unknown""",False,full_multiview,"""right""",True,improved
+H5,full_vs_original_rectified,IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,original_rectified_no_annotation,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H6,full_vs_annotated_raw,IMG_3311.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"[""left"", ""locational""]",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is 4100 to 4306?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is 4400 to 4711?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Elevator?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Room 4100?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Room 4101?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Room 4112?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Room 4203?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Room 4306?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Room 4400?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Room 4510?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Room 4711?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Russell Sage Laboratory 4th Floor?,scalar,locational,scalar:{locational},locational,raw_crop_multiview,"""ERROR""",False,full_multiview,"""locational""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is SAGE 4101 Classroom?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is SAGE 4112 Classroom?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is SAGE 4203 Classroom?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is SAGE 4510 Classroom?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is SAGE 4711 Classroom?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3323.JPG,Where is Women's Room?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3364.JPG,Where is CONFERENCE ROOM?,scalar,left,scalar:{left},horizontal,raw_crop_multiview,"""unknown""",False,full_multiview,"""left""",True,improved
+H6,full_vs_annotated_raw,IMG_3391.JPG,Where is 2nd Floor?,scalar,straight,scalar:{straight},vertical_forward,raw_crop_multiview,"""straight""",True,full_multiview,"""straight-right""",False,worsened
+H6,full_vs_annotated_raw,IMG_3391.JPG,Where is 3rd Floor?,scalar,straight,scalar:{straight},vertical_forward,raw_crop_multiview,"""straight""",True,full_multiview,"""straight-right""",False,worsened
+H6,full_vs_annotated_raw,IMG_3391.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,raw_crop_multiview,"[""straight-right"", ""locational""]",False,full_multiview,"""straight-right""",True,improved
+H6,full_vs_annotated_raw,IMG_3393.JPG,Where is 4th floor?,alternatives,straight|straight-right,"alternatives:{straight,straight-right}",mixed_multi_direction,raw_crop_multiview,"[""straight"", ""down""]",False,full_multiview,"""straight""",True,improved
+H6,full_vs_annotated_raw,IMG_3393.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,raw_crop_multiview,"""down""",False,full_multiview,"""straight-right""",True,improved
+H6,full_vs_annotated_raw,IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,scalar,locational,scalar:{locational},locational,raw_crop_multiview,"""locational""",True,full_multiview,"""right""",False,worsened
+H6,full_vs_annotated_raw,IMG_3406.JPG,Where is 3rd Floor?,scalar,locational,scalar:{locational},locational,raw_crop_multiview,"""ERROR""",False,full_multiview,"""locational""",True,improved
+H6,full_vs_annotated_raw,IMG_3406.JPG,Where is Mathematical Sciences Office?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3406.JPG,Where is Room 301?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""ERROR""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3442.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3442.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3442.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""straight""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,raw_crop_multiview,"""down-left""",False,full_multiview,"""down""",True,improved
+H6,full_vs_annotated_raw,IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,raw_crop_multiview,"""down-left""",False,full_multiview,"""down""",True,improved
+H6,full_vs_annotated_raw,IMG_3484.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3484.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3484.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3485.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3485.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3485.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"[""left"", ""right""]",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3617.JPG,Where is Admissions?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""down-right""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""down""",False,full_multiview,"""right""",True,improved
+H6,full_vs_annotated_raw,IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""right""",True,full_multiview,"""ERROR""",False,worsened
+H6,full_vs_annotated_raw,IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,raw_crop_multiview,"""right""",True,full_multiview,"""ERROR""",False,worsened

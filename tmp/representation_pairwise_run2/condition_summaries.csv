@@ -1,0 +1,8 @@
+condition,display_name,correct,total,errors,micro_accuracy,supported_exact_category_macro_accuracy,supported_direction_family_macro_accuracy,image_macro_accuracy,micro_rank,supported_exact_macro_rank,supported_direction_family_macro_rank,image_macro_rank,pairwise_wins,pairwise_losses,pairwise_ties
+original_only,Original only,1065,1100,35,0.9681818181818181,0.9377340719502084,0.9591673200658901,0.9740285806037252,2,4,4,4,5,1,0
+raw_crops_only,Raw crops only,1030,1100,70,0.9363636363636364,0.8976381948201247,0.903839021345521,0.9265494540783558,6,6,6,7,1,5,0
+rectified_crops_only,Rectified crops only,1023,1100,77,0.93,0.8871280406418961,0.9019800145811195,0.932209377007065,7,7,7,6,0,6,0
+original_raw_no_annotation,Original + raw crops,1058,1100,42,0.9618181818181818,0.9465696616422218,0.9657070725307527,0.9746628131021196,3,3,2,3,4,2,0
+original_rectified_no_annotation,Original + rectified crops,1052,1100,48,0.9563636363636364,0.9548760984795811,0.9629329199723509,0.9769933021378108,4,2,3,2,3,3,0
+raw_crop_multiview,Annotated original + raw crops,1046,1100,54,0.9509090909090909,0.9365989265511302,0.9463554079102573,0.9707874575649141,5,5,5,5,2,4,0
+full_multiview,Full multiview,1083,1100,17,0.9845454545454545,0.9706045514972762,0.9738253859354098,0.9835099550417471,1,1,1,1,6,0,0

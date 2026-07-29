@@ -1,0 +1,14 @@
+contrast_id,contrast_name,first_condition,second_condition,improved_questions,worsened_questions,net_gain_questions,images_with_improvements,images_with_regressions,images_with_both,cluster_bootstrap_95_ci_low,cluster_bootstrap_95_ci_high,cluster_randomization_p_value,cluster_randomization_holm_adjusted_p_value_21
+A,crop_only_rectification,raw_crops_only,rectified_crops_only,18,25,-7,11,10,0,-0.02645985401459854,0.012115705046739497,0.5929031372070312,1.0
+B,unannotated_scene_rectification,original_raw_no_annotation,original_rectified_no_annotation,14,20,-6,7,4,0,-0.04038652050761083,0.018165304268846504,0.9599609375,1.0
+C,annotated_scene_rectification,raw_crop_multiview,full_multiview,42,5,37,12,4,1,0.007368372588930895,0.0726950354609929,0.00982666015625,0.1768798828125
+D,add_raw_crops_to_original,original_only,original_raw_no_annotation,14,21,-7,8,6,0,-0.03926714108041964,0.01609657947686117,0.9261474609375,1.0
+E,add_rectified_crops_to_original,original_only,original_rectified_no_annotation,26,39,-13,12,8,1,-0.05719392314566577,0.024193548387096774,0.5784263610839844,1.0
+F,annotate_scene_with_raw_crops,original_raw_no_annotation,raw_crop_multiview,25,37,-12,6,11,0,-0.056487578119124957,0.032461677186654644,0.6075286865234375,1.0
+G,annotation_correspondence_with_rectified_crops,original_rectified_no_annotation,full_multiview,35,4,31,5,3,0,-0.002785515320334262,0.07122780635445503,0.3046875,1.0
+H1,full_vs_original,original_only,full_multiview,27,9,18,12,7,1,0.0018050134605931813,0.03292568203198495,0.05230712890625,0.8369140625
+H2,full_vs_raw_crops,raw_crops_only,full_multiview,59,6,53,28,6,1,0.026052104208416832,0.07459677419354839,6.999993000007e-06,0.000146999853000147
+H3,full_vs_rectified_crops,rectified_crops_only,full_multiview,68,8,60,29,6,1,0.029438001784121322,0.08354872116636643,1.0999989000011e-05,0.00021999978000021998
+H4,full_vs_original_raw,original_raw_no_annotation,full_multiview,31,6,25,9,4,0,0.0,0.05575547788460272,0.099853515625,1.0
+H5,full_vs_original_rectified,original_rectified_no_annotation,full_multiview,35,4,31,5,3,0,-0.002785515320334262,0.07122780635445503,0.3046875,1.0
+H6,full_vs_annotated_raw,raw_crop_multiview,full_multiview,42,5,37,12,4,1,0.007368372588930895,0.0726950354609929,0.00982666015625,0.1768798828125

@@ -1,0 +1,398 @@
+{
+  "all_seven_correct": 930,
+  "all_seven_incorrect": 2,
+  "correct_count_distribution_0_through_7": {
+    "0": 2,
+    "1": 6,
+    "2": 4,
+    "3": 9,
+    "4": 8,
+    "5": 72,
+    "6": 69,
+    "7": 930
+  },
+  "correctness_varied": 168,
+  "errors_shared_by_all_seven": 2,
+  "full_alone_correct": [],
+  "full_alone_incorrect": [
+    {
+      "identifier": "IMG_3624.JPG",
+      "question": "Where are Deliveries?"
+    }
+  ],
+  "highly_unstable_predictions": [
+    {
+      "identifier": "IMG_3617.JPG",
+      "predictions": {
+        "full_multiview": "right",
+        "original_only": "left",
+        "original_raw_no_annotation": "down",
+        "original_rectified_no_annotation": "right",
+        "raw_crop_multiview": "down",
+        "raw_crops_only": "down-right",
+        "rectified_crops_only": "right"
+      },
+      "question": "Where is Resident Life & Student Dining Services?",
+      "unique_prediction_sets": 4
+    }
+  ],
+  "persistent_errors": [
+    {
+      "identifier": "IMG_3406.JPG",
+      "question": "Where is Mathematical Sciences?"
+    },
+    {
+      "identifier": "IMG_3502.JPG",
+      "question": "Where is 1W19?"
+    }
+  ],
+  "shared_pairwise_error_counts": {
+    "full_multiview": {
+      "original_only": 8,
+      "original_raw_no_annotation": 11,
+      "original_rectified_no_annotation": 13,
+      "raw_crop_multiview": 12,
+      "raw_crops_only": 11,
+      "rectified_crops_only": 9
+    },
+    "original_only": {
+      "full_multiview": 8,
+      "original_raw_no_annotation": 21,
+      "original_rectified_no_annotation": 9,
+      "raw_crop_multiview": 17,
+      "raw_crops_only": 11,
+      "rectified_crops_only": 10
+    },
+    "original_raw_no_annotation": {
+      "full_multiview": 11,
+      "original_only": 21,
+      "original_rectified_no_annotation": 28,
+      "raw_crop_multiview": 17,
+      "raw_crops_only": 14,
+      "rectified_crops_only": 16
+    },
+    "original_rectified_no_annotation": {
+      "full_multiview": 13,
+      "original_only": 9,
+      "original_raw_no_annotation": 28,
+      "raw_crop_multiview": 13,
+      "raw_crops_only": 13,
+      "rectified_crops_only": 8
+    },
+    "raw_crop_multiview": {
+      "full_multiview": 12,
+      "original_only": 17,
+      "original_raw_no_annotation": 17,
+      "original_rectified_no_annotation": 13,
+      "raw_crops_only": 16,
+      "rectified_crops_only": 13
+    },
+    "raw_crops_only": {
+      "full_multiview": 11,
+      "original_only": 11,
+      "original_raw_no_annotation": 14,
+      "original_rectified_no_annotation": 13,
+      "raw_crop_multiview": 16,
+      "rectified_crops_only": 52
+    },
+    "rectified_crops_only": {
+      "full_multiview": 9,
+      "original_only": 10,
+      "original_raw_no_annotation": 16,
+      "original_rectified_no_annotation": 8,
+      "raw_crop_multiview": 13,
+      "raw_crops_only": 52
+    }
+  },
+  "unique_errors_by_condition": {
+    "full_multiview": [
+      {
+        "identifier": "IMG_3624.JPG",
+        "question": "Where are Deliveries?"
+      }
+    ],
+    "original_only": [
+      {
+        "identifier": "IMG_3347.JPG",
+        "question": "Where is 1201 - 1301?"
+      },
+      {
+        "identifier": "IMG_3347.JPG",
+        "question": "Where is 1201?"
+      },
+      {
+        "identifier": "IMG_3347.JPG",
+        "question": "Where is 1301?"
+      },
+      {
+        "identifier": "IMG_3457.JPG",
+        "question": "Where is 3039-3051?"
+      },
+      {
+        "identifier": "IMG_3545.JPG",
+        "question": "Where is Exit?"
+      },
+      {
+        "identifier": "IMG_3617.JPG",
+        "question": "Where is Financial Aid?"
+      },
+      {
+        "identifier": "IMG_3617.JPG",
+        "question": "Where is Public Safety & Public Access?"
+      },
+      {
+        "identifier": "IMG_3620.JPG",
+        "question": "Where is Financial Aid?"
+      },
+      {
+        "identifier": "IMG_3620.JPG",
+        "question": "Where is Public Safety & Public Access?"
+      }
+    ],
+    "original_raw_no_annotation": [],
+    "original_rectified_no_annotation": [
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Auditorium?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Computer Lab?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Economics Department Office (Room 3504)?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Economics Department Office?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Lobby?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Men's Room?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Room 3100?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Room 3210?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Room 3400?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Room 3510?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Rooms 3100 to 3210?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Rooms 3400 to 3510?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is Russell Sage Lab. 3rd Floor?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is SAGE 3101 Computer Lab/Classroom?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is SAGE 3303 Auditorium?"
+      },
+      {
+        "identifier": "IMG_3319.JPG",
+        "question": "Where is The Beanery Cafe?"
+      }
+    ],
+    "raw_crop_multiview": [
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is 4100 to 4306?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is 4400 to 4711?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Elevator?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Room 4100?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Room 4101?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Room 4112?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Room 4203?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Room 4306?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Room 4400?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Room 4510?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Room 4711?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Russell Sage Laboratory 4th Floor?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is SAGE 4101 Classroom?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is SAGE 4112 Classroom?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is SAGE 4203 Classroom?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is SAGE 4510 Classroom?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is SAGE 4711 Classroom?"
+      },
+      {
+        "identifier": "IMG_3323.JPG",
+        "question": "Where is Women's Room?"
+      },
+      {
+        "identifier": "IMG_3406.JPG",
+        "question": "Where is 3rd Floor?"
+      },
+      {
+        "identifier": "IMG_3406.JPG",
+        "question": "Where is Mathematical Sciences Office?"
+      },
+      {
+        "identifier": "IMG_3406.JPG",
+        "question": "Where is Room 301?"
+      },
+      {
+        "identifier": "IMG_3484.JPG",
+        "question": "Where is Design Lab?"
+      },
+      {
+        "identifier": "IMG_3484.JPG",
+        "question": "Where is JEC 3232?"
+      },
+      {
+        "identifier": "IMG_3484.JPG",
+        "question": "Where is THE DESIGN LAB?"
+      },
+      {
+        "identifier": "IMG_3485.JPG",
+        "question": "Where is JEC 3232?"
+      }
+    ],
+    "raw_crops_only": [
+      {
+        "identifier": "IMG_3379.JPG",
+        "question": "Where is CONTRACTS AND GRANTS?"
+      },
+      {
+        "identifier": "IMG_3423.JPG",
+        "question": "Where is Men's Restroom?"
+      },
+      {
+        "identifier": "IMG_3474.JPG",
+        "question": "Where is Communications Center?"
+      },
+      {
+        "identifier": "IMG_3474.JPG",
+        "question": "Where is Tunnel to Communications Center?"
+      },
+      {
+        "identifier": "IMG_3504.JPG",
+        "question": "Where is Earth Sciences?"
+      },
+      {
+        "identifier": "IMG_3504.JPG",
+        "question": "Where is Environmental Sciences?"
+      }
+    ],
+    "rectified_crops_only": [
+      {
+        "identifier": "IMG_3402.JPG",
+        "question": "Where is 3rd Floor?"
+      },
+      {
+        "identifier": "IMG_3402.JPG",
+        "question": "Where is Mathematical Sciences Office?"
+      },
+      {
+        "identifier": "IMG_3402.JPG",
+        "question": "Where is Room 301?"
+      },
+      {
+        "identifier": "IMG_3443.JPG",
+        "question": "Where is 4034?"
+      },
+      {
+        "identifier": "IMG_3443.JPG",
+        "question": "Where is 4040?"
+      },
+      {
+        "identifier": "IMG_3443.JPG",
+        "question": "Where is 4050?"
+      },
+      {
+        "identifier": "IMG_3444.JPG",
+        "question": "Where is 3039?"
+      },
+      {
+        "identifier": "IMG_3444.JPG",
+        "question": "Where is 3045?"
+      },
+      {
+        "identifier": "IMG_3444.JPG",
+        "question": "Where is 3051?"
+      },
+      {
+        "identifier": "IMG_3503.JPG",
+        "question": "Where is Environmental Sciences?"
+      },
+      {
+        "identifier": "IMG_3648.JPG",
+        "question": "Where is Cogswell Conference Room?"
+      },
+      {
+        "identifier": "IMG_3680.JPG",
+        "question": "Where is Room 308?"
+      }
+    ]
+  }
+}

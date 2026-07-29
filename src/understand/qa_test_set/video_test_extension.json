@@ -1,0 +1,284 @@
+[
+  {
+    "videoPath": "IMG_3846.MOV",
+    "questions": [
+      {
+        "question": "Where is 322?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 323?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Exit?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 326?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3847.MOV",
+    "questions": [
+      {
+        "question": "Where is Practice Rooms?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 328?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 329?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 327?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 326?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 322?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is 323?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3848.MOV",
+    "questions": [
+      {
+        "question": "Where is Exit?",
+        "answer": ["right", "left"],
+        "reference_type": "alternatives"
+      },
+      {
+        "question": "Where is Contracts And Grants?",
+        "answer": "straight-left"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3849.MOV",
+    "questions": [
+      {
+        "question": "Where is Department of Mathematical Sciences Room 301?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Mathematical Sciences 4th Floor?",
+        "answer": "straight-right"
+      },
+      {
+        "question": "Where is Ladies' Restroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "down"
+      },
+      {
+        "question": "Where is 2nd floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 3rd floor?",
+        "answer": "straight"
+      },
+      {
+        "question": "Where is 4th floor?",
+        "answer": ["straight-right", "straight"],
+        "reference_type": "alternatives"
+      },
+      {
+        "question": "Where is 1st floor?",
+        "answer": "down"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3850.MOV",
+    "questions": [
+      {
+        "question": "Where is Information Tech. & Web Science?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Main Office 207?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Meredith's Office 208?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is Conference Room?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3851.MOV",
+    "questions": [
+      {
+        "question": "Where is Exit?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Men's Restroom?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Fire Escape?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 202?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3852.MOV",
+    "questions": [
+      {
+        "question": "Where is 202?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Fire Escape?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 206?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Information Technology and Web Science Laboratory?",
+        "answer": "right"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3853.MOV",
+    "questions": [
+      {
+        "question": "Where is 103?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is MRC 136 Classroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is MSE Student Lounge?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 142",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is Materials Science And Engineering?",
+        "answer": "locational"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3854.MOV",
+    "questions": [
+      {
+        "question": "Where is Exit?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is MRC 136 Classroom?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is MSE Student Lounge?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3856.MOV",
+    "questions": [
+      {
+        "question": "Where is 118B?",
+        "answer": "locational"
+      },
+      {
+        "question": "Where is NYS Center For Polymer Synthesis?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3857.MOV",
+    "questions": [
+      {
+        "question": "Where is Exit?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 101?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 109?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Emergency Exit?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 115?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 110?",
+        "answer": "left"
+      }
+    ]
+  },
+  {
+    "videoPath": "IMG_3858.MOV",
+    "questions": [
+      {
+        "question": "Where is Exit?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 101?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is 109?",
+        "answer": "right"
+      },
+      {
+        "question": "Where is Emergency Exit?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 115?",
+        "answer": "left"
+      },
+      {
+        "question": "Where is 110?",
+        "answer": "left"
+      }
+    ]
+  }
+]

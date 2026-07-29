@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "name": "TRB corrected reference semantics",
+  "author_adjudication_date": "2026-07-22",
+  "purpose": "Versioned semantic overlay for rescoring stored predictions without modifying frozen annotations or inference outputs.",
+  "frozen_sources": {
+    "still_manifest": {
+      "path": "experiments/still_ablation/manifest.json",
+      "sha256": "4c719a095ca7cf34525b760b953c705f745096704def1dab6bdc1484ef9a1416"
+    },
+    "video_questions": {
+      "path": "src/understand/qa_test_set/video_test.json",
+      "sha256": "69545d0f5b457f938ad71bfb890b4bc1866520a92c484b75a0f6d1e595129147"
+    }
+  },
+  "default_reference_type": "scalar",
+  "scoring_rules": {
+    "scalar": "The deduplicated predicted set must equal the one-element reference set.",
+    "alternatives": "The deduplicated predicted set must be nonempty and a subset of the admissible-reference set.",
+    "joint_required": "The deduplicated predicted set must equal the required-reference set."
+  },
+  "overrides": [
+    {"dataset":"still","identifier":"IMG_3391.JPG","question":"Where is 4th Floor?","old_reference":["straight-right","straight"],"reference":["straight","straight-right"],"reference_type":"alternatives","reason":"Coarse and fine discretizations of one curved direction are both admissible."},
+    {"dataset":"still","identifier":"IMG_3393.JPG","question":"Where is 4th floor?","old_reference":["straight-right","straight"],"reference":["straight","straight-right"],"reference_type":"alternatives","reason":"Coarse and fine discretizations of one curved direction are both admissible."},
+    {"dataset":"still","identifier":"IMG_3397.JPG","question":"Where is 4th floor?","old_reference":["straight-right","straight"],"reference":["straight","straight-right"],"reference_type":"alternatives","reason":"Coarse and fine discretizations of one curved direction are both admissible."},
+    {"dataset":"still","identifier":"IMG_3572.JPG","question":"Where is Mens Lockers?","old_reference":["left","right"],"reference":["left","right"],"reference_type":"joint_required","reason":"The bidirectional sign requires both directions."},
+    {"dataset":"still","identifier":"IMG_3573.JPG","question":"Where is Mens Lockers?","old_reference":["left","right"],"reference":["left","right"],"reference_type":"joint_required","reason":"The bidirectional sign requires both directions."},
+    {"dataset":"still","identifier":"IMG_3574.JPG","question":"Where is Mens Lockers?","old_reference":["left","right"],"reference":["left","right"],"reference_type":"joint_required","reason":"The bidirectional sign requires both directions."},
+    {"dataset":"still","identifier":"IMG_3610.JPG","question":"Where is the restroom?","old_reference":["left","right"],"reference":["left","right"],"reference_type":"joint_required","reason":"Both visible restroom directions are required."},
+    {"dataset":"still","identifier":"IMG_3412.JPG","question":"Where is LALLY 02?","old_reference":"down","reference":["right","down"],"reference_type":"joint_required","reason":"The sign encodes a rightward segment followed by a downward direction; both are required."}
+  ],
+  "confirmed_scalar_adjudications": [
+    {"dataset":"still","identifier":"IMG_3412.JPG","question":"Where is Men's Restroom?","reference":"down"},
+    {"dataset":"still","identifier":"IMG_3483.JPG","question":"Where is THE DESIGN LAB?","reference":"right"},
+    {"dataset":"still","identifier":"IMG_3483.JPG","question":"Where is Design Lab?","reference":"right"},
+    {"dataset":"still","identifier":"IMG_3483.JPG","question":"Where is JEC 3232?","reference":"right"},
+    {"dataset":"still","identifier":"IMG_3484.JPG","question":"Where is THE DESIGN LAB?","reference":"right"},
+    {"dataset":"still","identifier":"IMG_3484.JPG","question":"Where is Design Lab?","reference":"right"},
+    {"dataset":"still","identifier":"IMG_3484.JPG","question":"Where is JEC 3232?","reference":"right"},
+    {"dataset":"still","identifier":"IMG_3485.JPG","question":"Where is THE DESIGN LAB?","reference":"right"},
+    {"dataset":"still","identifier":"IMG_3485.JPG","question":"Where is Design Lab?","reference":"right"},
+    {"dataset":"still","identifier":"IMG_3485.JPG","question":"Where is JEC 3232?","reference":"right"},
+    {"dataset":"video","identifier":"IMG_3769.MOV","question":"Where is Exit Here?","reference":"right"}
+  ]
+}

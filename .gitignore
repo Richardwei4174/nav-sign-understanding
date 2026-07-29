@@ -225,3 +225,5 @@ outputs/
 runs/
 weights/
 *.pt
+
+paper/

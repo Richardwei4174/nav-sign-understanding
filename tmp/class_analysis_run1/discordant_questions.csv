@@ -1,0 +1,37 @@
+image_identifier,question,reference_type,admissible_or_required_answer_set,exact_category,direction_family,original_prediction,original_correct,full_prediction,full_correct
+IMG_3308.JPG,Where is Restrooms?,scalar,left,scalar:{left},horizontal,"""left""",True,"[""left"", ""locational""]",False
+IMG_3347.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,"""down-right""",False,"""down""",True
+IMG_3347.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,"""down-right""",False,"""down""",True
+IMG_3347.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,"""down-right""",False,"""down""",True
+IMG_3349.JPG,Where is 1201 - 1301?,scalar,down,scalar:{down},vertical_forward,"""down-right""",False,"""down""",True
+IMG_3349.JPG,Where is 1201?,scalar,down,scalar:{down},vertical_forward,"""down-right""",False,"""down""",True
+IMG_3349.JPG,Where is 1301?,scalar,down,scalar:{down},vertical_forward,"""down-right""",False,"""down""",True
+IMG_3391.JPG,Where is 2nd Floor?,scalar,straight,scalar:{straight},vertical_forward,"""straight""",True,"""straight-right""",False
+IMG_3391.JPG,Where is 3rd Floor?,scalar,straight,scalar:{straight},vertical_forward,"""straight""",True,"""straight-right""",False
+IMG_3391.JPG,Where is Mathematical Sciences?,scalar,straight-right,scalar:{straight-right},diagonal,"[""straight-right"", ""locational""]",False,"""straight-right""",True
+IMG_3397.JPG,Where is Mathematical Sciences 4th Floor?,scalar,straight-right,scalar:{straight-right},diagonal,"""straight-right""",True,"""straight""",False
+IMG_3402.JPG,Where is Mathematical Sciences?,scalar,right,scalar:{right},horizontal,"""right""",True,"""unknown""",False
+IMG_3432.JPG,Where is Room 202A?,scalar,right,scalar:{right},horizontal,"""left""",False,"""right""",True
+IMG_3432.JPG,Where is Women's Restroom?,scalar,right,scalar:{right},horizontal,"""left""",False,"""right""",True
+IMG_3442.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,"""straight""",False,"""right""",True
+IMG_3442.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,"""straight""",False,"""right""",True
+IMG_3442.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,"""straight""",False,"""right""",True
+IMG_3443.JPG,Where is 3039?,scalar,right,scalar:{right},horizontal,"""straight""",False,"""right""",True
+IMG_3443.JPG,Where is 3045?,scalar,right,scalar:{right},horizontal,"""straight""",False,"""right""",True
+IMG_3443.JPG,Where is 3051?,scalar,right,scalar:{right},horizontal,"""straight""",False,"""right""",True
+IMG_3457.JPG,Where is 3039-3051?,scalar,right,scalar:{right},horizontal,"""straight-right""",False,"""right""",True
+IMG_3464.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,"""down""",True,"""down-left""",False
+IMG_3464.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,"""down""",True,"""down-left""",False
+IMG_3465.JPG,Where is RPI's College Radio Station?,scalar,down,scalar:{down},vertical_forward,"""down-left""",False,"""down""",True
+IMG_3465.JPG,Where is WRPI 91.5 FM?,scalar,down,scalar:{down},vertical_forward,"""down-left""",False,"""down""",True
+IMG_3483.JPG,Where is Design Lab?,scalar,right,scalar:{right},horizontal,"[""left"", ""right""]",False,"""right""",True
+IMG_3483.JPG,Where is JEC 3232?,scalar,right,scalar:{right},horizontal,"[""left"", ""right""]",False,"""right""",True
+IMG_3483.JPG,Where is THE DESIGN LAB?,scalar,right,scalar:{right},horizontal,"[""left"", ""right""]",False,"""right""",True
+IMG_3545.JPG,Where is Exit?,scalar,right,scalar:{right},horizontal,"""locational""",False,"""right""",True
+IMG_3617.JPG,Where is Financial Aid?,scalar,u-turn,scalar:{u-turn},u_turn_other,"""straight""",False,"""u-turn""",True
+IMG_3617.JPG,Where is Public Safety & Public Access?,scalar,u-turn,scalar:{u-turn},u_turn_other,"""left""",False,"""u-turn""",True
+IMG_3617.JPG,Where is Resident Life & Student Dining Services?,scalar,right,scalar:{right},horizontal,"""left""",False,"""right""",True
+IMG_3620.JPG,Where is Financial Aid?,scalar,u-turn,scalar:{u-turn},u_turn_other,"""left""",False,"""u-turn""",True
+IMG_3620.JPG,Where is Public Safety & Public Access?,scalar,u-turn,scalar:{u-turn},u_turn_other,"""left""",False,"""u-turn""",True
+IMG_3624.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,"""right""",True,"""ERROR""",False
+IMG_3625.JPG,Where are Deliveries?,scalar,right,scalar:{right},horizontal,"""right""",True,"""ERROR""",False

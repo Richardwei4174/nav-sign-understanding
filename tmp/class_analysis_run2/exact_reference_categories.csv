@@ -1,0 +1,14 @@
+exact_category,reference_type,answer_set,questions,benchmark_percentage,represented_images,questions_per_image_minimum,questions_per_image_median,questions_per_image_mean,questions_per_image_maximum,original_correct,original_total,original_accuracy,original_errors,full_correct,full_total,full_accuracy,full_errors,full_minus_original_accuracy_percentage_points,error_count_reduction_full_vs_original,both_correct,original_only_correct,full_only_correct,both_incorrect
+"alternatives:{straight,straight-right}",alternatives,straight|straight-right,3,0.2727272727272727,3,1,1,1.0,1,3,3,1.0,0,3,3,1.0,0,0.0,0,3,0,0,0
+"joint_required:{down,right}",joint_required,down|right,1,0.09090909090909091,1,1,1,1.0,1,1,1,1.0,0,1,1,1.0,0,0.0,0,1,0,0,0
+"joint_required:{left,right}",joint_required,left|right,4,0.36363636363636365,4,1,1.0,1.0,1,4,4,1.0,0,4,4,1.0,0,0.0,0,4,0,0,0
+scalar:{down-left},scalar,down-left,2,0.18181818181818182,2,1,1.0,1.0,1,2,2,1.0,0,2,2,1.0,0,0.0,0,2,0,0,0
+scalar:{down-right},scalar,down-right,10,0.9090909090909091,6,1,1.0,1.6666666666666667,3,10,10,1.0,0,10,10,1.0,0,0.0,0,10,0,0,0
+scalar:{down},scalar,down,25,2.272727272727273,12,1,2.0,2.0833333333333335,3,17,25,0.68,8,23,25,0.92,2,24.0,6,15,2,8,0
+scalar:{left},scalar,left,482,43.81818181818182,191,1,2,2.5235602094240837,9,481,482,0.9979253112033195,1,480,482,0.995850622406639,2,-0.20746887966804906,-1,480,1,0,1
+scalar:{locational},scalar,locational,61,5.545454545454546,54,1,1.0,1.1296296296296295,3,60,61,0.9836065573770492,1,60,61,0.9836065573770492,1,0.0,0,60,0,0,1
+scalar:{right},scalar,right,422,38.36363636363637,161,1,2,2.62111801242236,11,402,422,0.95260663507109,20,413,422,0.9786729857819905,9,2.6066350710900466,11,399,3,14,6
+scalar:{straight-left},scalar,straight-left,3,0.2727272727272727,3,1,1,1.0,1,3,3,1.0,0,3,3,1.0,0,0.0,0,3,0,0,0
+scalar:{straight-right},scalar,straight-right,20,1.8181818181818181,14,1,1.0,1.4285714285714286,3,19,20,0.95,1,19,20,0.95,1,0.0,0,18,1,1,0
+scalar:{straight},scalar,straight,59,5.363636363636363,32,1,2.0,1.84375,3,59,59,1.0,0,57,59,0.9661016949152542,2,-3.3898305084745783,-2,57,2,0,0
+scalar:{u-turn},scalar,u-turn,8,0.7272727272727273,5,1,2,1.6,2,4,8,0.5,4,8,8,1.0,0,50.0,4,4,0,4,0

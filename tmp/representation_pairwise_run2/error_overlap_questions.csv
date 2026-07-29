@@ -1,0 +1,1101 @@
+image_identifier,question,number_conditions_correct,number_unique_prediction_sets,original_only_correct,raw_crops_only_correct,rectified_crops_only_correct,original_raw_no_annotation_correct,original_rectified_no_annotation_correct,raw_crop_multiview_correct,full_multiview_correct
+IMG_3300.JPG,Where is Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Beanery Cafe?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Economics Department Office?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Elevator (accessible restrooms on 2nd floor)?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Main Stairwell?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Men's Room?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Rooms 3100 to 3210?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is Rooms 3400 to 3510?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,"Where is Russell Sage Lab, 3rd Floor?",7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is SAGE 3101 Computer Lab/Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3300.JPG,Where is The Beanery Cafe?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is Computer Lab?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is Economics Department Office?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is Main Stairwell?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is Men's Room?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is Rooms 3100 to 3210?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is Rooms 3400 to 3510?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,"Where is Russell Sage Lab, 3rd Floor?",7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is SAGE 3101 Computer Lab/Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is SAGE 3303 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3303.JPG,Where is The Beanery Cafe?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Computer Lab?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Economics Department Office?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Elevator (accessible restrooms on 2nd floor)?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Main Stairwell?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Men's Room?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Rooms 3100 to 3210?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is Rooms 3400 to 3510?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,"Where is Russell Sage Lab, 3rd Floor?",7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is SAGE 3101 Computer Lab/Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is SAGE 3303 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3304.JPG,Where is The Beanery Cafe?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is 3602-3510?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is 3702-3704?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is 3703-3713?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is Room 3602?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is Room 3702?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is Room 3703?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is Room 3704?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3305.JPG,Where is Sage Lab 3rd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is 3602-3510?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is 3702-3704?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is 3703-3713?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is Room 3602?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is Room 3702?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is Room 3703?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is Room 3704?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3306.JPG,Where is Sage Lab 3rd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is 3602-3510?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is 3702-3704?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is 3703-3713?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is Room 3602?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is Room 3702?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is Room 3703?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is Room 3704?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3307.JPG,Where is Sage Lab 3rd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is 1st Floor (via West Stairs or Elevator)?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is 2100 to 2500?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is 2600 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Main Directory in 3rd Floor Lobby?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Restrooms?,3,2,True,True,False,False,True,False,False
+IMG_3308.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Room 2500?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Room 2600?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Room 2715?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3308.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is 2100 to 2500?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is 2600 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Main Directory in 3rd Floor Lobby?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Room 2500?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Room 2600?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Room 2715?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3310.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is 2100 to 2500?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is 2600 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Main Directory in 3rd Floor Lobby?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Restrooms?,5,2,True,True,True,True,False,False,True
+IMG_3311.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Room 2500?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Room 2600?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Room 2715?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3311.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is 1st Floor (via West Stairs or Elevator)?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is 2100 to 2317?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is 2400 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is 3510 to 3713 (via East Stairs)?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Room 2317?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Room 2400?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Room 2715?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3313.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is 1st Floor (via West Stairs or Elevator)?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is 2100 to 2211?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is 2300 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is Room 2211?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is Room 2300?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is Room 2715?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3314.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is 1st Floor (via West Stairs or Elevator)?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is 2100 to 2211?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is 2300 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is 3510 to 3713 (via East Stairs)?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is Room 2211?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is Room 2300?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is Room 2715?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3315.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is 1st Floor (via West Stairs or Elevator)?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is 2100 to 2211?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is 2300 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is Room 2211?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is Room 2300?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is Room 2715?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3316.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is 2100 to 2211?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is 2300 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is 3510 to 3713 (via East Stairs)?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is Room 2211?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is Room 2300?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is Room 2715?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is Room 3510?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is Room 3713?,7,1,True,True,True,True,True,True,True
+IMG_3317.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3319.JPG,Where is Auditorium?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Computer Lab?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Economics Department Office (Room 3504)?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Economics Department Office?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Lobby?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Men's Room?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Room 3100?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Room 3210?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Room 3400?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Room 3510?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Rooms 3100 to 3210?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Rooms 3400 to 3510?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is Russell Sage Lab. 3rd Floor?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is SAGE 3101 Computer Lab/Classroom?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is SAGE 3303 Auditorium?,6,2,True,True,True,True,False,True,True
+IMG_3319.JPG,Where is The Beanery Cafe?,6,2,True,True,True,True,False,True,True
+IMG_3320.JPG,Where is Auditorium?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Computer Lab?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Economics Department Office?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Lobby?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Men's Room?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Room 3100?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Room 3210?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Room 3400?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Room 3510?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Rooms 3100 to 3210?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Rooms 3400 to 3510?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is Russell Sage Lab. 3rd Floor?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is SAGE 3101 Computer Lab/Classroom?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is SAGE 3303 Auditorium?,5,2,True,True,True,False,False,True,True
+IMG_3320.JPG,Where is The Beanery Cafe?,5,2,True,True,True,False,False,True,True
+IMG_3321.JPG,Where is 4100 to 4306?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is 4400 to 4711?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is HASS Student Services?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Room 4100?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Room 4101?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Room 4112?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Room 4203?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Room 4306?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Room 4400?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Room 4510?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Russell Sage Laboratory 4th Floor?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is SAGE 4101 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is SAGE 4112 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is SAGE 4203 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is SAGE 4510 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is SAGE 4711 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3321.JPG,Where is Women's Room?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is 4100 to 4306?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is 4400 to 4711?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Room 4100?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Room 4101?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Room 4112?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Room 4203?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Room 4306?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Room 4400?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Room 4510?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Russell Sage Laboratory 4th Floor?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is SAGE 4101 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is SAGE 4112 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is SAGE 4203 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is SAGE 4510 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is SAGE 4711 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3322.JPG,Where is Women's Room?,7,1,True,True,True,True,True,True,True
+IMG_3323.JPG,Where is 4100 to 4306?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is 4400 to 4711?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Elevator?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Room 4100?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Room 4101?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Room 4112?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Room 4203?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Room 4306?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Room 4400?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Room 4510?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Room 4711?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Russell Sage Laboratory 4th Floor?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is SAGE 4101 Classroom?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is SAGE 4112 Classroom?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is SAGE 4203 Classroom?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is SAGE 4510 Classroom?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is SAGE 4711 Classroom?,6,2,True,True,True,True,True,False,True
+IMG_3323.JPG,Where is Women's Room?,6,2,True,True,True,True,True,False,True
+IMG_3324.JPG,Where is Aaron Kemp Business Manager?,7,1,True,True,True,True,True,True,True
+IMG_3324.JPG,Where is Room 4410?,7,1,True,True,True,True,True,True,True
+IMG_3325.JPG,Where is 4510-4711?,7,1,True,True,True,True,True,True,True
+IMG_3325.JPG,Where is Room 4510?,7,1,True,True,True,True,True,True,True
+IMG_3325.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3326.JPG,Where is 4510-4711?,7,1,True,True,True,True,True,True,True
+IMG_3326.JPG,Where is Room 4510?,7,1,True,True,True,True,True,True,True
+IMG_3326.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3327.JPG,Where is 4510-4711?,7,1,True,True,True,True,True,True,True
+IMG_3327.JPG,Where is Room 4510?,7,1,True,True,True,True,True,True,True
+IMG_3327.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3328.JPG,Where is 4100-4602?,7,1,True,True,True,True,True,True,True
+IMG_3328.JPG,Where is 4702-4711?,7,1,True,True,True,True,True,True,True
+IMG_3328.JPG,Where is Room 4100?,7,1,True,True,True,True,True,True,True
+IMG_3328.JPG,Where is Room 4602?,7,1,True,True,True,True,True,True,True
+IMG_3328.JPG,Where is Room 4702?,7,1,True,True,True,True,True,True,True
+IMG_3328.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3328.JPG,Where is Sage Lab 4th Floor?,7,1,True,True,True,True,True,True,True
+IMG_3329.JPG,Where is 4100-4602?,7,1,True,True,True,True,True,True,True
+IMG_3329.JPG,Where is 4702-4711?,7,1,True,True,True,True,True,True,True
+IMG_3329.JPG,Where is Room 4100?,7,1,True,True,True,True,True,True,True
+IMG_3329.JPG,Where is Room 4602?,7,1,True,True,True,True,True,True,True
+IMG_3329.JPG,Where is Room 4702?,7,1,True,True,True,True,True,True,True
+IMG_3329.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3329.JPG,Where is Sage Lab 4th Floor?,7,1,True,True,True,True,True,True,True
+IMG_3330.JPG,Where is 4100-4602?,7,1,True,True,True,True,True,True,True
+IMG_3330.JPG,Where is 4702-4711?,7,1,True,True,True,True,True,True,True
+IMG_3330.JPG,Where is Room 4100?,7,1,True,True,True,True,True,True,True
+IMG_3330.JPG,Where is Room 4602?,7,1,True,True,True,True,True,True,True
+IMG_3330.JPG,Where is Room 4702?,7,1,True,True,True,True,True,True,True
+IMG_3330.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3330.JPG,Where is Sage Lab 4th Floor?,7,1,True,True,True,True,True,True,True
+IMG_3331.JPG,Where is 4100-4602?,7,1,True,True,True,True,True,True,True
+IMG_3331.JPG,Where is 4702-4711?,7,1,True,True,True,True,True,True,True
+IMG_3331.JPG,Where is Room 4100?,7,1,True,True,True,True,True,True,True
+IMG_3331.JPG,Where is Room 4602?,7,1,True,True,True,True,True,True,True
+IMG_3331.JPG,Where is Room 4702?,7,1,True,True,True,True,True,True,True
+IMG_3331.JPG,Where is Room 4711?,7,1,True,True,True,True,True,True,True
+IMG_3331.JPG,Where is Sage Lab 4th Floor?,7,1,True,True,True,True,True,True,True
+IMG_3333.JPG,Where is 5100-5602?,7,1,True,True,True,True,True,True,True
+IMG_3333.JPG,Where is 5702-5717?,7,1,True,True,True,True,True,True,True
+IMG_3333.JPG,Where is Room 5100?,7,1,True,True,True,True,True,True,True
+IMG_3333.JPG,Where is Room 5602?,7,1,True,True,True,True,True,True,True
+IMG_3333.JPG,Where is Room 5702?,7,1,True,True,True,True,True,True,True
+IMG_3333.JPG,Where is Room 5717?,7,1,True,True,True,True,True,True,True
+IMG_3333.JPG,Where is Sage Lab 5th Floor?,7,1,True,True,True,True,True,True,True
+IMG_3334.JPG,Where is 5100-5602?,7,1,True,True,True,True,True,True,True
+IMG_3334.JPG,Where is 5702-5717?,7,1,True,True,True,True,True,True,True
+IMG_3334.JPG,Where is Room 5100?,7,1,True,True,True,True,True,True,True
+IMG_3334.JPG,Where is Room 5602?,7,1,True,True,True,True,True,True,True
+IMG_3334.JPG,Where is Room 5702?,7,1,True,True,True,True,True,True,True
+IMG_3334.JPG,Where is Room 5717?,7,1,True,True,True,True,True,True,True
+IMG_3334.JPG,Where is Sage Lab 5th Floor?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5702?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5703?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5704?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5705?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5706?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5708?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5709?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5710?,7,1,True,True,True,True,True,True,True
+IMG_3335.JPG,Where is 5711?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5702?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5703?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5704?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5705?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5706?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5708?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5709?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5710?,7,1,True,True,True,True,True,True,True
+IMG_3336.JPG,Where is 5711?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5702?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5703?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5704?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5705?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5706?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5708?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5709?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5710?,7,1,True,True,True,True,True,True,True
+IMG_3337.JPG,Where is 5711?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5702?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5703?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5704?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5705?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5706?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5708?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5709?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5710?,7,1,True,True,True,True,True,True,True
+IMG_3338.JPG,Where is 5711?,7,1,True,True,True,True,True,True,True
+IMG_3339.JPG,Where is 1201 - 1301?,7,1,True,True,True,True,True,True,True
+IMG_3339.JPG,Where is 1201?,7,1,True,True,True,True,True,True,True
+IMG_3339.JPG,Where is 1301?,7,1,True,True,True,True,True,True,True
+IMG_3344.JPG,Where is 1201 - 1301?,7,1,True,True,True,True,True,True,True
+IMG_3344.JPG,Where is 1201?,7,1,True,True,True,True,True,True,True
+IMG_3344.JPG,Where is 1301?,7,1,True,True,True,True,True,True,True
+IMG_3345.JPG,Where is 1201 - 1301?,7,1,True,True,True,True,True,True,True
+IMG_3345.JPG,Where is 1201?,7,1,True,True,True,True,True,True,True
+IMG_3345.JPG,Where is 1301?,7,1,True,True,True,True,True,True,True
+IMG_3346.JPG,Where is 1107 - 1112?,7,1,True,True,True,True,True,True,True
+IMG_3346.JPG,Where is 1107?,7,1,True,True,True,True,True,True,True
+IMG_3346.JPG,Where is 1112?,7,1,True,True,True,True,True,True,True
+IMG_3346.JPG,Where is 1201 - 1301?,7,1,True,True,True,True,True,True,True
+IMG_3346.JPG,Where is 1201?,7,1,True,True,True,True,True,True,True
+IMG_3346.JPG,Where is 1301?,7,1,True,True,True,True,True,True,True
+IMG_3347.JPG,Where is 1107 - 1112?,7,1,True,True,True,True,True,True,True
+IMG_3347.JPG,Where is 1107?,7,1,True,True,True,True,True,True,True
+IMG_3347.JPG,Where is 1112?,7,1,True,True,True,True,True,True,True
+IMG_3347.JPG,Where is 1201 - 1301?,6,2,False,True,True,True,True,True,True
+IMG_3347.JPG,Where is 1201?,6,2,False,True,True,True,True,True,True
+IMG_3347.JPG,Where is 1301?,6,2,False,True,True,True,True,True,True
+IMG_3348.JPG,Where is 1107 - 1112?,7,1,True,True,True,True,True,True,True
+IMG_3348.JPG,Where is 1107?,7,1,True,True,True,True,True,True,True
+IMG_3348.JPG,Where is 1112?,7,1,True,True,True,True,True,True,True
+IMG_3348.JPG,Where is 1201 - 1301?,7,1,True,True,True,True,True,True,True
+IMG_3348.JPG,Where is 1201?,7,1,True,True,True,True,True,True,True
+IMG_3348.JPG,Where is 1301?,7,1,True,True,True,True,True,True,True
+IMG_3349.JPG,Where is 1107 - 1112?,7,1,True,True,True,True,True,True,True
+IMG_3349.JPG,Where is 1107?,7,1,True,True,True,True,True,True,True
+IMG_3349.JPG,Where is 1112?,7,1,True,True,True,True,True,True,True
+IMG_3349.JPG,Where is 1201 - 1301?,4,2,False,True,False,False,True,True,True
+IMG_3349.JPG,Where is 1201?,4,2,False,True,False,False,True,True,True
+IMG_3349.JPG,Where is 1301?,4,2,False,True,False,False,True,True,True
+IMG_3350.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3351.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3352.JPG,Where is SAGE?,7,1,True,True,True,True,True,True,True
+IMG_3353.JPG,Where is SAGE?,7,1,True,True,True,True,True,True,True
+IMG_3354.JPG,Where is CONFERENCE ROOM 2103?,7,1,True,True,True,True,True,True,True
+IMG_3354.JPG,Where is Conference Room?,7,1,True,True,True,True,True,True,True
+IMG_3354.JPG,Where is Room 2103?,7,1,True,True,True,True,True,True,True
+IMG_3357.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3359.JPG,Where is Conference Room 2103?,7,1,True,True,True,True,True,True,True
+IMG_3359.JPG,Where is Conference Room?,7,1,True,True,True,True,True,True,True
+IMG_3360.JPG,Where is Exit?,5,2,True,False,False,True,True,True,True
+IMG_3364.JPG,Where is CONFERENCE ROOM 2103?,7,1,True,True,True,True,True,True,True
+IMG_3364.JPG,Where is CONFERENCE ROOM?,5,2,True,False,True,True,True,False,True
+IMG_3365.JPG,Where is Men's Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3365.JPG,Where is Women's Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3366.JPG,Where is Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3368.JPG,Where is Men's Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3368.JPG,Where is Women's Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3369.JPG,Where is Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3370.JPG,Where is contracts and grants?,7,1,True,True,True,True,True,True,True
+IMG_3372.JPG,Where is Men's Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3372.JPG,Where is Women's Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3373.JPG,Where is Bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3374.JPG,Where is exit?,7,1,True,True,True,True,True,True,True
+IMG_3375.JPG,Where is contracts and grants?,7,1,True,True,True,True,True,True,True
+IMG_3376.JPG,Where is EXIT?,7,1,True,True,True,True,True,True,True
+IMG_3377.JPG,Where is ARTS?,7,1,True,True,True,True,True,True,True
+IMG_3378.JPG,Where is EXIT?,7,1,True,True,True,True,True,True,True
+IMG_3379.JPG,Where is CONTRACTS AND GRANTS?,6,2,True,False,True,True,True,True,True
+IMG_3380.JPG,Where is ARTS?,7,1,True,True,True,True,True,True,True
+IMG_3382.JPG,Where is ARTS?,5,2,True,False,False,True,True,True,True
+IMG_3382.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3383.JPG,Where is ARTS?,7,1,True,True,True,True,True,True,True
+IMG_3384.JPG,Where is G15?,7,1,True,True,True,True,True,True,True
+IMG_3385.JPG,Where is ARTS?,7,1,True,True,True,True,True,True,True
+IMG_3385.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3386.JPG,Where is 1st floor?,7,1,True,True,True,True,True,True,True
+IMG_3386.JPG,Where is 2nd floor?,7,1,True,True,True,True,True,True,True
+IMG_3386.JPG,Where is 3rd floor?,7,1,True,True,True,True,True,True,True
+IMG_3386.JPG,Where is 4th floor?,7,1,True,True,True,True,True,True,True
+IMG_3388.JPG,Where is ARTS?,7,1,True,True,True,True,True,True,True
+IMG_3388.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3389.JPG,Where is G15?,7,1,True,True,True,True,True,True,True
+IMG_3390.JPG,Where is ARTS?,5,2,True,False,False,True,True,True,True
+IMG_3390.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3391.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_3391.JPG,Where is 2nd Floor?,3,2,True,False,False,True,False,True,False
+IMG_3391.JPG,Where is 3rd Floor?,3,2,True,False,False,True,False,True,False
+IMG_3391.JPG,Where is 4th Floor?,7,2,True,True,True,True,True,True,True
+IMG_3391.JPG,Where is Department of Mathematical Sciences Room 301?,7,1,True,True,True,True,True,True,True
+IMG_3391.JPG,Where is Ladies' Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3391.JPG,Where is Mathematical Sciences Room 301?,7,1,True,True,True,True,True,True,True
+IMG_3391.JPG,Where is Mathematical Sciences?,5,2,False,True,True,True,True,False,True
+IMG_3391.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3392.JPG,Where is Auditorium?,7,1,True,True,True,True,True,True,True
+IMG_3393.JPG,Where is 1st floor?,7,1,True,True,True,True,True,True,True
+IMG_3393.JPG,Where is 2nd floor?,7,1,True,True,True,True,True,True,True
+IMG_3393.JPG,Where is 3rd floor?,7,1,True,True,True,True,True,True,True
+IMG_3393.JPG,Where is 4th floor?,5,3,True,False,True,True,True,False,True
+IMG_3393.JPG,Where is Department of Mathematical Sciences Room 301?,7,1,True,True,True,True,True,True,True
+IMG_3393.JPG,Where is Ladies' Restroom?,5,2,True,False,False,True,True,True,True
+IMG_3393.JPG,Where is Mathematical Sciences 4th Floor?,4,3,True,False,False,True,True,False,True
+IMG_3393.JPG,Where is Men's Restroom?,5,2,True,False,False,True,True,True,True
+IMG_3394.JPG,Where is Auditorium?,7,1,True,True,True,True,True,True,True
+IMG_3395.JPG,Where is 4th Floor?,5,2,True,False,False,True,True,True,True
+IMG_3395.JPG,Where is Mathematical Sciences 4th Floor?,5,2,True,False,False,True,True,True,True
+IMG_3395.JPG,Where is Mathematical Sciences?,5,2,True,False,False,True,True,True,True
+IMG_3396.JPG,Where is Auditorium?,7,1,True,True,True,True,True,True,True
+IMG_3397.JPG,Where is 1st floor?,5,2,True,False,False,True,True,True,True
+IMG_3397.JPG,Where is 2nd floor?,5,2,True,False,False,True,True,True,True
+IMG_3397.JPG,Where is 3rd floor?,5,2,True,False,False,True,True,True,True
+IMG_3397.JPG,Where is 4th floor?,5,3,True,False,False,True,True,True,True
+IMG_3397.JPG,Where is Department of Mathematical Sciences Room 301?,5,3,False,True,True,True,True,True,False
+IMG_3397.JPG,Where is Ladies' Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3397.JPG,Where is Mathematical Sciences 4th Floor?,3,3,True,False,False,True,True,False,False
+IMG_3397.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3398.JPG,Where is Amos Eaton?,7,1,True,True,True,True,True,True,True
+IMG_3399.JPG,Where is Ladies' Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3399.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3400.JPG,Where is Accessible Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3400.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3401.JPG,Where is Accessible Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3401.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3402.JPG,Where is 3rd Floor?,6,2,True,True,False,True,True,True,True
+IMG_3402.JPG,Where is Mathematical Sciences Office?,6,2,True,True,False,True,True,True,True
+IMG_3402.JPG,Where is Mathematical Sciences?,2,3,True,True,False,False,False,False,False
+IMG_3402.JPG,Where is Room 301?,6,2,True,True,False,True,True,True,True
+IMG_3404.JPG,Where is Accessible Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3404.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3405.JPG,Where is Accessible Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3405.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3406.JPG,Where is 3rd Floor?,6,2,True,True,True,True,True,False,True
+IMG_3406.JPG,Where is Mathematical Sciences Office?,6,2,True,True,True,True,True,False,True
+IMG_3406.JPG,Where is Mathematical Sciences?,0,2,False,False,False,False,False,False,False
+IMG_3406.JPG,Where is Room 301?,6,2,True,True,True,True,True,False,True
+IMG_3407.JPG,Where is MEN?,7,1,True,True,True,True,True,True,True
+IMG_3407.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3409.JPG,Where is ITWS Lab?,7,1,True,True,True,True,True,True,True
+IMG_3409.JPG,Where is Information Tech. & Web Science?,7,1,True,True,True,True,True,True,True
+IMG_3409.JPG,Where is Information Technology & Web Science?,7,1,True,True,True,True,True,True,True
+IMG_3409.JPG,Where is Jeanne Luker?,7,1,True,True,True,True,True,True,True
+IMG_3409.JPG,Where is Prof. Plotka?,7,1,True,True,True,True,True,True,True
+IMG_3410.JPG,Where is ITWS Lab?,7,1,True,True,True,True,True,True,True
+IMG_3410.JPG,Where is Information Tech. & Web Science?,7,1,True,True,True,True,True,True,True
+IMG_3410.JPG,Where is Information Technology & Web Science?,7,1,True,True,True,True,True,True,True
+IMG_3410.JPG,Where is Jeanne Luker?,7,1,True,True,True,True,True,True,True
+IMG_3410.JPG,Where is Prof. Plotka?,7,1,True,True,True,True,True,True,True
+IMG_3411.JPG,Where is 3rd Floor?,7,1,True,True,True,True,True,True,True
+IMG_3411.JPG,Where is Mathematical Sciences Office?,7,1,True,True,True,True,True,True,True
+IMG_3411.JPG,Where is Mathematical Sciences?,2,2,False,True,True,False,False,False,False
+IMG_3411.JPG,Where is Room 301?,7,1,True,True,True,True,True,True,True
+IMG_3412.JPG,Where is LALLY 02?,7,1,True,True,True,True,True,True,True
+IMG_3412.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3413.JPG,Where is LALLY?,7,1,True,True,True,True,True,True,True
+IMG_3417.JPG,Where is Fire Escape?,7,1,True,True,True,True,True,True,True
+IMG_3419.JPG,Where is Women's Restroom?,5,2,True,False,False,True,True,True,True
+IMG_3421.JPG,Where is Fire Escape?,7,1,True,True,True,True,True,True,True
+IMG_3423.JPG,Where is Men's Restroom?,6,2,True,False,True,True,True,True,True
+IMG_3424.JPG,Where is GREENE?,7,1,True,True,True,True,True,True,True
+IMG_3425.JPG,Where is Fire Department Connection?,7,1,True,True,True,True,True,True,True
+IMG_3426.JPG,Where is Fire Department Connection?,7,1,True,True,True,True,True,True,True
+IMG_3427.JPG,Where is Ladies Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3427.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3428.JPG,Where is Ladies Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3428.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3429.JPG,Where is Ladies Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3429.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3430.JPG,Where is Ladies Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3430.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3431.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3432.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3432.JPG,Where is Room 202A?,4,2,False,False,True,False,True,True,True
+IMG_3432.JPG,Where is Women's Restroom?,4,2,False,False,True,False,True,True,True
+IMG_3433.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3433.JPG,Where is Room 202A?,1,2,False,False,True,False,False,False,False
+IMG_3433.JPG,Where is Women's Restroom?,1,2,False,False,True,False,False,False,False
+IMG_3434.JPG,Where is 005C?,7,1,True,True,True,True,True,True,True
+IMG_3434.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_3434.JPG,Where is Room 202A?,1,2,False,False,True,False,False,False,False
+IMG_3434.JPG,Where is Women's Restroom?,1,2,False,False,True,False,False,False,False
+IMG_3438.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3440.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3442.JPG,Where is 3039?,5,2,False,True,True,True,True,False,True
+IMG_3442.JPG,Where is 3045?,5,2,False,True,True,True,True,False,True
+IMG_3442.JPG,Where is 3051?,5,2,False,True,True,True,True,False,True
+IMG_3442.JPG,Where is 3112?,7,1,True,True,True,True,True,True,True
+IMG_3442.JPG,Where is 3116?,7,1,True,True,True,True,True,True,True
+IMG_3442.JPG,Where is 3130?,7,1,True,True,True,True,True,True,True
+IMG_3442.JPG,Where is 4034?,7,1,True,True,True,True,True,True,True
+IMG_3442.JPG,Where is 4040?,7,1,True,True,True,True,True,True,True
+IMG_3442.JPG,Where is 4050?,7,1,True,True,True,True,True,True,True
+IMG_3443.JPG,Where is 3039?,3,2,False,True,False,False,True,False,True
+IMG_3443.JPG,Where is 3045?,3,2,False,True,False,False,True,False,True
+IMG_3443.JPG,Where is 3051?,3,2,False,True,False,False,True,False,True
+IMG_3443.JPG,Where is 3112?,7,1,True,True,True,True,True,True,True
+IMG_3443.JPG,Where is 3116?,7,1,True,True,True,True,True,True,True
+IMG_3443.JPG,Where is 3130?,7,1,True,True,True,True,True,True,True
+IMG_3443.JPG,Where is 4034?,6,2,True,True,False,True,True,True,True
+IMG_3443.JPG,Where is 4040?,6,2,True,True,False,True,True,True,True
+IMG_3443.JPG,Where is 4050?,6,2,True,True,False,True,True,True,True
+IMG_3444.JPG,Where is 3039?,6,2,True,True,False,True,True,True,True
+IMG_3444.JPG,Where is 3045?,6,2,True,True,False,True,True,True,True
+IMG_3444.JPG,Where is 3051?,6,2,True,True,False,True,True,True,True
+IMG_3444.JPG,Where is 3112?,7,1,True,True,True,True,True,True,True
+IMG_3444.JPG,Where is 3116?,7,1,True,True,True,True,True,True,True
+IMG_3444.JPG,Where is 3130?,7,1,True,True,True,True,True,True,True
+IMG_3444.JPG,Where is 4034?,7,1,True,True,True,True,True,True,True
+IMG_3444.JPG,Where is 4040?,7,1,True,True,True,True,True,True,True
+IMG_3444.JPG,Where is 4050?,7,1,True,True,True,True,True,True,True
+IMG_3445.JPG,Where is 3112?,7,1,True,True,True,True,True,True,True
+IMG_3445.JPG,Where is 3116?,7,1,True,True,True,True,True,True,True
+IMG_3445.JPG,Where is 3130?,7,1,True,True,True,True,True,True,True
+IMG_3445.JPG,"Where is CII 3112, 3116 & 3130?",7,1,True,True,True,True,True,True,True
+IMG_3445.JPG,Where is CII 3112?,7,1,True,True,True,True,True,True,True
+IMG_3445.JPG,Where is CII 3116?,7,1,True,True,True,True,True,True,True
+IMG_3446.JPG,Where is 3112?,7,1,True,True,True,True,True,True,True
+IMG_3446.JPG,Where is 3116?,7,1,True,True,True,True,True,True,True
+IMG_3446.JPG,Where is 3130?,7,1,True,True,True,True,True,True,True
+IMG_3446.JPG,"Where is CII 3112, 3116 & 3130?",7,1,True,True,True,True,True,True,True
+IMG_3446.JPG,Where is CII 3112?,7,1,True,True,True,True,True,True,True
+IMG_3446.JPG,Where is CII 3116?,7,1,True,True,True,True,True,True,True
+IMG_3446.JPG,Where is CII 3130?,7,1,True,True,True,True,True,True,True
+IMG_3447.JPG,Where is 3112?,7,1,True,True,True,True,True,True,True
+IMG_3447.JPG,Where is 3116?,7,1,True,True,True,True,True,True,True
+IMG_3447.JPG,Where is 3130?,7,1,True,True,True,True,True,True,True
+IMG_3447.JPG,"Where is CII 3112, 3116 & 3130?",7,1,True,True,True,True,True,True,True
+IMG_3447.JPG,Where is CII 3112?,7,1,True,True,True,True,True,True,True
+IMG_3447.JPG,Where is CII 3116?,7,1,True,True,True,True,True,True,True
+IMG_3447.JPG,Where is CII 3130?,7,1,True,True,True,True,True,True,True
+IMG_3449.JPG,Where is 3111-3125?,7,1,True,True,True,True,True,True,True
+IMG_3449.JPG,Where is 3111?,7,1,True,True,True,True,True,True,True
+IMG_3449.JPG,Where is 3125?,7,1,True,True,True,True,True,True,True
+IMG_3450.JPG,Where is 3111-3125?,7,1,True,True,True,True,True,True,True
+IMG_3450.JPG,Where is 3111?,7,1,True,True,True,True,True,True,True
+IMG_3450.JPG,Where is 3125?,7,1,True,True,True,True,True,True,True
+IMG_3451.JPG,Where is ADA?,7,1,True,True,True,True,True,True,True
+IMG_3451.JPG,Where is DCC?,7,1,True,True,True,True,True,True,True
+IMG_3451.JPG,Where is JEC?,7,1,True,True,True,True,True,True,True
+IMG_3452.JPG,Where is 3039-3051?,7,1,True,True,True,True,True,True,True
+IMG_3452.JPG,Where is 3039?,7,1,True,True,True,True,True,True,True
+IMG_3452.JPG,Where is 3051?,7,1,True,True,True,True,True,True,True
+IMG_3453.JPG,Where is 3112?,7,1,True,True,True,True,True,True,True
+IMG_3453.JPG,Where is 3116?,7,1,True,True,True,True,True,True,True
+IMG_3453.JPG,Where is 3130?,7,1,True,True,True,True,True,True,True
+IMG_3454.JPG,Where is 3112?,7,1,True,True,True,True,True,True,True
+IMG_3454.JPG,Where is 3116?,7,1,True,True,True,True,True,True,True
+IMG_3454.JPG,Where is 3130?,7,1,True,True,True,True,True,True,True
+IMG_3455.JPG,Where is 3213?,7,1,True,True,True,True,True,True,True
+IMG_3456.JPG,Where is 3213?,7,1,True,True,True,True,True,True,True
+IMG_3457.JPG,Where is 3039-3051?,6,2,False,True,True,True,True,True,True
+IMG_3458.JPG,Where is STAIRS & ELEVATORS?,7,1,True,True,True,True,True,True,True
+IMG_3459.JPG,Where is STAIRS & ELEVATORS?,7,1,True,True,True,True,True,True,True
+IMG_3460.JPG,Where is STAIRS & ELEVATORS?,7,1,True,True,True,True,True,True,True
+IMG_3461.JPG,Where is The Forge?,7,1,True,True,True,True,True,True,True
+IMG_3462.JPG,Where is The Forge?,7,1,True,True,True,True,True,True,True
+IMG_3463.JPG,Where is DCC / JEC Path of travel?,7,1,True,True,True,True,True,True,True
+IMG_3463.JPG,Where is The Forge?,7,1,True,True,True,True,True,True,True
+IMG_3464.JPG,Where is RPI's College Radio Station?,1,2,True,False,False,False,False,False,False
+IMG_3464.JPG,Where is WRPI 91.5 FM?,1,2,True,False,False,False,False,False,False
+IMG_3465.JPG,Where is RPI's College Radio Station?,2,2,False,False,True,False,False,False,True
+IMG_3465.JPG,Where is WRPI 91.5 FM?,2,2,False,False,True,False,False,False,True
+IMG_3469.JPG,Where is HASS Media Studio?,7,1,True,True,True,True,True,True,True
+IMG_3469.JPG,Where is Media Studio?,7,1,True,True,True,True,True,True,True
+IMG_3470.JPG,Where is HASS Media Studio?,7,1,True,True,True,True,True,True,True
+IMG_3470.JPG,Where is Media Studio?,7,1,True,True,True,True,True,True,True
+IMG_3471.JPG,Where is HASS Media Studio?,7,1,True,True,True,True,True,True,True
+IMG_3471.JPG,Where is Media Studio?,7,1,True,True,True,True,True,True,True
+IMG_3472.JPG,Where is Communications Center?,7,1,True,True,True,True,True,True,True
+IMG_3472.JPG,Where is Tunnel to Communications Center?,7,1,True,True,True,True,True,True,True
+IMG_3473.JPG,Where is Communications Center?,7,1,True,True,True,True,True,True,True
+IMG_3473.JPG,Where is Tunnel to Communications Center?,7,1,True,True,True,True,True,True,True
+IMG_3474.JPG,Where is Communications Center?,6,2,True,False,True,True,True,True,True
+IMG_3474.JPG,Where is Tunnel to Communications Center?,6,2,True,False,True,True,True,True,True
+IMG_3475.JPG,Where is Centrifuge Lab?,7,1,True,True,True,True,True,True,True
+IMG_3475.JPG,Where is Civil & Environmental Centrifuge Lab?,7,1,True,True,True,True,True,True,True
+IMG_3475.JPG,Where is Civil & Environmental Hydrology Lab?,7,1,True,True,True,True,True,True,True
+IMG_3475.JPG,Where is Hydrology Lab?,7,1,True,True,True,True,True,True,True
+IMG_3476.JPG,Where is Centrifuge Lab?,7,1,True,True,True,True,True,True,True
+IMG_3476.JPG,Where is Civil & Environmental Centrifuge Lab?,7,1,True,True,True,True,True,True,True
+IMG_3476.JPG,Where is Civil & Environmental Hydrology Lab?,7,1,True,True,True,True,True,True,True
+IMG_3476.JPG,Where is Hydrology Lab?,7,1,True,True,True,True,True,True,True
+IMG_3477.JPG,Where is Centrifuge Lab?,7,1,True,True,True,True,True,True,True
+IMG_3477.JPG,Where is Civil & Environmental Centrifuge Lab?,7,1,True,True,True,True,True,True,True
+IMG_3477.JPG,Where is Civil & Environmental Hydrology Lab?,7,1,True,True,True,True,True,True,True
+IMG_3477.JPG,Where is Hydrology Lab?,7,1,True,True,True,True,True,True,True
+IMG_3478.JPG,Where is CII/DCC/JEC?,7,1,True,True,True,True,True,True,True
+IMG_3478.JPG,Where is DCC?,7,1,True,True,True,True,True,True,True
+IMG_3478.JPG,Where is JEC?,7,1,True,True,True,True,True,True,True
+IMG_3479.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3480.JPG,Where is 2100-2119?,7,1,True,True,True,True,True,True,True
+IMG_3480.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3480.JPG,Where is Room 2119?,7,1,True,True,True,True,True,True,True
+IMG_3481.JPG,Where is 2100-2119?,5,3,True,False,False,True,True,True,True
+IMG_3481.JPG,Where is Room 2100?,5,3,True,False,False,True,True,True,True
+IMG_3481.JPG,Where is Room 2119?,5,3,True,False,False,True,True,True,True
+IMG_3482.JPG,Where is 2100-2119?,7,1,True,True,True,True,True,True,True
+IMG_3482.JPG,Where is Room 2100?,7,1,True,True,True,True,True,True,True
+IMG_3482.JPG,Where is Room 2119?,7,1,True,True,True,True,True,True,True
+IMG_3483.JPG,Where is Design Lab?,4,3,False,True,False,False,True,True,True
+IMG_3483.JPG,Where is JEC 3232?,5,2,False,True,True,False,True,True,True
+IMG_3483.JPG,Where is THE DESIGN LAB?,4,3,False,True,False,False,True,True,True
+IMG_3484.JPG,Where is Design Lab?,6,2,True,True,True,True,True,False,True
+IMG_3484.JPG,Where is JEC 3232?,6,2,True,True,True,True,True,False,True
+IMG_3484.JPG,Where is THE DESIGN LAB?,6,2,True,True,True,True,True,False,True
+IMG_3485.JPG,Where is Design Lab?,5,3,True,True,False,True,True,False,True
+IMG_3485.JPG,Where is JEC 3232?,6,2,True,True,True,True,True,False,True
+IMG_3485.JPG,Where is THE DESIGN LAB?,5,3,True,True,False,True,True,False,True
+IMG_3486.JPG,Where is 3100-3118?,7,1,True,True,True,True,True,True,True
+IMG_3486.JPG,Where is Room 3100?,7,1,True,True,True,True,True,True,True
+IMG_3486.JPG,Where is Room 3118?,7,1,True,True,True,True,True,True,True
+IMG_3487.JPG,Where is 3100-3118?,7,1,True,True,True,True,True,True,True
+IMG_3487.JPG,Where is Room 3100?,7,1,True,True,True,True,True,True,True
+IMG_3487.JPG,Where is Room 3118?,7,1,True,True,True,True,True,True,True
+IMG_3488.JPG,Where is 3100-3118?,7,1,True,True,True,True,True,True,True
+IMG_3488.JPG,Where is Room 3100?,7,1,True,True,True,True,True,True,True
+IMG_3488.JPG,Where is Room 3118?,7,1,True,True,True,True,True,True,True
+IMG_3489.JPG,Where is 3200-3232?,7,1,True,True,True,True,True,True,True
+IMG_3489.JPG,Where is Room 3200?,7,1,True,True,True,True,True,True,True
+IMG_3489.JPG,Where is Room 3232?,7,1,True,True,True,True,True,True,True
+IMG_3490.JPG,Where is 3200-3232?,7,1,True,True,True,True,True,True,True
+IMG_3490.JPG,Where is Room 3200?,7,1,True,True,True,True,True,True,True
+IMG_3490.JPG,Where is Room 3232?,7,1,True,True,True,True,True,True,True
+IMG_3491.JPG,Where is 3300-3321?,7,1,True,True,True,True,True,True,True
+IMG_3491.JPG,Where is Room 3300?,7,1,True,True,True,True,True,True,True
+IMG_3491.JPG,Where is Room 3321?,7,1,True,True,True,True,True,True,True
+IMG_3492.JPG,Where is 3300-3321?,7,1,True,True,True,True,True,True,True
+IMG_3492.JPG,Where is Room 3300?,7,1,True,True,True,True,True,True,True
+IMG_3492.JPG,Where is Room 3321?,7,1,True,True,True,True,True,True,True
+IMG_3493.JPG,Where is 1200-1219?,7,1,True,True,True,True,True,True,True
+IMG_3493.JPG,Where is Room 1200?,7,1,True,True,True,True,True,True,True
+IMG_3493.JPG,Where is Room 1219?,7,1,True,True,True,True,True,True,True
+IMG_3494.JPG,Where is 1200-1219?,7,1,True,True,True,True,True,True,True
+IMG_3494.JPG,Where is Room 1200?,7,1,True,True,True,True,True,True,True
+IMG_3494.JPG,Where is Room 1219?,7,1,True,True,True,True,True,True,True
+IMG_3495.JPG,Where is 1300-1321?,7,1,True,True,True,True,True,True,True
+IMG_3495.JPG,Where is Room 1300?,7,1,True,True,True,True,True,True,True
+IMG_3495.JPG,Where is Room 1321?,7,1,True,True,True,True,True,True,True
+IMG_3496.JPG,Where is 1300-1321?,7,1,True,True,True,True,True,True,True
+IMG_3496.JPG,Where is Room 1300?,7,1,True,True,True,True,True,True,True
+IMG_3496.JPG,Where is Room 1321?,7,1,True,True,True,True,True,True,True
+IMG_3497.JPG,Where is DCC?,7,1,True,True,True,True,True,True,True
+IMG_3497.JPG,Where is JEC?,7,1,True,True,True,True,True,True,True
+IMG_3497.JPG,Where is Tunnel to JEC & DCC?,7,1,True,True,True,True,True,True,True
+IMG_3498.JPG,Where is DCC?,7,1,True,True,True,True,True,True,True
+IMG_3498.JPG,Where is JEC?,7,1,True,True,True,True,True,True,True
+IMG_3498.JPG,Where is Tunnel to JEC & DCC?,7,1,True,True,True,True,True,True,True
+IMG_3501.JPG,Where is 1W19?,7,1,True,True,True,True,True,True,True
+IMG_3501.JPG,Where is Earth & Environmental Sciences?,7,1,True,True,True,True,True,True,True
+IMG_3501.JPG,Where is Environmental Sciences?,7,1,True,True,True,True,True,True,True
+IMG_3502.JPG,Where is 1W19?,0,1,False,False,False,False,False,False,False
+IMG_3502.JPG,Where is Earth Sciences?,7,1,True,True,True,True,True,True,True
+IMG_3502.JPG,Where is Earth and Environmental Sciences?,7,1,True,True,True,True,True,True,True
+IMG_3502.JPG,Where is Environmental Sciences?,7,1,True,True,True,True,True,True,True
+IMG_3503.JPG,Where is Earth Sciences?,5,2,True,True,False,False,True,True,True
+IMG_3503.JPG,Where is Earth and Environmental Sciences?,7,1,True,True,True,True,True,True,True
+IMG_3503.JPG,Where is Environmental Sciences?,6,2,True,True,False,True,True,True,True
+IMG_3504.JPG,Where is Earth Sciences?,6,2,True,False,True,True,True,True,True
+IMG_3504.JPG,Where is Earth and Environmental Sciences?,7,1,True,True,True,True,True,True,True
+IMG_3504.JPG,Where is Environmental Sciences?,6,2,True,False,True,True,True,True,True
+IMG_3505.JPG,Where is Entrance IC36?,7,1,True,True,True,True,True,True,True
+IMG_3505.JPG,Where is IC34?,7,1,True,True,True,True,True,True,True
+IMG_3505.JPG,Where is IC36?,7,1,True,True,True,True,True,True,True
+IMG_3506.JPG,Where is DCC?,7,1,True,True,True,True,True,True,True
+IMG_3506.JPG,Where is JEC?,7,1,True,True,True,True,True,True,True
+IMG_3509.JPG,Where is 9107-9129?,7,1,True,True,True,True,True,True,True
+IMG_3510.JPG,Where is 9107-9129?,7,1,True,True,True,True,True,True,True
+IMG_3511.JPG,Where is 9207-9231?,7,1,True,True,True,True,True,True,True
+IMG_3512.JPG,Where is 9207-9231?,7,1,True,True,True,True,True,True,True
+IMG_3513.JPG,Where is 8107-8130?,7,1,True,True,True,True,True,True,True
+IMG_3514.JPG,Where is 8107-8130?,7,1,True,True,True,True,True,True,True
+IMG_3515.JPG,Where is 8207-8231?,7,1,True,True,True,True,True,True,True
+IMG_3516.JPG,Where is 8207-8231?,7,1,True,True,True,True,True,True,True
+IMG_3517.JPG,Where is 7105-7129?,7,1,True,True,True,True,True,True,True
+IMG_3518.JPG,Where is 7207-7231?,7,1,True,True,True,True,True,True,True
+IMG_3519.JPG,Where is 7207-7231?,7,1,True,True,True,True,True,True,True
+IMG_3521.JPG,Where is 6107-6129?,7,1,True,True,True,True,True,True,True
+IMG_3522.JPG,Where is 6207-6231?,7,1,True,True,True,True,True,True,True
+IMG_3523.JPG,Where is 5107-5129?,7,1,True,True,True,True,True,True,True
+IMG_3524.JPG,Where is 5207-5231?,7,1,True,True,True,True,True,True,True
+IMG_3525.JPG,Where is 7100-7119?,7,1,True,True,True,True,True,True,True
+IMG_3526.JPG,Where is 7100-7119?,5,2,True,False,False,True,True,True,True
+IMG_3527.JPG,Where is 7100-7119?,5,2,True,False,False,True,True,True,True
+IMG_3528.JPG,Where is 7200-7220?,7,1,True,True,True,True,True,True,True
+IMG_3529.JPG,Where is 7200-7220?,7,1,True,True,True,True,True,True,True
+IMG_3530.JPG,Where is 7200-7220?,7,1,True,True,True,True,True,True,True
+IMG_3531.JPG,Where is 7300-7319?,7,1,True,True,True,True,True,True,True
+IMG_3532.JPG,Where is 7300-7319?,7,1,True,True,True,True,True,True,True
+IMG_3533.JPG,Where is 7300-7319?,7,1,True,True,True,True,True,True,True
+IMG_3534.JPG,Where is 6100-6119?,7,1,True,True,True,True,True,True,True
+IMG_3535.JPG,Where is 6300-6319?,7,1,True,True,True,True,True,True,True
+IMG_3536.JPG,Where is 6300-6319?,7,1,True,True,True,True,True,True,True
+IMG_3537.JPG,Where is 6300-6319?,7,1,True,True,True,True,True,True,True
+IMG_3538.JPG,Where is 5100-5119?,7,1,True,True,True,True,True,True,True
+IMG_3539.JPG,Where is 5100-5119?,7,1,True,True,True,True,True,True,True
+IMG_3540.JPG,Where is 5200-5219?,7,1,True,True,True,True,True,True,True
+IMG_3540.JPG,Where is BME Lab?,7,1,True,True,True,True,True,True,True
+IMG_3540.JPG,Where is Biomedical Engineering Instructional Laboratory?,7,1,True,True,True,True,True,True,True
+IMG_3541.JPG,Where is 5200-5219?,7,1,True,True,True,True,True,True,True
+IMG_3542.JPG,Where is 5300-5319?,7,1,True,True,True,True,True,True,True
+IMG_3542.JPG,Where is Center for Multiphase Research?,7,1,True,True,True,True,True,True,True
+IMG_3543.JPG,Where is 5300-5319?,7,1,True,True,True,True,True,True,True
+IMG_3544.JPG,Where is 5100-5119?,7,1,True,True,True,True,True,True,True
+IMG_3545.JPG,Where is 4100-4118?,7,1,True,True,True,True,True,True,True
+IMG_3545.JPG,Where is Exit?,6,2,False,True,True,True,True,True,True
+IMG_3546.JPG,Where is JEC?,7,1,True,True,True,True,True,True,True
+IMG_3546.JPG,Where is Jonsson Engineering Center (JEC)?,7,1,True,True,True,True,True,True,True
+IMG_3546.JPG,Where is LITEC?,7,1,True,True,True,True,True,True,True
+IMG_3546.JPG,Where is Laboratory Introduction to Embedded Control (LITEC)?,7,1,True,True,True,True,True,True,True
+IMG_3546.JPG,Where is Room 4201?,7,1,True,True,True,True,True,True,True
+IMG_3547.JPG,Where is JEC 4201?,7,1,True,True,True,True,True,True,True
+IMG_3547.JPG,Where is Room 4201?,7,1,True,True,True,True,True,True,True
+IMG_3548.JPG,Where is JEC 4201?,7,1,True,True,True,True,True,True,True
+IMG_3549.JPG,Where is #4304?,7,1,True,True,True,True,True,True,True
+IMG_3549.JPG,Where is #4309?,7,1,True,True,True,True,True,True,True
+IMG_3549.JPG,Where is 4300 - 4319?,7,1,True,True,True,True,True,True,True
+IMG_3549.JPG,Where is Jonsson Engineering Center #4304?,7,1,True,True,True,True,True,True,True
+IMG_3549.JPG,Where is Jonsson Engineering Center #4309?,7,1,True,True,True,True,True,True,True
+IMG_3550.JPG,Where is #4304?,7,1,True,True,True,True,True,True,True
+IMG_3550.JPG,Where is #4309?,7,1,True,True,True,True,True,True,True
+IMG_3550.JPG,Where is 4300 - 4319?,7,1,True,True,True,True,True,True,True
+IMG_3550.JPG,Where is Jonsson Engineering Center #4304?,7,1,True,True,True,True,True,True,True
+IMG_3550.JPG,Where is Jonsson Engineering Center #4309?,7,1,True,True,True,True,True,True,True
+IMG_3551.JPG,Where is Mechatronics Lab?,5,2,True,False,False,True,True,True,True
+IMG_3551.JPG,Where is Mechatronics?,3,2,True,False,False,False,False,True,True
+IMG_3552.JPG,Where is 4304?,7,1,True,True,True,True,True,True,True
+IMG_3552.JPG,Where is Mechatronics Lab?,7,1,True,True,True,True,True,True,True
+IMG_3552.JPG,Where is Mechatronics?,7,1,True,True,True,True,True,True,True
+IMG_3553.JPG,Where is 3200-3232?,7,1,True,True,True,True,True,True,True
+IMG_3553.JPG,Where is 3200?,7,1,True,True,True,True,True,True,True
+IMG_3553.JPG,Where is 3232?,7,1,True,True,True,True,True,True,True
+IMG_3553.JPG,Where is Room 3200?,7,1,True,True,True,True,True,True,True
+IMG_3553.JPG,Where is Room 3232?,7,1,True,True,True,True,True,True,True
+IMG_3554.JPG,Where is 3200-3232?,7,1,True,True,True,True,True,True,True
+IMG_3554.JPG,Where is 3200?,7,1,True,True,True,True,True,True,True
+IMG_3554.JPG,Where is 3232?,7,1,True,True,True,True,True,True,True
+IMG_3554.JPG,Where is Room 3200?,7,1,True,True,True,True,True,True,True
+IMG_3554.JPG,Where is Room 3232?,7,1,True,True,True,True,True,True,True
+IMG_3555.JPG,Where is 3200-3232?,7,1,True,True,True,True,True,True,True
+IMG_3555.JPG,Where is 3200?,7,1,True,True,True,True,True,True,True
+IMG_3555.JPG,Where is 3232?,7,1,True,True,True,True,True,True,True
+IMG_3555.JPG,Where is Room 3200?,7,1,True,True,True,True,True,True,True
+IMG_3556.JPG,Where is 3300-3321?,5,2,True,False,False,True,True,True,True
+IMG_3556.JPG,Where is 3300?,5,2,True,False,False,True,True,True,True
+IMG_3556.JPG,Where is 3321?,5,2,True,False,False,True,True,True,True
+IMG_3556.JPG,Where is George S. Ansell Lounge?,7,1,True,True,True,True,True,True,True
+IMG_3556.JPG,Where is Room 3300?,5,2,True,False,False,True,True,True,True
+IMG_3556.JPG,Where is Room 3321?,5,2,True,False,False,True,True,True,True
+IMG_3558.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3558.JPG,Where is EXIT HERE?,7,1,True,True,True,True,True,True,True
+IMG_3558.JPG,Where is the exit?,7,1,True,True,True,True,True,True,True
+IMG_3559.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3559.JPG,Where is EXIT HERE?,7,1,True,True,True,True,True,True,True
+IMG_3559.JPG,Where is the exit?,7,1,True,True,True,True,True,True,True
+IMG_3560.JPG,Where is EXIT HERE?,7,1,True,True,True,True,True,True,True
+IMG_3560.JPG,Where is the exit?,7,1,True,True,True,True,True,True,True
+IMG_3562.JPG,Where is EXIT?,7,1,True,True,True,True,True,True,True
+IMG_3563.JPG,Where is Archery Range?,7,1,True,True,True,True,True,True,True
+IMG_3563.JPG,Where is Rifle & Archery Range?,7,1,True,True,True,True,True,True,True
+IMG_3563.JPG,Where is Rifle Range?,7,1,True,True,True,True,True,True,True
+IMG_3564.JPG,Where is Archery Range?,7,1,True,True,True,True,True,True,True
+IMG_3564.JPG,Where is Rifle & Archery Range?,7,1,True,True,True,True,True,True,True
+IMG_3564.JPG,Where is Rifle Range?,7,1,True,True,True,True,True,True,True
+IMG_3565.JPG,Where is ARMY ROTC BATTALION?,7,1,True,True,True,True,True,True,True
+IMG_3565.JPG,Where is ARMY ROTC?,7,1,True,True,True,True,True,True,True
+IMG_3565.JPG,Where is ROTC BATTALION?,7,1,True,True,True,True,True,True,True
+IMG_3566.JPG,Where is ARMY ROTC BATTALION?,7,1,True,True,True,True,True,True,True
+IMG_3566.JPG,Where is ARMY ROTC?,7,1,True,True,True,True,True,True,True
+IMG_3566.JPG,Where is ROTC BATTALION?,7,1,True,True,True,True,True,True,True
+IMG_3567.JPG,Where is ARMY ROTC BATTALION?,7,1,True,True,True,True,True,True,True
+IMG_3567.JPG,Where is ARMY ROTC?,7,1,True,True,True,True,True,True,True
+IMG_3567.JPG,Where is ROTC BATTALION?,7,1,True,True,True,True,True,True,True
+IMG_3568.JPG,Where is ARMY ROTC BATTALION?,7,1,True,True,True,True,True,True,True
+IMG_3568.JPG,Where is ARMY ROTC?,7,1,True,True,True,True,True,True,True
+IMG_3568.JPG,Where is ROTC BATTALION?,7,1,True,True,True,True,True,True,True
+IMG_3569.JPG,Where is Womens Lockers?,7,1,True,True,True,True,True,True,True
+IMG_3569.JPG,Where is Womens Room?,7,1,True,True,True,True,True,True,True
+IMG_3570.JPG,Where is Womens Lockers?,7,1,True,True,True,True,True,True,True
+IMG_3570.JPG,Where is Womens Room?,7,1,True,True,True,True,True,True,True
+IMG_3571.JPG,Where is Womens Lockers?,7,1,True,True,True,True,True,True,True
+IMG_3571.JPG,Where is Womens Room?,7,1,True,True,True,True,True,True,True
+IMG_3572.JPG,Where is Mens Lockers?,7,1,True,True,True,True,True,True,True
+IMG_3572.JPG,Where is Mens Room?,7,1,True,True,True,True,True,True,True
+IMG_3573.JPG,Where is Mens Lockers?,7,1,True,True,True,True,True,True,True
+IMG_3573.JPG,Where is Mens Room?,7,1,True,True,True,True,True,True,True
+IMG_3574.JPG,Where is Mens Lockers?,7,1,True,True,True,True,True,True,True
+IMG_3574.JPG,Where is Mens Room?,7,1,True,True,True,True,True,True,True
+IMG_3575.JPG,Where is Archery Range?,7,1,True,True,True,True,True,True,True
+IMG_3575.JPG,Where is Rifle & Archery Range?,7,1,True,True,True,True,True,True,True
+IMG_3575.JPG,Where is Rifle Range?,7,1,True,True,True,True,True,True,True
+IMG_3576.JPG,Where is Archery Range?,7,1,True,True,True,True,True,True,True
+IMG_3576.JPG,Where is Rifle & Archery Range?,7,1,True,True,True,True,True,True,True
+IMG_3576.JPG,Where is Rifle Range?,7,1,True,True,True,True,True,True,True
+IMG_3577.JPG,Where is Ricketts Building?,5,2,True,False,False,True,True,True,True
+IMG_3578.JPG,Where is 102?,7,1,True,True,True,True,True,True,True
+IMG_3579.JPG,Where is 102?,7,1,True,True,True,True,True,True,True
+IMG_3580.JPG,Where is 102?,7,1,True,True,True,True,True,True,True
+IMG_3581.JPG,Where is 120?,7,1,True,True,True,True,True,True,True
+IMG_3581.JPG,Where is 121-135?,7,1,True,True,True,True,True,True,True
+IMG_3581.JPG,Where is Ladies Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3582.JPG,Where is 120?,7,1,True,True,True,True,True,True,True
+IMG_3582.JPG,Where is 121-135?,7,1,True,True,True,True,True,True,True
+IMG_3582.JPG,Where is Ladies Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3583.JPG,Where is Men's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3584.JPG,Where is Motorsport?,7,1,True,True,True,True,True,True,True
+IMG_3584.JPG,Where is Rensselaer Motorsport?,7,1,True,True,True,True,True,True,True
+IMG_3585.JPG,Where is Design Build Fly?,7,1,True,True,True,True,True,True,True
+IMG_3585.JPG,Where is Ricketts 211?,7,1,True,True,True,True,True,True,True
+IMG_3585.JPG,Where is room 211?,7,1,True,True,True,True,True,True,True
+IMG_3586.JPG,Where is Design Build Fly?,7,1,True,True,True,True,True,True,True
+IMG_3586.JPG,Where is Ricketts 211?,7,1,True,True,True,True,True,True,True
+IMG_3586.JPG,Where is room 211?,7,1,True,True,True,True,True,True,True
+IMG_3590.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3591.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3592.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3593.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3594.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3595.JPG,Where are the restrooms?,5,2,True,False,False,True,True,True,True
+IMG_3596.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3597.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3598.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3599.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3600.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3601.JPG,Where is 3418?,5,2,True,False,False,True,True,True,True
+IMG_3602.JPG,Where is 3418?,7,1,True,True,True,True,True,True,True
+IMG_3603.JPG,Where is the PUB Entrance?,7,1,True,True,True,True,True,True,True
+IMG_3604.JPG,Where are the restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3604.JPG,Where is the PUB Entrance?,5,2,True,False,False,True,True,True,True
+IMG_3605.JPG,Where is the PUB Entrance?,7,1,True,True,True,True,True,True,True
+IMG_3606.JPG,Where is the women restroom?,7,1,True,True,True,True,True,True,True
+IMG_3606.JPG,Where is the women's bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3607.JPG,Where is the women restroom?,7,1,True,True,True,True,True,True,True
+IMG_3607.JPG,Where is the women's bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3608.JPG,Where is the men restroom?,7,1,True,True,True,True,True,True,True
+IMG_3608.JPG,Where is the men's bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3609.JPG,Where is the men restroom?,7,1,True,True,True,True,True,True,True
+IMG_3609.JPG,Where is the men's bathroom?,7,1,True,True,True,True,True,True,True
+IMG_3610.JPG,Where is the restroom?,7,1,True,True,True,True,True,True,True
+IMG_3611.JPG,Where is the customer service office?,7,1,True,True,True,True,True,True,True
+IMG_3612.JPG,Where is the customer service office?,7,1,True,True,True,True,True,True,True
+IMG_3613.JPG,Where is locker 6?,7,1,True,True,True,True,True,True,True
+IMG_3614.JPG,Where is locker 6?,7,1,True,True,True,True,True,True,True
+IMG_3615.JPG,Where is the ATM?,7,1,True,True,True,True,True,True,True
+IMG_3616.JPG,Where is the ATM?,7,1,True,True,True,True,True,True,True
+IMG_3617.JPG,Where is Admissions?,5,2,True,False,True,True,True,False,True
+IMG_3617.JPG,Where is Field House?,7,1,True,True,True,True,True,True,True
+IMG_3617.JPG,Where is Financial Aid?,6,2,False,True,True,True,True,True,True
+IMG_3617.JPG,Where is Public Safety & Public Access?,6,2,False,True,True,True,True,True,True
+IMG_3617.JPG,Where is Resident Life & Student Dining Services?,3,4,False,False,True,False,True,False,True
+IMG_3618.JPG,Where is Admissions?,7,1,True,True,True,True,True,True,True
+IMG_3618.JPG,Where is Field House?,7,1,True,True,True,True,True,True,True
+IMG_3618.JPG,Where is Financial Aid?,7,1,True,True,True,True,True,True,True
+IMG_3618.JPG,Where is Public Safety & Public Access?,7,1,True,True,True,True,True,True,True
+IMG_3618.JPG,Where is Resident Life & Student Dining Services?,7,1,True,True,True,True,True,True,True
+IMG_3619.JPG,Where is Admissions?,7,1,True,True,True,True,True,True,True
+IMG_3619.JPG,Where is Field House?,7,1,True,True,True,True,True,True,True
+IMG_3619.JPG,Where is Financial Aid?,7,1,True,True,True,True,True,True,True
+IMG_3619.JPG,Where is Public Safety & Public Access?,7,1,True,True,True,True,True,True,True
+IMG_3619.JPG,Where is Resident Life & Student Dining Services?,7,1,True,True,True,True,True,True,True
+IMG_3620.JPG,Where is Admissions?,7,1,True,True,True,True,True,True,True
+IMG_3620.JPG,Where is Field House?,7,1,True,True,True,True,True,True,True
+IMG_3620.JPG,Where is Financial Aid?,6,2,False,True,True,True,True,True,True
+IMG_3620.JPG,Where is Public Safety & Public Access?,6,2,False,True,True,True,True,True,True
+IMG_3620.JPG,Where is Resident Life & Student Dining Services?,7,1,True,True,True,True,True,True,True
+IMG_3621.JPG,Where is Admissions?,7,1,True,True,True,True,True,True,True
+IMG_3621.JPG,Where is Field House?,7,1,True,True,True,True,True,True,True
+IMG_3621.JPG,Where is Financial Aid?,7,1,True,True,True,True,True,True,True
+IMG_3621.JPG,Where is Public Safety & Public Access?,7,1,True,True,True,True,True,True,True
+IMG_3621.JPG,Where is Resident Life & Student Dining Services?,7,1,True,True,True,True,True,True,True
+IMG_3622.JPG,Where is Admissions Office?,7,1,True,True,True,True,True,True,True
+IMG_3624.JPG,Where are Deliveries?,6,2,True,True,True,True,True,True,False
+IMG_3625.JPG,Where are Deliveries?,5,2,True,True,True,True,False,True,False
+IMG_3628.JPG,Where is MRC 136 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3628.JPG,Where is MSE Student Lounge?,7,1,True,True,True,True,True,True,True
+IMG_3629.JPG,Where is MRC 136 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3629.JPG,Where is MSE Student Lounge?,7,1,True,True,True,True,True,True,True
+IMG_3630.JPG,Where is MRC 136 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3630.JPG,Where is MSE Student Lounge?,7,1,True,True,True,True,True,True,True
+IMG_3631.JPG,Where is MRC 136 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3631.JPG,Where is MSE Student Lounge?,7,1,True,True,True,True,True,True,True
+IMG_3632.JPG,Where is MRC 136 Classroom?,7,1,True,True,True,True,True,True,True
+IMG_3632.JPG,Where is MSE Student Lounge?,7,1,True,True,True,True,True,True,True
+IMG_3633.JPG,Where is NYS Center for Polymer Synthesis?,7,1,True,True,True,True,True,True,True
+IMG_3634.JPG,Where is NYS Center for Polymer Synthesis?,7,1,True,True,True,True,True,True,True
+IMG_3635.JPG,Where is NYS Center for Polymer Synthesis?,7,1,True,True,True,True,True,True,True
+IMG_3636.JPG,Where is Materials Science & Engineering Office?,7,1,True,True,True,True,True,True,True
+IMG_3637.JPG,Where is MSE Office?,7,1,True,True,True,True,True,True,True
+IMG_3637.JPG,Where is Materials Science & Engineering Office?,7,1,True,True,True,True,True,True,True
+IMG_3638.JPG,Where is MSE Office?,7,1,True,True,True,True,True,True,True
+IMG_3638.JPG,Where is Materials Science & Engineering Office?,7,1,True,True,True,True,True,True,True
+IMG_3639.JPG,Where is Materials Research Center?,7,1,True,True,True,True,True,True,True
+IMG_3640.JPG,Where is Center for Polymer Synthesis?,7,1,True,True,True,True,True,True,True
+IMG_3640.JPG,Where is NYS Center for Polymer Synthesis?,7,1,True,True,True,True,True,True,True
+IMG_3640.JPG,Where is the Polymer Synthesis Center?,7,1,True,True,True,True,True,True,True
+IMG_3641.JPG,Where is the Hub?,7,1,True,True,True,True,True,True,True
+IMG_3642.JPG,Where is the Hub?,7,1,True,True,True,True,True,True,True
+IMG_3643.JPG,Where is the Hub?,7,1,True,True,True,True,True,True,True
+IMG_3644.JPG,Where is the Hub?,7,1,True,True,True,True,True,True,True
+IMG_3645.JPG,Where is the Hub?,7,1,True,True,True,True,True,True,True
+IMG_3646.JPG,Where is Cogswell Laboratory Department of Chemistry and Chemical Biology?,7,1,True,True,True,True,True,True,True
+IMG_3647.JPG,Where is Cogswell Conference Room?,7,1,True,True,True,True,True,True,True
+IMG_3647.JPG,Where is Room 238?,7,1,True,True,True,True,True,True,True
+IMG_3648.JPG,Where is Cogswell Conference Room?,6,2,True,True,False,True,True,True,True
+IMG_3648.JPG,Where is Room 238?,7,1,True,True,True,True,True,True,True
+IMG_3649.JPG,Where is Cogswell Conference Room?,7,1,True,True,True,True,True,True,True
+IMG_3649.JPG,Where is Room 238?,7,1,True,True,True,True,True,True,True
+IMG_3650.JPG,Where is Room 126?,7,1,True,True,True,True,True,True,True
+IMG_3650.JPG,Where is Room 134?,7,1,True,True,True,True,True,True,True
+IMG_3651.JPG,Where is Room 126?,7,1,True,True,True,True,True,True,True
+IMG_3651.JPG,Where is Room 134?,7,1,True,True,True,True,True,True,True
+IMG_3652.JPG,Where is Room 126?,7,1,True,True,True,True,True,True,True
+IMG_3652.JPG,Where is Room 134?,7,1,True,True,True,True,True,True,True
+IMG_3653.JPG,Where is Room 126?,7,1,True,True,True,True,True,True,True
+IMG_3653.JPG,Where is Room 134?,7,1,True,True,True,True,True,True,True
+IMG_3654.JPG,Where is Room 116?,7,1,True,True,True,True,True,True,True
+IMG_3654.JPG,Where is Room 124?,7,1,True,True,True,True,True,True,True
+IMG_3655.JPG,Where is Room 116?,7,1,True,True,True,True,True,True,True
+IMG_3655.JPG,Where is Room 124?,7,1,True,True,True,True,True,True,True
+IMG_3656.JPG,Where is Room 116?,7,1,True,True,True,True,True,True,True
+IMG_3656.JPG,Where is Room 124?,7,1,True,True,True,True,True,True,True
+IMG_3657.JPG,Where is Room 116?,7,1,True,True,True,True,True,True,True
+IMG_3657.JPG,Where is Room 124?,7,1,True,True,True,True,True,True,True
+IMG_3658.JPG,Where is the emergency exit?,7,1,True,True,True,True,True,True,True
+IMG_3658.JPG,Where is the exit?,7,1,True,True,True,True,True,True,True
+IMG_3659.JPG,Where is the emergency exit?,7,1,True,True,True,True,True,True,True
+IMG_3659.JPG,Where is the exit?,7,1,True,True,True,True,True,True,True
+IMG_3660.JPG,Where is the emergency exit?,7,1,True,True,True,True,True,True,True
+IMG_3660.JPG,Where is the exit?,7,1,True,True,True,True,True,True,True
+IMG_3661.JPG,Where is Room 110?,7,1,True,True,True,True,True,True,True
+IMG_3661.JPG,Where is Room 115?,7,1,True,True,True,True,True,True,True
+IMG_3662.JPG,Where is Room 110?,7,1,True,True,True,True,True,True,True
+IMG_3662.JPG,Where is Room 115?,7,1,True,True,True,True,True,True,True
+IMG_3663.JPG,Where is Room 110?,7,1,True,True,True,True,True,True,True
+IMG_3663.JPG,Where is Room 115?,7,1,True,True,True,True,True,True,True
+IMG_3664.JPG,Where is Room 110?,7,1,True,True,True,True,True,True,True
+IMG_3664.JPG,Where is Room 115?,7,1,True,True,True,True,True,True,True
+IMG_3665.JPG,Where is Room 101?,5,2,True,False,False,True,True,True,True
+IMG_3665.JPG,Where is Room 109?,5,2,True,False,False,True,True,True,True
+IMG_3665.JPG,Where is the emergency exit?,5,2,True,False,False,True,True,True,True
+IMG_3666.JPG,Where is Room 101?,7,1,True,True,True,True,True,True,True
+IMG_3666.JPG,Where is Room 109?,7,1,True,True,True,True,True,True,True
+IMG_3666.JPG,Where is the emergency exit?,7,1,True,True,True,True,True,True,True
+IMG_3667.JPG,Where is Room 101?,7,1,True,True,True,True,True,True,True
+IMG_3667.JPG,Where is Room 109?,7,1,True,True,True,True,True,True,True
+IMG_3667.JPG,Where is the emergency exit?,7,1,True,True,True,True,True,True,True
+IMG_3668.JPG,Where is Room 101?,7,1,True,True,True,True,True,True,True
+IMG_3668.JPG,Where is Room 109?,7,1,True,True,True,True,True,True,True
+IMG_3668.JPG,Where is the emergency exit?,7,1,True,True,True,True,True,True,True
+IMG_3669.JPG,Where is Room 201?,7,1,True,True,True,True,True,True,True
+IMG_3669.JPG,Where is Room 208?,7,1,True,True,True,True,True,True,True
+IMG_3669.JPG,Where is Room 230?,5,2,True,False,False,True,True,True,True
+IMG_3669.JPG,Where is Room 238?,7,1,True,True,True,True,True,True,True
+IMG_3669.JPG,Where is Room 239?,5,2,True,False,False,True,True,True,True
+IMG_3669.JPG,Where is the Cogswell Conference Room?,7,1,True,True,True,True,True,True,True
+IMG_3670.JPG,Where is Room 201?,5,2,True,False,False,True,True,True,True
+IMG_3670.JPG,Where is Room 208?,5,2,True,False,False,True,True,True,True
+IMG_3670.JPG,Where is Room 238?,7,1,True,True,True,True,True,True,True
+IMG_3670.JPG,Where is the Cogswell Conference Room?,7,1,True,True,True,True,True,True,True
+IMG_3671.JPG,Where is Room 201?,7,1,True,True,True,True,True,True,True
+IMG_3671.JPG,Where is Room 208?,7,1,True,True,True,True,True,True,True
+IMG_3671.JPG,Where is Room 238?,7,1,True,True,True,True,True,True,True
+IMG_3671.JPG,Where is the Cogswell Conference Room?,7,1,True,True,True,True,True,True,True
+IMG_3672.JPG,Where is Room 230?,7,1,True,True,True,True,True,True,True
+IMG_3672.JPG,Where is Room 239?,7,1,True,True,True,True,True,True,True
+IMG_3673.JPG,Where is Lakshmi Laboratory?,7,1,True,True,True,True,True,True,True
+IMG_3673.JPG,Where is Solids NMR Lab?,7,1,True,True,True,True,True,True,True
+IMG_3674.JPG,Where is Room 209?,7,1,True,True,True,True,True,True,True
+IMG_3674.JPG,Where is Room 220?,7,1,True,True,True,True,True,True,True
+IMG_3674.JPG,Where is Room 221?,7,1,True,True,True,True,True,True,True
+IMG_3674.JPG,Where is Room 229?,7,1,True,True,True,True,True,True,True
+IMG_3675.JPG,Where is Room 221?,7,1,True,True,True,True,True,True,True
+IMG_3675.JPG,Where is Room 229?,7,1,True,True,True,True,True,True,True
+IMG_3676.JPG,Where is Room 209?,7,1,True,True,True,True,True,True,True
+IMG_3676.JPG,Where is Room 220?,7,1,True,True,True,True,True,True,True
+IMG_3677.JPG,Where is Room 309?,7,1,True,True,True,True,True,True,True
+IMG_3677.JPG,Where is Room 319?,7,1,True,True,True,True,True,True,True
+IMG_3678.JPG,Where is Room 309?,7,1,True,True,True,True,True,True,True
+IMG_3678.JPG,Where is Room 319?,7,1,True,True,True,True,True,True,True
+IMG_3679.JPG,Where is Room 301?,7,1,True,True,True,True,True,True,True
+IMG_3679.JPG,Where is Room 308?,7,1,True,True,True,True,True,True,True
+IMG_3679.JPG,Where is Room 330?,7,1,True,True,True,True,True,True,True
+IMG_3679.JPG,Where is Room 336?,7,1,True,True,True,True,True,True,True
+IMG_3680.JPG,Where is Room 301?,7,1,True,True,True,True,True,True,True
+IMG_3680.JPG,Where is Room 308?,6,2,True,True,False,True,True,True,True
+IMG_3681.JPG,Where is Room 330?,7,1,True,True,True,True,True,True,True
+IMG_3681.JPG,Where is Room 336?,7,1,True,True,True,True,True,True,True
+IMG_3683.JPG,Where is Room 301?,7,1,True,True,True,True,True,True,True
+IMG_3683.JPG,Where is Room 308?,7,1,True,True,True,True,True,True,True
+IMG_3684.JPG,Where is the Exit?,7,1,True,True,True,True,True,True,True
+IMG_3684.JPG,Where is the West Stair Tower and Campus?,7,1,True,True,True,True,True,True,True
+IMG_3685.JPG,Where is the Exit?,7,1,True,True,True,True,True,True,True
+IMG_3685.JPG,Where is the West Stair Tower and Campus?,7,1,True,True,True,True,True,True,True
+IMG_3686.JPG,Where is the Exit?,7,1,True,True,True,True,True,True,True
+IMG_3686.JPG,Where is the West Stair Tower and Campus?,7,1,True,True,True,True,True,True,True
+IMG_3687.JPG,Where is Customer Service?,7,1,True,True,True,True,True,True,True
+IMG_3687.JPG,Where is Financial Aid?,7,1,True,True,True,True,True,True,True
+IMG_3687.JPG,Where is Suite 2232?,7,1,True,True,True,True,True,True,True
+IMG_3687.JPG,Where is Suite 2600?,7,1,True,True,True,True,True,True,True
+IMG_3687.JPG,Where is the Archer Center for Student Leadership Development?,7,1,True,True,True,True,True,True,True
+IMG_3687.JPG,Where is the Bursar?,7,1,True,True,True,True,True,True,True
+IMG_3687.JPG,Where is the Registrar?,7,1,True,True,True,True,True,True,True
+IMG_3688.JPG,Where is Customer Service?,7,1,True,True,True,True,True,True,True
+IMG_3688.JPG,Where is Financial Aid?,7,1,True,True,True,True,True,True,True
+IMG_3688.JPG,Where is Suite 2232?,7,1,True,True,True,True,True,True,True
+IMG_3688.JPG,Where is Suite 2600?,7,1,True,True,True,True,True,True,True
+IMG_3688.JPG,Where is the Archer Center for Student Leadership Development?,7,1,True,True,True,True,True,True,True
+IMG_3688.JPG,Where is the Bursar?,7,1,True,True,True,True,True,True,True
+IMG_3688.JPG,Where is the Registrar?,7,1,True,True,True,True,True,True,True
+IMG_3689.JPG,Where is Customer Service?,7,1,True,True,True,True,True,True,True
+IMG_3689.JPG,Where is Financial Aid?,7,1,True,True,True,True,True,True,True
+IMG_3689.JPG,Where is Suite 2232?,7,1,True,True,True,True,True,True,True
+IMG_3689.JPG,Where is Suite 2600?,7,1,True,True,True,True,True,True,True
+IMG_3689.JPG,Where is the Archer Center for Student Leadership Development?,7,1,True,True,True,True,True,True,True
+IMG_3689.JPG,Where is the Bursar?,7,1,True,True,True,True,True,True,True
+IMG_3689.JPG,Where is the Registrar?,7,1,True,True,True,True,True,True,True
+IMG_3693.JPG,Where are the Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3693.JPG,Where is the Women's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3694.JPG,Where are the Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3694.JPG,Where is the Women's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3695.JPG,Where are the Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_3695.JPG,Where is the Women's Restroom?,7,1,True,True,True,True,True,True,True
+IMG_3696.JPG,Where is Religious and Spiritual Life?,5,2,True,False,False,True,True,True,True
+IMG_3696.JPG,Where is Student Success?,5,2,True,False,False,True,True,True,True
+IMG_3696.JPG,Where is Suite 4100?,5,2,True,False,False,True,True,True,True
+IMG_3696.JPG,Where is Suite 4200?,5,2,True,False,False,True,True,True,True
+IMG_3696.JPG,Where is Suite 4600?,5,2,True,False,False,True,True,True,True
+IMG_3696.JPG,Where is Suite 4629?,5,2,True,False,False,True,True,True,True
+IMG_3696.JPG,Where is the Counseling Center?,5,2,True,False,False,True,True,True,True
+IMG_3696.JPG,Where is the Dean of Students Office?,5,2,True,False,False,True,True,True,True
+IMG_3697.JPG,Where is Religious and Spiritual Life?,7,1,True,True,True,True,True,True,True
+IMG_3697.JPG,Where is Student Success?,7,1,True,True,True,True,True,True,True
+IMG_3697.JPG,Where is Suite 4100?,7,1,True,True,True,True,True,True,True
+IMG_3697.JPG,Where is Suite 4200?,7,1,True,True,True,True,True,True,True
+IMG_3697.JPG,Where is Suite 4600?,7,1,True,True,True,True,True,True,True
+IMG_3697.JPG,Where is Suite 4629?,7,1,True,True,True,True,True,True,True
+IMG_3697.JPG,Where is the Counseling Center?,7,1,True,True,True,True,True,True,True
+IMG_3697.JPG,Where is the Dean of Students Office?,7,1,True,True,True,True,True,True,True
+IMG_3698.JPG,Where is Religious and Spiritual Life?,7,1,True,True,True,True,True,True,True
+IMG_3698.JPG,Where is Student Success?,7,1,True,True,True,True,True,True,True
+IMG_3698.JPG,Where is Suite 4100?,7,1,True,True,True,True,True,True,True
+IMG_3698.JPG,Where is Suite 4200?,7,1,True,True,True,True,True,True,True
+IMG_3698.JPG,Where is Suite 4600?,7,1,True,True,True,True,True,True,True
+IMG_3698.JPG,Where is Suite 4629?,7,1,True,True,True,True,True,True,True
+IMG_3698.JPG,Where is the Counseling Center?,7,1,True,True,True,True,True,True,True
+IMG_3698.JPG,Where is the Dean of Students Office?,7,1,True,True,True,True,True,True,True
+IMG_E3313.JPG,Where is 1st Floor?,7,1,True,True,True,True,True,True,True
+IMG_E3313.JPG,Where is 2100 to 2317?,7,1,True,True,True,True,True,True,True
+IMG_E3313.JPG,Where is 2400 to 2715?,7,1,True,True,True,True,True,True,True
+IMG_E3313.JPG,Where is 3510 to 3713?,7,1,True,True,True,True,True,True,True
+IMG_E3313.JPG,Where is Elevator?,7,1,True,True,True,True,True,True,True
+IMG_E3313.JPG,Where is Restrooms?,7,1,True,True,True,True,True,True,True
+IMG_E3313.JPG,Where is Russell Sage Laboratory 2nd Floor?,7,1,True,True,True,True,True,True,True
